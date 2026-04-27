@@ -1,0 +1,82 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.atakmap.android.plugintemplate.plugin"
+4    android:versionCode="1"
+5    android:versionName="1.0 () - [4.6.0]" >
+6
+7    <uses-sdk android:minSdkVersion="21" />
+7-->C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml
+8
+9    <uses-permission android:name="android.permission.CAMERA" />
+9-->C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml:6:5-65
+9-->C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml:6:22-62
+10    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+10-->C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml:7:5-81
+10-->C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml:7:22-78
+11
+12    <uses-feature
+12-->C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml:8:5-85
+13        android:name="android.hardware.camera"
+13-->C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml:8:19-57
+14        android:required="false" />
+14-->C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml:8:58-82
+15
+16    <application
+16-->C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml:10:5-39:19
+17        android:allowBackup="false"
+17-->C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml:11:9-36
+18        android:debuggable="true"
+19        android:description="@string/app_desc"
+19-->C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml:14:9-47
+20        android:extractNativeLibs="true"
+20-->C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml:15:9-41
+21        android:icon="@drawable/ic_launcher"
+21-->C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml:12:9-45
+22        android:label="@string/app_name"
+22-->C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml:13:9-41
+23        android:testOnly="true"
+24        android:theme="@style/AppTheme" >
+24-->C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml:16:9-40
+25        <meta-data
+26            android:name="plugin-api"
+26-->C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml:17:20-45
+27            android:value="com.atakmap.app@4.6.0.CIV" />
+27-->C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml:17:46-79
+28        <meta-data
+28-->C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml:18:9-78
+29            android:name="app_desc"
+29-->C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml:18:20-43
+30            android:value="@string/app_desc" />
+30-->C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml:18:44-76
+31
+32        <!--
+33            This fictitious activity entry allow for ATAK 4.6.0.2 and newer to perform 
+34            plugin discovery  android devices.  If this is removed, the plugin will 
+35            not be able to be discovered or loaded.
+36        -->
+37        <activity android:name="com.atakmap.app.component" >
+37-->C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml:24:8-29:19
+37-->C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml:24:18-58
+38            <intent-filter android:label="@string/app_name" >
+38-->C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml:26:12-28:28
+38-->C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml:26:27-59
+39                <action android:name="com.atakmap.app.component" />
+39-->C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml:27:15-66
+39-->C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml:27:23-63
+40            </intent-filter>
+41        </activity>
+42        <activity
+42-->C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml:31:8-36:79
+43            android:name="com.atakmap.android.plugintemplate.MultiPixCaptureActivity"
+43-->C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml:32:12-85
+44            android:configChanges="keyboardHidden|orientation|screenSize"
+44-->C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml:33:12-73
+45            android:exported="true"
+45-->C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml:34:12-35
+46            android:screenOrientation="sensorLandscape"
+46-->C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml:35:12-55
+47            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
+47-->C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml:36:12-76
+48    </application>
+49
+50</manifest>
