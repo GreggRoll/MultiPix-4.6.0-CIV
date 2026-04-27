@@ -1,0 +1,102 @@
+-- Merging decision tree log ---
+meta-data#plugin-api
+INJECTED from C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml:17:9-81
+	android:value
+		INJECTED from C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml:17:46-79
+	android:name
+		ADDED from C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml:17:20-45
+manifest
+ADDED from C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml:1:1-41:12
+INJECTED from C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml:1:1-41:12
+INJECTED from C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml:1:1-41:12
+INJECTED from C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml:1:1-41:12
+INJECTED from C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml:1:1-41:12
+INJECTED from C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml:1:1-41:12
+INJECTED from C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml:1:1-41:12
+	package
+		ADDED from C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml:3:5-56
+		INJECTED from C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml:1:1-41:12
+		INJECTED from C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml:2:5-51
+	android:versionCode
+		INJECTED from C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml:1:1-41:12
+		INJECTED from C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml:1:11-69
+	tools:ignore
+		ADDED from C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml:4:5-44
+uses-permission#android.permission.CAMERA
+ADDED from C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml:6:5-65
+	android:name
+		ADDED from C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml:6:22-62
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml:7:5-81
+	android:name
+		ADDED from C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml:7:22-78
+uses-feature#android.hardware.camera
+ADDED from C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml:8:5-85
+	android:required
+		ADDED from C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml:8:58-82
+	android:name
+		ADDED from C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml:8:19-57
+application
+ADDED from C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml:10:5-39:19
+	android:extractNativeLibs
+		ADDED from C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml:15:9-41
+	android:label
+		ADDED from C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml:13:9-41
+	android:icon
+		ADDED from C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml:12:9-45
+	android:allowBackup
+		ADDED from C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml:11:9-36
+	android:description
+		ADDED from C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml:14:9-47
+	android:theme
+		ADDED from C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml:16:9-40
+meta-data#app_desc
+ADDED from C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml:18:9-78
+	android:value
+		ADDED from C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml:18:44-76
+	android:name
+		ADDED from C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml:18:20-43
+activity#com.atakmap.app.component
+ADDED from C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml:24:8-29:19
+	tools:ignore
+		ADDED from C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml:25:12-39
+	android:name
+		ADDED from C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml:24:18-58
+intent-filter#action:name:com.atakmap.app.component
+ADDED from C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml:26:12-28:28
+	android:label
+		ADDED from C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml:26:27-59
+action#com.atakmap.app.component
+ADDED from C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml:27:15-66
+	android:name
+		ADDED from C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml:27:23-63
+activity#com.atakmap.android.plugintemplate.MultiPixCaptureActivity
+ADDED from C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml:31:8-36:79
+	android:screenOrientation
+		ADDED from C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml:35:12-55
+	android:exported
+		ADDED from C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml:34:12-35
+	android:configChanges
+		ADDED from C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml:33:12-73
+	android:theme
+		ADDED from C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml:36:12-76
+	android:name
+		ADDED from C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml:32:12-85
+uses-sdk
+INJECTED from C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml

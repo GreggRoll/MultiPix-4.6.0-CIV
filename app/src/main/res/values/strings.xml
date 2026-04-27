@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App -->
+    <string name="app_name">MultiPix</string>
+    <!-- description -->
+    <string name="app_desc">Capture multiple photos and attach them to one ATAK marker.</string>
+    <string name="multipix_done">Done</string>
+    <string name="multipix_capture">Capture</string>
+    <string name="multipix_cancel">Cancel</string>
+    <string name="multipix_save">Save</string>
+    <string name="multipix_empty">No photos captured</string>
+
+
+
+
+</resources>
