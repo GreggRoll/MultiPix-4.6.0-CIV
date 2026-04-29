@@ -31,7 +31,11 @@ import com.atakmap.coremap.maps.coords.GeoPointMetaData;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 import java.util.UUID;
+
+import org.json.JSONArray;
+import org.json.JSONObject;
 
 public class PluginTemplateDropDownReceiver extends DropDownReceiver implements
         OnStateListener {
@@ -48,6 +52,7 @@ public class PluginTemplateDropDownReceiver extends DropDownReceiver implements
     private final LinearLayout galleryList;
     private final TextView emptyState;
     private final TextView sessionPoint;
+    private final EditText photoDescription;
     private final Button saveSession;
     private final ArrayList<SessionPhoto> sessionPhotos = new ArrayList<>();
     private GeoPointMetaData sharedPoint;
@@ -61,9 +66,11 @@ public class PluginTemplateDropDownReceiver extends DropDownReceiver implements
                             .equals(intent.getAction())) {
                         return;
                     }
+                    String records = intent.getStringExtra(
+                            MultiPixCaptureActivity.EXTRA_PHOTO_RECORDS);
                     ArrayList<String> paths = intent.getStringArrayListExtra(
                             MultiPixCaptureActivity.EXTRA_PHOTO_PATHS);
-                    receiveCaptureSession(paths);
+                    receiveCaptureSession(records, paths);
                 }
             };
 
@@ -78,6 +85,7 @@ public class PluginTemplateDropDownReceiver extends DropDownReceiver implements
         galleryList = reviewView.findViewById(R.id.galleryList);
         emptyState = reviewView.findViewById(R.id.emptyState);
         sessionPoint = reviewView.findViewById(R.id.sessionPoint);
+        photoDescription = reviewView.findViewById(R.id.photoDescription);
         saveSession = reviewView.findViewById(R.id.saveSession);
         saveSession.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -129,17 +137,34 @@ public class PluginTemplateDropDownReceiver extends DropDownReceiver implements
         atakContext.startActivity(intent);
     }
 
-    private void receiveCaptureSession(List<String> paths) {
+    private void receiveCaptureSession(String recordsJson, List<String> paths) {
         sessionPhotos.clear();
-        if (paths == null || paths.isEmpty()) {
+        photoDescription.setText("");
+
+        List<SessionPhoto> records = readPhotoRecords(recordsJson);
+        if (records == null || records.isEmpty()) {
+            records = readStoredPhotoRecords();
+        }
+
+        if ((records == null || records.isEmpty())
+                && (paths == null || paths.isEmpty())) {
             paths = readStoredSessionPaths();
         }
 
-        if (paths != null) {
+        if (records != null && !records.isEmpty()) {
+            for (SessionPhoto photo : records) {
+                if (photo.file.exists()) {
+                    sessionPhotos.add(photo);
+                } else {
+                    Log.w(TAG, "Captured photo path was not readable: "
+                            + photo.file);
+                }
+            }
+        } else if (paths != null) {
             for (String path : paths) {
                 File file = new File(path);
                 if (file.exists()) {
-                    sessionPhotos.add(new SessionPhoto(file));
+                    sessionPhotos.add(new SessionPhoto(file, null));
                 } else {
                     Log.w(TAG, "Captured photo path was not readable: " + path);
                 }
@@ -168,6 +193,44 @@ public class PluginTemplateDropDownReceiver extends DropDownReceiver implements
             }
         }
         return paths;
+    }
+
+    private List<SessionPhoto> readStoredPhotoRecords() {
+        SharedPreferences preferences = pluginContext.getSharedPreferences(
+                MultiPixCaptureActivity.PREFS_NAME, Context.MODE_PRIVATE);
+        return readPhotoRecords(preferences.getString(
+                MultiPixCaptureActivity.PREF_PHOTO_RECORDS, ""));
+    }
+
+    private List<SessionPhoto> readPhotoRecords(String recordsJson) {
+        ArrayList<SessionPhoto> records = new ArrayList<>();
+        if (recordsJson == null || recordsJson.trim().length() == 0) {
+            return records;
+        }
+
+        try {
+            JSONArray array = new JSONArray(recordsJson);
+            for (int i = 0; i < array.length(); i++) {
+                JSONObject object = array.optJSONObject(i);
+                if (object == null) {
+                    continue;
+                }
+
+                String path = object.optString("path", "");
+                if (path.trim().length() == 0) {
+                    continue;
+                }
+
+                Float heading = null;
+                if (object.has("heading")) {
+                    heading = (float) object.optDouble("heading");
+                }
+                records.add(new SessionPhoto(new File(path), heading));
+            }
+        } catch (Exception e) {
+            Log.w(TAG, "Could not parse captured photo records", e);
+        }
+        return records;
     }
 
     private void renderSession() {
@@ -201,6 +264,15 @@ public class PluginTemplateDropDownReceiver extends DropDownReceiver implements
         thumbnail.setImageBitmap(decodeThumbnail(photo.file));
         row.addView(thumbnail, new LinearLayout.LayoutParams(
                 LinearLayout.LayoutParams.MATCH_PARENT, 160));
+
+        TextView heading = new TextView(pluginContext);
+        heading.setText(formatHeading(photo.headingDegrees));
+        heading.setTextColor(0xFFCFD8DC);
+        heading.setTextSize(13);
+        heading.setPadding(0, 4, 0, 0);
+        row.addView(heading, new LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.MATCH_PARENT,
+                LinearLayout.LayoutParams.WRAP_CONTENT));
 
         EditText caption = new EditText(pluginContext);
         caption.setSingleLine(false);
@@ -266,6 +338,7 @@ public class PluginTemplateDropDownReceiver extends DropDownReceiver implements
         Marker marker = createSessionMarker(pointMetaData);
 
         ArrayList<String> captions = new ArrayList<>();
+        ArrayList<String> headings = new ArrayList<>();
         int attached = 0;
         for (SessionPhoto photo : sessionPhotos) {
             try {
@@ -276,12 +349,17 @@ public class PluginTemplateDropDownReceiver extends DropDownReceiver implements
                     attached++;
                 }
                 captions.add(photo.caption == null ? "" : photo.caption);
+                headings.add(photo.headingDegrees == null ? ""
+                        : formatHeadingValue(photo.headingDegrees));
             } catch (Exception e) {
                 Log.e(TAG, "Failed to attach " + photo.file, e);
             }
         }
 
         marker.setMetaStringArrayList("multipix.captions", captions);
+        marker.setMetaStringArrayList("multipix.headings", headings);
+        marker.setMetaString("photo_description",
+                photoDescription.getText().toString());
         marker.setMetaInteger("multipix.photoCount", attached);
         marker.persist(getMapView().getMapEventDispatcher(), null,
                 PluginTemplateDropDownReceiver.class);
@@ -342,6 +420,11 @@ public class PluginTemplateDropDownReceiver extends DropDownReceiver implements
                 toExifCoordinate(Math.abs(point.getLongitude())));
         exif.setAttribute(ExifInterface.TAG_GPS_LONGITUDE_REF,
                 point.getLongitude() >= 0 ? "E" : "W");
+        if (photo.headingDegrees != null) {
+            exif.setAttribute(ExifInterface.TAG_GPS_IMG_DIRECTION,
+                    toExifDirection(photo.headingDegrees));
+            exif.setAttribute(ExifInterface.TAG_GPS_IMG_DIRECTION_REF, "M");
+        }
         if (photo.caption != null && photo.caption.trim().length() > 0) {
             exif.setAttribute(ExifInterface.TAG_IMAGE_DESCRIPTION,
                     photo.caption);
@@ -356,6 +439,21 @@ public class PluginTemplateDropDownReceiver extends DropDownReceiver implements
         double seconds = (minutesFull - minutes) * 60.0;
         int secondsScaled = (int) Math.round(seconds * 10000.0);
         return degrees + "/1," + minutes + "/1," + secondsScaled + "/10000";
+    }
+
+    private String toExifDirection(float heading) {
+        return Math.round(heading * 100.0f) + "/100";
+    }
+
+    private String formatHeading(Float heading) {
+        if (heading == null) {
+            return "Heading: unavailable";
+        }
+        return "Heading: " + Math.round(heading) + "\u00B0";
+    }
+
+    private String formatHeadingValue(float heading) {
+        return String.format(Locale.US, "%.2f", heading);
     }
 
     private String format(double value) {
@@ -380,10 +478,12 @@ public class PluginTemplateDropDownReceiver extends DropDownReceiver implements
 
     private static class SessionPhoto {
         final File file;
+        final Float headingDegrees;
         String caption = "";
 
-        SessionPhoto(File file) {
+        SessionPhoto(File file, Float headingDegrees) {
             this.file = file;
+            this.headingDegrees = headingDegrees;
         }
     }
 }

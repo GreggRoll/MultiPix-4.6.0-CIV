@@ -6,6 +6,10 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.pm.ActivityInfo;
 import android.hardware.Camera;
+import android.hardware.Sensor;
+import android.hardware.SensorEvent;
+import android.hardware.SensorEventListener;
+import android.hardware.SensorManager;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
@@ -28,34 +32,55 @@ import java.io.FileOutputStream;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.json.JSONArray;
+import org.json.JSONObject;
+
 public class MultiPixCaptureActivity extends Activity
-        implements SurfaceHolder.Callback {
+        implements SurfaceHolder.Callback, SensorEventListener {
 
     public static final String ACTION_SESSION_DONE =
             "com.atakmap.android.plugintemplate.MULTIPIX_SESSION_DONE";
     public static final String EXTRA_PHOTO_PATHS = "photo_paths";
+    public static final String EXTRA_PHOTO_RECORDS = "photo_records";
     public static final String PREFS_NAME = "multipix_capture";
     public static final String PREF_PHOTO_PATHS = "photo_paths";
+    public static final String PREF_PHOTO_RECORDS = "photo_records";
 
     private static final int REQUEST_CAMERA_PERMISSION = 82;
     private static final String PATH_SEPARATOR = "\n";
 
-    private final ArrayList<String> photoPaths = new ArrayList<>();
+    private final ArrayList<PhotoRecord> photoRecords = new ArrayList<>();
 
     private SurfaceHolder holder;
     private Camera camera;
     private int cameraId = -1;
+    private SensorManager sensorManager;
+    private Sensor rotationVectorSensor;
+    private Sensor accelerometerSensor;
+    private Sensor magneticFieldSensor;
     private Button captureButton;
     private Button doneButton;
     private TextView countView;
     private boolean surfaceReady;
     private boolean capturing;
+    private Float latestHeadingDegrees;
+    private float[] latestAccelerometer;
+    private float[] latestMagneticField;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_SENSOR_LANDSCAPE);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+        sensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
+        if (sensorManager != null) {
+            rotationVectorSensor = sensorManager.getDefaultSensor(
+                    Sensor.TYPE_ROTATION_VECTOR);
+            accelerometerSensor = sensorManager.getDefaultSensor(
+                    Sensor.TYPE_ACCELEROMETER);
+            magneticFieldSensor = sensorManager.getDefaultSensor(
+                    Sensor.TYPE_MAGNETIC_FIELD);
+        }
         buildUi();
         clearStoredSession();
 
@@ -166,6 +191,7 @@ public class MultiPixCaptureActivity extends Activity
     @Override
     protected void onResume() {
         super.onResume();
+        registerHeadingSensors();
         if (surfaceReady) {
             openCamera();
         }
@@ -173,8 +199,29 @@ public class MultiPixCaptureActivity extends Activity
 
     @Override
     protected void onPause() {
+        unregisterHeadingSensors();
         releaseCamera();
         super.onPause();
+    }
+
+    @Override
+    public void onSensorChanged(SensorEvent event) {
+        if (event.sensor.getType() == Sensor.TYPE_ROTATION_VECTOR) {
+            float[] rotationMatrix = new float[9];
+            SensorManager.getRotationMatrixFromVector(rotationMatrix,
+                    event.values);
+            updateHeading(rotationMatrix);
+        } else if (event.sensor.getType() == Sensor.TYPE_ACCELEROMETER) {
+            latestAccelerometer = event.values.clone();
+            updateHeadingFromFallbackSensors();
+        } else if (event.sensor.getType() == Sensor.TYPE_MAGNETIC_FIELD) {
+            latestMagneticField = event.values.clone();
+            updateHeadingFromFallbackSensors();
+        }
+    }
+
+    @Override
+    public void onAccuracyChanged(Sensor sensor, int accuracy) {
     }
 
     @Override
@@ -283,6 +330,7 @@ public class MultiPixCaptureActivity extends Activity
             return;
         }
 
+        final Float heading = latestHeadingDegrees;
         capturing = true;
         captureButton.setEnabled(false);
         doneButton.setEnabled(false);
@@ -290,7 +338,7 @@ public class MultiPixCaptureActivity extends Activity
             camera.takePicture(null, null, new Camera.PictureCallback() {
                 @Override
                 public void onPictureTaken(byte[] data, Camera camera) {
-                    savePhoto(data);
+                    savePhoto(data, heading);
                     capturing = false;
                     captureButton.setEnabled(true);
                     doneButton.setEnabled(true);
@@ -307,7 +355,7 @@ public class MultiPixCaptureActivity extends Activity
         }
     }
 
-    private void savePhoto(byte[] data) {
+    private void savePhoto(byte[] data, Float heading) {
         if (data == null || data.length == 0) {
             Toast.makeText(this, "Camera returned no image",
                     Toast.LENGTH_SHORT).show();
@@ -324,10 +372,10 @@ public class MultiPixCaptureActivity extends Activity
 
             File image = new File(dir, "multipix_"
                     + System.currentTimeMillis() + "_"
-                    + (photoPaths.size() + 1) + ".jpg");
+                    + (photoRecords.size() + 1) + ".jpg");
             outputStream = new FileOutputStream(image);
             outputStream.write(data);
-            photoPaths.add(image.getAbsolutePath());
+            photoRecords.add(new PhotoRecord(image.getAbsolutePath(), heading));
             storeSession();
         } catch (Exception e) {
             Toast.makeText(this, "Could not save photo",
@@ -344,34 +392,118 @@ public class MultiPixCaptureActivity extends Activity
 
     private void updateCount() {
         if (countView != null) {
-            countView.setText(photoPaths.size() + " photos");
+            countView.setText(photoRecords.size() + " photos");
         }
     }
 
     private void sendSession() {
         storeSession();
         Intent intent = new Intent(ACTION_SESSION_DONE);
-        intent.putStringArrayListExtra(EXTRA_PHOTO_PATHS, photoPaths);
+        intent.putStringArrayListExtra(EXTRA_PHOTO_PATHS, getPhotoPaths());
+        intent.putExtra(EXTRA_PHOTO_RECORDS, serializePhotoRecords());
         sendBroadcast(intent);
     }
 
     private void storeSession() {
+        getSharedPreferences(PREFS_NAME, MODE_PRIVATE).edit()
+                .putString(PREF_PHOTO_RECORDS, serializePhotoRecords())
+                .putString(PREF_PHOTO_PATHS, serializePhotoPaths())
+                .apply();
+    }
+
+    private String serializePhotoPaths() {
         StringBuilder builder = new StringBuilder();
-        for (String path : photoPaths) {
+        for (PhotoRecord photoRecord : photoRecords) {
             if (builder.length() > 0) {
                 builder.append(PATH_SEPARATOR);
             }
-            builder.append(path);
+            builder.append(photoRecord.path);
         }
-        getSharedPreferences(PREFS_NAME, MODE_PRIVATE).edit()
-                .putString(PREF_PHOTO_PATHS, builder.toString())
-                .apply();
+        return builder.toString();
+    }
+
+    private String serializePhotoRecords() {
+        JSONArray array = new JSONArray();
+        for (PhotoRecord photoRecord : photoRecords) {
+            JSONObject object = new JSONObject();
+            try {
+                object.put("path", photoRecord.path);
+                if (photoRecord.headingDegrees != null) {
+                    object.put("heading", photoRecord.headingDegrees);
+                }
+                array.put(object);
+            } catch (Exception ignored) {
+            }
+        }
+        return array.toString();
+    }
+
+    private ArrayList<String> getPhotoPaths() {
+        ArrayList<String> paths = new ArrayList<>();
+        for (PhotoRecord photoRecord : photoRecords) {
+            paths.add(photoRecord.path);
+        }
+        return paths;
     }
 
     private void clearStoredSession() {
         getSharedPreferences(PREFS_NAME, MODE_PRIVATE).edit()
+                .remove(PREF_PHOTO_RECORDS)
                 .remove(PREF_PHOTO_PATHS)
                 .apply();
+    }
+
+    private void registerHeadingSensors() {
+        if (sensorManager == null) {
+            return;
+        }
+        if (rotationVectorSensor != null) {
+            sensorManager.registerListener(this, rotationVectorSensor,
+                    SensorManager.SENSOR_DELAY_UI);
+        } else {
+            if (accelerometerSensor != null) {
+                sensorManager.registerListener(this, accelerometerSensor,
+                        SensorManager.SENSOR_DELAY_UI);
+            }
+            if (magneticFieldSensor != null) {
+                sensorManager.registerListener(this, magneticFieldSensor,
+                        SensorManager.SENSOR_DELAY_UI);
+            }
+        }
+    }
+
+    private void unregisterHeadingSensors() {
+        if (sensorManager != null) {
+            sensorManager.unregisterListener(this);
+        }
+    }
+
+    private void updateHeadingFromFallbackSensors() {
+        if (latestAccelerometer == null || latestMagneticField == null) {
+            return;
+        }
+
+        float[] rotationMatrix = new float[9];
+        float[] inclinationMatrix = new float[9];
+        if (SensorManager.getRotationMatrix(rotationMatrix, inclinationMatrix,
+                latestAccelerometer, latestMagneticField)) {
+            updateHeading(rotationMatrix);
+        }
+    }
+
+    private void updateHeading(float[] rotationMatrix) {
+        float[] orientation = new float[3];
+        SensorManager.getOrientation(rotationMatrix, orientation);
+        latestHeadingDegrees = normalizeHeadingDegrees(
+                (float) Math.toDegrees(orientation[0]));
+    }
+
+    private float normalizeHeadingDegrees(float degrees) {
+        float normalized = degrees % 360.0f;
+        if (normalized < 0.0f) {
+            normalized += 360.0f;
+        }
+        return normalized;
     }
 
     private void releaseCamera() {
@@ -382,6 +514,16 @@ public class MultiPixCaptureActivity extends Activity
             }
             camera.release();
             camera = null;
+        }
+    }
+
+    private static class PhotoRecord {
+        final String path;
+        final Float headingDegrees;
+
+        PhotoRecord(String path, Float headingDegrees) {
+            this.path = path;
+            this.headingDegrees = headingDegrees;
         }
     }
 }

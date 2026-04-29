@@ -30,6 +30,17 @@
             android:textColor="#cfd8dc"
             android:textSize="13sp" />
 
+        <EditText
+            android:id="@+id/photoDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Photo description"
+            android:singleLine="false"
+            android:minLines="2"
+            android:textColor="@android:color/white"
+            android:textColorHint="#9E9E9E" />
+
         <TextView
             android:id="@+id/emptyState"
             android:layout_width="match_parent"

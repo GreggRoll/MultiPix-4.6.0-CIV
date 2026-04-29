@@ -6,6 +6,7 @@ com/atakmap/android/plugintemplate/MultiPixCaptureActivity.java
  com.atakmap.android.plugintemplate.MultiPixCaptureActivity$2
  com.atakmap.android.plugintemplate.MultiPixCaptureActivity$3
  com.atakmap.android.plugintemplate.MultiPixCaptureActivity$4
+ com.atakmap.android.plugintemplate.MultiPixCaptureActivity$PhotoRecord
 com/atakmap/android/plugintemplate/PluginTemplateMapComponent.java
  com.atakmap.android.plugintemplate.PluginTemplateMapComponent
 com/atakmap/android/plugintemplate/plugin/PluginNativeLoader.java
