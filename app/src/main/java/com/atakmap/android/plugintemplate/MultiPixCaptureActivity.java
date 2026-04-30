@@ -14,6 +14,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.view.Gravity;
+import android.view.MotionEvent;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 import android.view.Surface;
@@ -64,6 +65,7 @@ public class MultiPixCaptureActivity extends Activity
     private boolean surfaceReady;
     private boolean capturing;
     private Float latestHeadingDegrees;
+    private Float headingAtCapturePress;
     private float[] latestAccelerometer;
     private float[] latestMagneticField;
 
@@ -125,6 +127,15 @@ public class MultiPixCaptureActivity extends Activity
 
         captureButton = new Button(this);
         captureButton.setText(R.string.multipix_capture);
+        captureButton.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                if (event.getAction() == MotionEvent.ACTION_DOWN) {
+                    headingAtCapturePress = latestHeadingDegrees;
+                }
+                return false;
+            }
+        });
         captureButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -330,7 +341,9 @@ public class MultiPixCaptureActivity extends Activity
             return;
         }
 
-        final Float heading = latestHeadingDegrees;
+        final Float heading = headingAtCapturePress == null
+                ? latestHeadingDegrees : headingAtCapturePress;
+        headingAtCapturePress = null;
         capturing = true;
         captureButton.setEnabled(false);
         doneButton.setEnabled(false);
@@ -347,6 +360,7 @@ public class MultiPixCaptureActivity extends Activity
                 }
             });
         } catch (Exception e) {
+            headingAtCapturePress = null;
             capturing = false;
             captureButton.setEnabled(true);
             doneButton.setEnabled(true);
@@ -492,10 +506,23 @@ public class MultiPixCaptureActivity extends Activity
     }
 
     private void updateHeading(float[] rotationMatrix) {
-        float[] orientation = new float[3];
-        SensorManager.getOrientation(rotationMatrix, orientation);
-        latestHeadingDegrees = normalizeHeadingDegrees(
-                (float) Math.toDegrees(orientation[0]));
+        Float cameraHeading = getBackCameraHeading(rotationMatrix);
+        if (cameraHeading != null) {
+            latestHeadingDegrees = cameraHeading;
+        }
+    }
+
+    private Float getBackCameraHeading(float[] rotationMatrix) {
+        float east = -rotationMatrix[2];
+        float north = -rotationMatrix[5];
+        float horizontalMagnitude = (float) Math.sqrt(east * east
+                + north * north);
+        if (horizontalMagnitude < 0.1f) {
+            return null;
+        }
+
+        return normalizeHeadingDegrees(
+                (float) Math.toDegrees(Math.atan2(east, north)));
     }
 
     private float normalizeHeadingDegrees(float degrees) {

@@ -1,8 +1,8 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
 3    package="com.atakmap.android.plugintemplate.plugin"
-4    android:versionCode="1777336596"
-5    android:versionName="1.0 (31603061) - [4.6.0]" >
+4    android:versionCode="1777475840"
+5    android:versionName="1.1 (2885f056) - [4.6.0]" >
 6
 7    <uses-sdk android:minSdkVersion="21" />
 7-->C:\Users\adams\Code\ATAK\atak-civ\plugins\Test Plugin\app\src\main\AndroidManifest.xml

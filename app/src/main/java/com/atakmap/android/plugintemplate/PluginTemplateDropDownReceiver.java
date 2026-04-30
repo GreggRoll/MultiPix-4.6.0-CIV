@@ -274,24 +274,6 @@ public class PluginTemplateDropDownReceiver extends DropDownReceiver implements
                 LinearLayout.LayoutParams.MATCH_PARENT,
                 LinearLayout.LayoutParams.WRAP_CONTENT));
 
-        EditText caption = new EditText(pluginContext);
-        caption.setSingleLine(false);
-        caption.setHint("Caption " + (index + 1));
-        caption.setText(photo.caption);
-        caption.setTextColor(0xFFFFFFFF);
-        caption.setHintTextColor(0xFF9E9E9E);
-        caption.setOnFocusChangeListener(new View.OnFocusChangeListener() {
-            @Override
-            public void onFocusChange(View v, boolean hasFocus) {
-                if (!hasFocus) {
-                    photo.caption = ((EditText) v).getText().toString();
-                }
-            }
-        });
-        row.addView(caption, new LinearLayout.LayoutParams(
-                LinearLayout.LayoutParams.MATCH_PARENT,
-                LinearLayout.LayoutParams.WRAP_CONTENT));
-
         Button delete = new Button(pluginContext);
         delete.setText("Delete");
         delete.setOnClickListener(new View.OnClickListener() {
@@ -325,7 +307,8 @@ public class PluginTemplateDropDownReceiver extends DropDownReceiver implements
     }
 
     private void saveSession() {
-        syncCaptionsFromView();
+        String description = photoDescription.getText().toString();
+        applyDescriptionToPhotos(description);
         if (sessionPhotos.isEmpty()) {
             Toast.makeText(atakContext, "No photos to save",
                     Toast.LENGTH_SHORT).show();
@@ -358,8 +341,7 @@ public class PluginTemplateDropDownReceiver extends DropDownReceiver implements
 
         marker.setMetaStringArrayList("multipix.captions", captions);
         marker.setMetaStringArrayList("multipix.headings", headings);
-        marker.setMetaString("photo_description",
-                photoDescription.getText().toString());
+        marker.setMetaString("photo_description", description);
         marker.setMetaInteger("multipix.photoCount", attached);
         marker.persist(getMapView().getMapEventDispatcher(), null,
                 PluginTemplateDropDownReceiver.class);
@@ -371,21 +353,9 @@ public class PluginTemplateDropDownReceiver extends DropDownReceiver implements
         closeDropDown();
     }
 
-    private void syncCaptionsFromView() {
-        for (int i = 0; i < galleryList.getChildCount()
-                && i < sessionPhotos.size(); i++) {
-            View row = galleryList.getChildAt(i);
-            if (row instanceof LinearLayout) {
-                LinearLayout layout = (LinearLayout) row;
-                for (int child = 0; child < layout.getChildCount(); child++) {
-                    View candidate = layout.getChildAt(child);
-                    if (candidate instanceof EditText) {
-                        sessionPhotos.get(i).caption =
-                                ((EditText) candidate).getText().toString();
-                        break;
-                    }
-                }
-            }
+    private void applyDescriptionToPhotos(String description) {
+        for (SessionPhoto photo : sessionPhotos) {
+            photo.caption = description == null ? "" : description;
         }
     }
 

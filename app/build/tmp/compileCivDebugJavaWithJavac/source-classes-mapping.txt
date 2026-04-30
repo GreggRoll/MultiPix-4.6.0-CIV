@@ -6,6 +6,7 @@ com/atakmap/android/plugintemplate/MultiPixCaptureActivity.java
  com.atakmap.android.plugintemplate.MultiPixCaptureActivity$2
  com.atakmap.android.plugintemplate.MultiPixCaptureActivity$3
  com.atakmap.android.plugintemplate.MultiPixCaptureActivity$4
+ com.atakmap.android.plugintemplate.MultiPixCaptureActivity$5
  com.atakmap.android.plugintemplate.MultiPixCaptureActivity$PhotoRecord
 com/atakmap/android/plugintemplate/PluginTemplateMapComponent.java
  com.atakmap.android.plugintemplate.PluginTemplateMapComponent
@@ -22,7 +23,6 @@ com/atakmap/android/plugintemplate/PluginTemplateDropDownReceiver.java
  com.atakmap.android.plugintemplate.PluginTemplateDropDownReceiver$1
  com.atakmap.android.plugintemplate.PluginTemplateDropDownReceiver$2
  com.atakmap.android.plugintemplate.PluginTemplateDropDownReceiver$3
- com.atakmap.android.plugintemplate.PluginTemplateDropDownReceiver$4
  com.atakmap.android.plugintemplate.PluginTemplateDropDownReceiver$SessionPhoto
 com/atakmap/android/plugintemplate/plugin/PluginTemplateTool.java
  com.atakmap.android.plugintemplate.plugin.PluginTemplateTool
