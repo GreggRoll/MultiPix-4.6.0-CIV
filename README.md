@@ -2,7 +2,7 @@
 
 MultiPix is an ATAK plugin that provides an in-plugin multi-photo capture workflow. It opens a plugin-owned camera experience, lets the user capture multiple images in one session, and then returns to ATAK for review before saving the kept images to a single marker.
 
-[Download APK](./MultiPix%201.1%20Release/ATAK-Plugin-MultiPix-1.1--5.5.0-civ-release.apk)
+[Download APK](https://github.com/GreggRoll/MultiPix-4.6.0-CIV/releases/download/v1.1/ATAK-Plugin-MultiPix-1.1--5.5.0-civ-release.apk)
 ## Purpose and Capabilities
 
 MultiPix is designed for fast field collection when several photos need to be tied to the same location.
