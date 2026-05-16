@@ -1,0 +1,43 @@
+<variant
+    name="civRelease"
+    package="com.atakmap.android.multipix.plugin"
+    minSdkVersion="21"
+    targetSdkVersion="35"
+    shrinking="true"
+    mergedManifest="build\intermediates\merged_manifest\civRelease\processCivReleaseMainManifest\AndroidManifest.xml"
+    proguardFiles="proguard-gradle.txt"
+    partialResultsDir="build\intermediates\lint_vital_partial_results\civRelease\lintVitalAnalyzeCivRelease\out"
+    desugaredMethodsFiles="C:\Users\adams\.gradle\caches\8.13\transforms\27823785fd656b6df8624f2ea6ab4b3d\transformed\D8BackportedDesugaredMethods.txt">
+  <buildFeatures
+      namespacing="REQUIRED"/>
+  <sourceProviders>
+    <sourceProvider
+        manifests="src\main\AndroidManifest.xml"
+        javaDirectories="src\main\java;src\civ\java;build-types\release\java;src\civRelease\java;src\main\kotlin;src\civ\kotlin;build-types\release\kotlin;src\civRelease\kotlin"
+        resDirectories="src\main\res;src\civ\res;build-types\release\res;src\civRelease\res"
+        assetsDirectories="src\main\assets;src\civ\assets;build-types\release\assets;src\civRelease\assets"/>
+  </sourceProviders>
+  <testSourceProviders>
+  </testSourceProviders>
+  <testFixturesSourceProviders>
+  </testFixturesSourceProviders>
+  <resValues>
+    <resValue
+        type="string"
+        name="versionName"
+        value="1.1 (d6e54ee9) - [5.5.0]" />
+  </resValues>
+  <manifestPlaceholders>
+    <placeholder
+        name="atakApiVersion"
+        value="com.atakmap.app@5.5.0.CIV" />
+  </manifestPlaceholders>
+  <artifact
+      classOutputs="build\intermediates\javac\civRelease\compileCivReleaseJavaWithJavac\classes;build\intermediates\compile_and_runtime_not_namespaced_r_class_jar\civRelease\processCivReleaseResources\R.jar"
+      type="MAIN"
+      applicationId="com.atakmap.android.multipix.plugin"
+      generatedSourceFolders="build\generated\ap_generated_sources\civRelease\out"
+      generatedResourceFolders="build\generated\res\resValues\civ\release"
+      desugaredMethodsFiles="C:\Users\adams\.gradle\caches\8.13\transforms\27823785fd656b6df8624f2ea6ab4b3d\transformed\D8BackportedDesugaredMethods.txt">
+  </artifact>
+</variant>

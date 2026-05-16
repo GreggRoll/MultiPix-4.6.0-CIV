@@ -1,0 +1,21 @@
+{
+  "version": 3,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "com.atakmap.android.multipix.plugin",
+  "variantName": "civDebug",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "attributes": [],
+      "versionCode": 1777514980,
+      "versionName": "1.1 (d6e54ee9) - [5.5.0]",
+      "outputFile": "ATAK-Plugin-MultiPix-MIL-1.1-d6e54ee9-5.5.0-civ-debug.apk"
+    }
+  ],
+  "elementType": "File",
+  "minSdkVersionForDexing": 24
+}

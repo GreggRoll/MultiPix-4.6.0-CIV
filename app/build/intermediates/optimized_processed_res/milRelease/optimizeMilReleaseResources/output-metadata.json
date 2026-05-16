@@ -1,0 +1,20 @@
+{
+  "version": 3,
+  "artifactType": {
+    "type": "OPTIMIZED_PROCESSED_RES",
+    "kind": "Directory"
+  },
+  "applicationId": "com.atakmap.android.multipix.plugin",
+  "variantName": "milRelease",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "attributes": [],
+      "versionCode": 1777514980,
+      "versionName": "1.1 (d6e54ee9) - [5.5.0]",
+      "outputFile": "resources-mil-release-optimize.ap_"
+    }
+  ],
+  "elementType": "File"
+}

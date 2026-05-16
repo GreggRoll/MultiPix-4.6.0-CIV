@@ -1,0 +1,9 @@
+com.atakmap.android.multipix.plugin.app-release-0 C:\Users\adams\Code\ATAK\ATAK-MIL-5.5.0.7-SDK\plugins\MultiPix-MIL\app\build-types\release\res
+com.atakmap.android.multipix.plugin.app-mil-1 C:\Users\adams\Code\ATAK\ATAK-MIL-5.5.0.7-SDK\plugins\MultiPix-MIL\app\build\generated\res\pngs\mil\release
+com.atakmap.android.multipix.plugin.app-mil-2 C:\Users\adams\Code\ATAK\ATAK-MIL-5.5.0.7-SDK\plugins\MultiPix-MIL\app\build\generated\res\resValues\mil\release
+com.atakmap.android.multipix.plugin.app-packageMilReleaseResources-3 C:\Users\adams\Code\ATAK\ATAK-MIL-5.5.0.7-SDK\plugins\MultiPix-MIL\app\build\intermediates\incremental\milRelease\packageMilReleaseResources\merged.dir
+com.atakmap.android.multipix.plugin.app-packageMilReleaseResources-4 C:\Users\adams\Code\ATAK\ATAK-MIL-5.5.0.7-SDK\plugins\MultiPix-MIL\app\build\intermediates\incremental\milRelease\packageMilReleaseResources\stripped.dir
+com.atakmap.android.multipix.plugin.app-milRelease-5 C:\Users\adams\Code\ATAK\ATAK-MIL-5.5.0.7-SDK\plugins\MultiPix-MIL\app\build\intermediates\merged_res\milRelease\mergeMilReleaseResources
+com.atakmap.android.multipix.plugin.app-main-6 C:\Users\adams\Code\ATAK\ATAK-MIL-5.5.0.7-SDK\plugins\MultiPix-MIL\app\src\main\res
+com.atakmap.android.multipix.plugin.app-mil-7 C:\Users\adams\Code\ATAK\ATAK-MIL-5.5.0.7-SDK\plugins\MultiPix-MIL\app\src\mil\res
+com.atakmap.android.multipix.plugin.app-milRelease-8 C:\Users\adams\Code\ATAK\ATAK-MIL-5.5.0.7-SDK\plugins\MultiPix-MIL\app\src\milRelease\res

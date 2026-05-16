@@ -1,0 +1,40 @@
+com.atakmap.android.multipix.plugin.MultiPixTool
+com.atakmap.android.multipix.plugin.MultiPixLifecycle
+com.atakmap.android.multipix.MultiPixCaptureActivity
+com.atakmap.android.multipix.plugin.R$dimen: int auto_margin
+com.atakmap.android.multipix.plugin.R$style: int PopupMenuTextAppearance
+com.atakmap.android.multipix.plugin.R$drawable: int new_dark_button_disabled
+com.atakmap.android.multipix.plugin.R$style: int ATAKTheme
+com.atakmap.android.multipix.plugin.R$string: int multipix_cancel
+com.atakmap.android.multipix.plugin.R$dimen: int fontSize
+com.atakmap.android.multipix.plugin.R$style: int ATAKSpinnerDropDownItem
+com.atakmap.android.multipix.plugin.R$string: int multipix_capture
+com.atakmap.android.multipix.plugin.R$style: int ATAKPluginTheme
+com.atakmap.android.multipix.plugin.R$style: int darkButton
+com.atakmap.android.multipix.plugin.R$id: int sessionPoint
+com.atakmap.android.multipix.plugin.R$id: int emptyState
+com.atakmap.android.multipix.plugin.R$style: int AppTheme
+com.atakmap.android.multipix.plugin.R$drawable: int ic_launcher
+com.atakmap.android.multipix.plugin.R$style: int ATAKSpinner
+com.atakmap.android.multipix.plugin.R$style: int ATAKEditText
+com.atakmap.android.multipix.plugin.R$id: int sessionTitle
+com.atakmap.android.multipix.plugin.R$drawable: int new_dark_button_selected
+com.atakmap.android.multipix.plugin.R$string: int multipix_save
+com.atakmap.android.multipix.plugin.R$id: int photoDescription
+com.atakmap.android.multipix.plugin.R$drawable: int new_dark_button_bg
+com.atakmap.android.multipix.plugin.R$style: int AppBaseTheme
+com.atakmap.android.multipix.plugin.R$color: int darker_gray
+com.atakmap.android.multipix.plugin.R$style: int ATAKSpinnerItem
+com.atakmap.android.multipix.plugin.R$string: int multipix_done
+com.atakmap.android.multipix.plugin.R$style: int FullDropdownStyle
+com.atakmap.android.multipix.plugin.R$string: int versionName
+com.atakmap.android.multipix.plugin.R$id: int galleryList
+com.atakmap.android.multipix.plugin.R$style: int unpaddedButton
+com.atakmap.android.multipix.plugin.R$layout: int main_layout
+com.atakmap.android.multipix.plugin.R$string: int app_name
+com.atakmap.android.multipix.plugin.R$id: int saveSession
+com.atakmap.android.multipix.plugin.R$string: int multipix_empty
+com.atakmap.android.multipix.plugin.R$drawable: int btn_gray
+com.atakmap.android.multipix.plugin.R$color: int white
+com.atakmap.android.multipix.plugin.R$string: int app_desc
+com.atakmap.android.multipix.MultiPixCaptureActivity: MultiPixCaptureActivity()

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\adams\Code\ATAK\ATAK-MIL-5.5.0.7-SDK\plugins\MultiPix-MIL\app\src\main\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main" generated-set="main$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\adams\Code\ATAK\ATAK-MIL-5.5.0.7-SDK\plugins\MultiPix-MIL\app\src\main\res"><file name="btn_gray" path="C:\Users\adams\Code\ATAK\ATAK-MIL-5.5.0.7-SDK\plugins\MultiPix-MIL\app\src\main\res\drawable\btn_gray.xml" qualifiers="" type="drawable"/><file name="ic_launcher" path="C:\Users\adams\Code\ATAK\ATAK-MIL-5.5.0.7-SDK\plugins\MultiPix-MIL\app\src\main\res\drawable\ic_launcher.png" qualifiers="" type="drawable"/><file name="new_dark_button_bg" path="C:\Users\adams\Code\ATAK\ATAK-MIL-5.5.0.7-SDK\plugins\MultiPix-MIL\app\src\main\res\drawable\new_dark_button_bg.xml" qualifiers="" type="drawable"/><file name="new_dark_button_disabled" path="C:\Users\adams\Code\ATAK\ATAK-MIL-5.5.0.7-SDK\plugins\MultiPix-MIL\app\src\main\res\drawable\new_dark_button_disabled.xml" qualifiers="" type="drawable"/><file name="new_dark_button_selected" path="C:\Users\adams\Code\ATAK\ATAK-MIL-5.5.0.7-SDK\plugins\MultiPix-MIL\app\src\main\res\drawable\new_dark_button_selected.xml" qualifiers="" type="drawable"/><file name="main_layout" path="C:\Users\adams\Code\ATAK\ATAK-MIL-5.5.0.7-SDK\plugins\MultiPix-MIL\app\src\main\res\layout\main_layout.xml" qualifiers="" type="layout"/><file path="C:\Users\adams\Code\ATAK\ATAK-MIL-5.5.0.7-SDK\plugins\MultiPix-MIL\app\src\main\res\values\colors.xml" qualifiers=""><color name="white">#ffffff</color><color name="darker_gray">#121212</color></file><file path="C:\Users\adams\Code\ATAK\ATAK-MIL-5.5.0.7-SDK\plugins\MultiPix-MIL\app\src\main\res\values\dimen.xml" qualifiers=""><dimen name="fontSize">14sp</dimen><dimen name="auto_margin">6dp</dimen></file><file path="C:\Users\adams\Code\ATAK\ATAK-MIL-5.5.0.7-SDK\plugins\MultiPix-MIL\app\src\main\res\values\strings.xml" qualifiers=""><string name="app_name">MultiPix</string><string name="app_desc">Capture multiple photos and attach them to one ATAK marker.</string><string name="multipix_done">Done</string><string name="multipix_capture">Capture</string><string name="multipix_cancel">Cancel</string><string name="multipix_save">Save</string><string name="multipix_empty">No photos captured</string></file><file path="C:\Users\adams\Code\ATAK\ATAK-MIL-5.5.0.7-SDK\plugins\MultiPix-MIL\app\src\main\res\values\styles.xml" qualifiers=""><style name="ATAKPluginTheme" parent="@android:style/Theme.Holo">
+        <item name="android:textAppearanceLargePopupMenu">@style/PopupMenuTextAppearance</item>
+        <item name="android:buttonStyle">@android:style/Widget.Button</item>
+        <item name="android:imageButtonStyle">@android:style/Widget.Button</item>
+        <item name="android:buttonStyleToggle">@android:style/Widget.Button</item>
+        <item name="android:spinnerStyle">@style/ATAKSpinner</item>
+        <item name="android:spinnerItemStyle">@style/ATAKSpinnerItem</item>
+        <item name="android:spinnerDropDownItemStyle">@style/ATAKSpinnerDropDownItem</item>
+        <item name="android:editTextStyle">@style/ATAKEditText</item>
+    </style><style name="ATAKTheme" parent="@android:style/Theme.Holo">
+
+        
+        <item name="android:buttonStyle">@android:style/Widget.Button</item>
+        <item name="android:imageButtonStyle">@android:style/Widget.Button</item>
+        <item name="android:buttonStyleToggle">@android:style/Widget.Button</item>
+        <item name="android:spinnerStyle">@style/ATAKSpinner</item>
+        <item name="android:spinnerItemStyle">@style/ATAKSpinnerItem</item>
+
+        <item name="android:editTextStyle">@style/ATAKEditText</item>
+
+        
+        
+    </style><style name="AppBaseTheme" parent="android:Theme.Light">
+        
+    </style><style name="AppTheme" parent="@android:style/Theme.Holo">
+        <item name="android:buttonStyle">@android:style/Widget.Button</item>
+        <item name="android:imageButtonStyle">@android:style/Widget.Button</item>
+        <item name="android:buttonStyleToggle">@android:style/Widget.Button</item>
+        <item name="android:spinnerStyle">@style/ATAKSpinner</item>
+        <item name="android:spinnerItemStyle">@style/ATAKSpinnerItem</item>
+        <item name="android:editTextStyle">@style/ATAKEditText</item>
+    </style><style name="ATAKSpinner" parent="@android:style/Widget.Spinner">
+        <item name="android:spinnerMode">dialog</item>
+    </style><style name="ATAKEditText" parent="@android:style/Widget.EditText">
+        
+        
+
+        
+        <item name="android:imeOptions">flagNoFullscreen</item>
+    </style><style name="ATAKSpinnerItem">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:dropDownVerticalOffset">0dip</item>
+        <item name="android:dropDownHorizontalOffset">0dip</item>
+        <item name="android:dropDownWidth">wrap_content</item>
+        <item name="android:gravity">left|center_vertical</item>
+    </style><style name="ATAKSpinnerDropDownItem" parent="@style/ATAKSpinnerItem">
+        <item name="android:paddingStart">@dimen/auto_margin</item>
+    </style><style name="FullDropdownStyle" parent="@style/ATAKTheme">
+        <item name="android:buttonStyle">@style/unpaddedButton</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:imeOptions">flagNoExtractUi</item>
+    </style><style name="unpaddedButton" parent="@android:style/Widget.Button">
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:textSize">@dimen/fontSize</item>
+    </style><style name="PopupMenuTextAppearance" parent="android:TextAppearance.Large">
+        <item name="android:textColor">@color/white</item>
+    </style><style name="darkButton" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/btn_gray</item>
+        <item name="android:shadowColor">@color/darker_gray</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">2</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:textSize">@dimen/fontSize</item>
+    </style></file></source></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="civ$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\adams\Code\ATAK\ATAK-MIL-5.5.0.7-SDK\plugins\MultiPix-MIL\app\src\civ\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="civ" generated-set="civ$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\adams\Code\ATAK\ATAK-MIL-5.5.0.7-SDK\plugins\MultiPix-MIL\app\src\civ\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="release$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\adams\Code\ATAK\ATAK-MIL-5.5.0.7-SDK\plugins\MultiPix-MIL\app\build-types\release\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="release" generated-set="release$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\adams\Code\ATAK\ATAK-MIL-5.5.0.7-SDK\plugins\MultiPix-MIL\app\build-types\release\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="generated$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\adams\Code\ATAK\ATAK-MIL-5.5.0.7-SDK\plugins\MultiPix-MIL\app\build\generated\res\resValues\civ\release"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="generated" generated-set="generated$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\adams\Code\ATAK\ATAK-MIL-5.5.0.7-SDK\plugins\MultiPix-MIL\app\build\generated\res\resValues\civ\release"><file path="C:\Users\adams\Code\ATAK\ATAK-MIL-5.5.0.7-SDK\plugins\MultiPix-MIL\app\build\generated\res\resValues\civ\release\values\gradleResValues.xml" qualifiers=""><string name="versionName" translatable="false">1.1 (d6e54ee9) - [5.5.0]</string></file></source></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="variant$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\adams\Code\ATAK\ATAK-MIL-5.5.0.7-SDK\plugins\MultiPix-MIL\app\src\civRelease\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="variant" generated-set="variant$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\adams\Code\ATAK\ATAK-MIL-5.5.0.7-SDK\plugins\MultiPix-MIL\app\src\civRelease\res"/></dataSet><mergedItems/></merger>

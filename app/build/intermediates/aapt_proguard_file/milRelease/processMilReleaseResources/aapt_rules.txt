@@ -1,0 +1,2 @@
+-keep class com.atakmap.android.multipix.MultiPixCaptureActivity { <init>(); }
+-keep class com.atakmap.app.component { <init>(); }

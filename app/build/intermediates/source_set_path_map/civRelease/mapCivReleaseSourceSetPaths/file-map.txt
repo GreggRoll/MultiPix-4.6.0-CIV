@@ -1,0 +1,9 @@
+com.atakmap.android.multipix.plugin.app-release-0 C:\Users\adams\Code\ATAK\ATAK-MIL-5.5.0.7-SDK\plugins\MultiPix-MIL\app\build-types\release\res
+com.atakmap.android.multipix.plugin.app-civ-1 C:\Users\adams\Code\ATAK\ATAK-MIL-5.5.0.7-SDK\plugins\MultiPix-MIL\app\build\generated\res\pngs\civ\release
+com.atakmap.android.multipix.plugin.app-civ-2 C:\Users\adams\Code\ATAK\ATAK-MIL-5.5.0.7-SDK\plugins\MultiPix-MIL\app\build\generated\res\resValues\civ\release
+com.atakmap.android.multipix.plugin.app-packageCivReleaseResources-3 C:\Users\adams\Code\ATAK\ATAK-MIL-5.5.0.7-SDK\plugins\MultiPix-MIL\app\build\intermediates\incremental\civRelease\packageCivReleaseResources\merged.dir
+com.atakmap.android.multipix.plugin.app-packageCivReleaseResources-4 C:\Users\adams\Code\ATAK\ATAK-MIL-5.5.0.7-SDK\plugins\MultiPix-MIL\app\build\intermediates\incremental\civRelease\packageCivReleaseResources\stripped.dir
+com.atakmap.android.multipix.plugin.app-civRelease-5 C:\Users\adams\Code\ATAK\ATAK-MIL-5.5.0.7-SDK\plugins\MultiPix-MIL\app\build\intermediates\merged_res\civRelease\mergeCivReleaseResources
+com.atakmap.android.multipix.plugin.app-civ-6 C:\Users\adams\Code\ATAK\ATAK-MIL-5.5.0.7-SDK\plugins\MultiPix-MIL\app\src\civ\res
+com.atakmap.android.multipix.plugin.app-civRelease-7 C:\Users\adams\Code\ATAK\ATAK-MIL-5.5.0.7-SDK\plugins\MultiPix-MIL\app\src\civRelease\res
+com.atakmap.android.multipix.plugin.app-main-8 C:\Users\adams\Code\ATAK\ATAK-MIL-5.5.0.7-SDK\plugins\MultiPix-MIL\app\src\main\res

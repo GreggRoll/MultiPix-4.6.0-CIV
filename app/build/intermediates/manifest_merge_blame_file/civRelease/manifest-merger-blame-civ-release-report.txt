@@ -1,0 +1,80 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.atakmap.android.plugintemplate.plugin"
+4    android:versionCode="1777514980"
+5    android:versionName="1.1 (d6e54ee9) - [5.0.0]" >
+6
+7    <uses-sdk android:minSdkVersion="21" />
+7-->C:\Users\adams\Code\ATAK\atak-civ\plugins\MultiPix-MIL\app\src\main\AndroidManifest.xml
+8
+9    <uses-permission android:name="android.permission.CAMERA" />
+9-->C:\Users\adams\Code\ATAK\atak-civ\plugins\MultiPix-MIL\app\src\main\AndroidManifest.xml:6:5-65
+9-->C:\Users\adams\Code\ATAK\atak-civ\plugins\MultiPix-MIL\app\src\main\AndroidManifest.xml:6:22-62
+10    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+10-->C:\Users\adams\Code\ATAK\atak-civ\plugins\MultiPix-MIL\app\src\main\AndroidManifest.xml:7:5-81
+10-->C:\Users\adams\Code\ATAK\atak-civ\plugins\MultiPix-MIL\app\src\main\AndroidManifest.xml:7:22-78
+11
+12    <uses-feature
+12-->C:\Users\adams\Code\ATAK\atak-civ\plugins\MultiPix-MIL\app\src\main\AndroidManifest.xml:8:5-85
+13        android:name="android.hardware.camera"
+13-->C:\Users\adams\Code\ATAK\atak-civ\plugins\MultiPix-MIL\app\src\main\AndroidManifest.xml:8:19-57
+14        android:required="false" />
+14-->C:\Users\adams\Code\ATAK\atak-civ\plugins\MultiPix-MIL\app\src\main\AndroidManifest.xml:8:58-82
+15
+16    <application
+16-->C:\Users\adams\Code\ATAK\atak-civ\plugins\MultiPix-MIL\app\src\main\AndroidManifest.xml:10:5-39:19
+17        android:allowBackup="false"
+17-->C:\Users\adams\Code\ATAK\atak-civ\plugins\MultiPix-MIL\app\src\main\AndroidManifest.xml:11:9-36
+18        android:description="@string/app_desc"
+18-->C:\Users\adams\Code\ATAK\atak-civ\plugins\MultiPix-MIL\app\src\main\AndroidManifest.xml:14:9-47
+19        android:extractNativeLibs="true"
+19-->C:\Users\adams\Code\ATAK\atak-civ\plugins\MultiPix-MIL\app\src\main\AndroidManifest.xml:15:9-41
+20        android:icon="@drawable/ic_launcher"
+20-->C:\Users\adams\Code\ATAK\atak-civ\plugins\MultiPix-MIL\app\src\main\AndroidManifest.xml:12:9-45
+21        android:label="@string/app_name"
+21-->C:\Users\adams\Code\ATAK\atak-civ\plugins\MultiPix-MIL\app\src\main\AndroidManifest.xml:13:9-41
+22        android:theme="@style/AppTheme" >
+22-->C:\Users\adams\Code\ATAK\atak-civ\plugins\MultiPix-MIL\app\src\main\AndroidManifest.xml:16:9-40
+23        <meta-data
+24            android:name="plugin-api"
+24-->C:\Users\adams\Code\ATAK\atak-civ\plugins\MultiPix-MIL\app\src\main\AndroidManifest.xml:17:20-45
+25            android:value="com.atakmap.app@5.0.0.CIV" />
+25-->C:\Users\adams\Code\ATAK\atak-civ\plugins\MultiPix-MIL\app\src\main\AndroidManifest.xml:17:46-79
+26        <meta-data
+26-->C:\Users\adams\Code\ATAK\atak-civ\plugins\MultiPix-MIL\app\src\main\AndroidManifest.xml:18:9-78
+27            android:name="app_desc"
+27-->C:\Users\adams\Code\ATAK\atak-civ\plugins\MultiPix-MIL\app\src\main\AndroidManifest.xml:18:20-43
+28            android:value="@string/app_desc" />
+28-->C:\Users\adams\Code\ATAK\atak-civ\plugins\MultiPix-MIL\app\src\main\AndroidManifest.xml:18:44-76
+29
+30        <!--
+31            This fictitious activity entry allow for ATAK 4.6.0.2 and newer to perform 
+32            plugin discovery  android devices.  If this is removed, the plugin will 
+33            not be able to be discovered or loaded.
+34        -->
+35        <activity android:name="com.atakmap.app.component" >
+35-->C:\Users\adams\Code\ATAK\atak-civ\plugins\MultiPix-MIL\app\src\main\AndroidManifest.xml:24:8-29:19
+35-->C:\Users\adams\Code\ATAK\atak-civ\plugins\MultiPix-MIL\app\src\main\AndroidManifest.xml:24:18-58
+36            <intent-filter android:label="@string/app_name" >
+36-->C:\Users\adams\Code\ATAK\atak-civ\plugins\MultiPix-MIL\app\src\main\AndroidManifest.xml:26:12-28:28
+36-->C:\Users\adams\Code\ATAK\atak-civ\plugins\MultiPix-MIL\app\src\main\AndroidManifest.xml:26:27-59
+37                <action android:name="com.atakmap.app.component" />
+37-->C:\Users\adams\Code\ATAK\atak-civ\plugins\MultiPix-MIL\app\src\main\AndroidManifest.xml:27:15-66
+37-->C:\Users\adams\Code\ATAK\atak-civ\plugins\MultiPix-MIL\app\src\main\AndroidManifest.xml:27:23-63
+38            </intent-filter>
+39        </activity>
+40        <activity
+40-->C:\Users\adams\Code\ATAK\atak-civ\plugins\MultiPix-MIL\app\src\main\AndroidManifest.xml:31:8-36:79
+41            android:name="com.atakmap.android.plugintemplate.MultiPixCaptureActivity"
+41-->C:\Users\adams\Code\ATAK\atak-civ\plugins\MultiPix-MIL\app\src\main\AndroidManifest.xml:32:12-85
+42            android:configChanges="keyboardHidden|orientation|screenSize"
+42-->C:\Users\adams\Code\ATAK\atak-civ\plugins\MultiPix-MIL\app\src\main\AndroidManifest.xml:33:12-73
+43            android:exported="true"
+43-->C:\Users\adams\Code\ATAK\atak-civ\plugins\MultiPix-MIL\app\src\main\AndroidManifest.xml:34:12-35
+44            android:screenOrientation="sensorLandscape"
+44-->C:\Users\adams\Code\ATAK\atak-civ\plugins\MultiPix-MIL\app\src\main\AndroidManifest.xml:35:12-55
+45            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
+45-->C:\Users\adams\Code\ATAK\atak-civ\plugins\MultiPix-MIL\app\src\main\AndroidManifest.xml:36:12-76
+46    </application>
+47
+48</manifest>

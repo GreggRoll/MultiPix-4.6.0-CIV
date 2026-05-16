@@ -1,0 +1,96 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.atakmap.android.multipix.plugin.app-mergeCivDebugResources-3:/values/values.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\adams\\Code\\ATAK\\ATAK-MIL-5.5.0.7-SDK\\plugins\\MultiPix-MIL\\app\\build\\generated\\res\\resValues\\civ\\debug\\values\\gradleResValues.xml",
+                    "from": {
+                        "startLines": "6",
+                        "startColumns": "4",
+                        "startOffsets": "155",
+                        "endColumns": "85",
+                        "endOffsets": "236"
+                    },
+                    "to": {
+                        "startLines": "13",
+                        "startColumns": "4",
+                        "startOffsets": "626",
+                        "endColumns": "85",
+                        "endOffsets": "707"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\adams\\Code\\ATAK\\ATAK-MIL-5.5.0.7-SDK\\plugins\\MultiPix-MIL\\app\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "5,3,8,7,6,10,9",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "143,72,340,287,240,438,391",
+                        "endColumns": "96,45,50,52,46,61,46",
+                        "endOffsets": "235,113,386,335,282,495,433"
+                    },
+                    "to": {
+                        "startLines": "6,7,8,9,10,11,12",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "223,320,366,417,470,517,579",
+                        "endColumns": "96,45,50,52,46,61,46",
+                        "endOffsets": "315,361,412,465,512,574,621"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\adams\\Code\\ATAK\\ATAK-MIL-5.5.0.7-SDK\\plugins\\MultiPix-MIL\\app\\src\\main\\res\\values\\styles.xml",
+                    "from": {
+                        "startLines": "70,3,66,86,78,15,47,56,92,105,112,99",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "3351,49,3212,4128,3753,778,2354,2678,4390,4920,5127,4668",
+                        "endLines": "76,12,68,88,84,40,53,63,96,107,122,103",
+                        "endColumns": "12,12,12,12,12,12,12,12,12,12,12,12",
+                        "endOffsets": "3747,771,3345,4279,4121,2178,2640,3205,4661,5068,5710,4914"
+                    },
+                    "to": {
+                        "startLines": "14,21,31,34,37,44,58,61,69,74,77,88",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "712,889,1616,1754,1910,2283,2846,2929,3461,3737,3890,4478",
+                        "endLines": "20,30,33,36,43,57,60,68,73,76,87,92",
+                        "endColumns": "12,12,12,12,12,12,12,12,12,12,12,12",
+                        "endOffsets": "884,1611,1749,1905,2278,2841,2924,3456,3732,3885,4473,4724"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\adams\\Code\\ATAK\\ATAK-MIL-5.5.0.7-SDK\\plugins\\MultiPix-MIL\\app\\src\\main\\res\\values\\colors.xml",
+                    "from": {
+                        "startLines": "5,4",
+                        "startColumns": "4,4",
+                        "startOffsets": "120,80",
+                        "endColumns": "45,39",
+                        "endOffsets": "161,115"
+                    },
+                    "to": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,101",
+                        "endColumns": "45,39",
+                        "endOffsets": "96,136"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\adams\\Code\\ATAK\\ATAK-MIL-5.5.0.7-SDK\\plugins\\MultiPix-MIL\\app\\src\\main\\res\\values\\dimen.xml",
+                    "from": {
+                        "startLines": "17,4",
+                        "startColumns": "4,4",
+                        "startOffsets": "947,196",
+                        "endColumns": "41,39",
+                        "endOffsets": "984,231"
+                    },
+                    "to": {
+                        "startLines": "4,5",
+                        "startColumns": "4,4",
+                        "startOffsets": "141,183",
+                        "endColumns": "41,39",
+                        "endOffsets": "178,218"
+                    }
+                }
+            ]
+        }
+    ]
+}

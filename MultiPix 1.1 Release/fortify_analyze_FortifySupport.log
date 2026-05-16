@@ -1,0 +1,310 @@
+[2026-05-15 19:05:40.511 INFO  ]
+loggerConfig:
+   level:INFO
+   filename:/app/build/fortify_analyze.log
+   appendLogFile:true
+   installLoggingPrintStreams:true
+
+   logger:com.fortify.logging.log4j2.LoggerFactory marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE} NDC:[]
+[2026-05-15 19:05:40.657 INFO  ]
+0 suppressions loaded
+   logger:com.fortify.sca.cmd.CommandLine marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE} NDC:[]
+[2026-05-15 19:05:40.658 INFO  ]
+0 level adjustments loaded
+   logger:com.fortify.sca.cmd.CommandLine marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE} NDC:[]
+[2026-05-15 19:05:40.931 INFO  ]
+OpenText SAST (Fortify) 25.4.0.0135 (using JRE 17.0.11)
+Modules:
+.NET Frontend 25.4.0.0135
+.NET and ASP.NET Translators 25.4.0.0135
+AngularJS Translator Utils 25.4.0.0135
+Apex Translator 25.4.0.0135
+C/C++ Translator (CTran) 25.4.0.0022
+Flight main!12855_653c157b
+Kotlin Translator 25.4.0.0135
+Legacy Apex Translator 25.4.0.0135
+Legacy Translators 25.4.0.0135
+MSBuild Plugin 25.4.0.0135
+Modified Rhino 25.4.0.0135
+PHP Translator 25.4.0.0135
+Python Translator 25.4.0.0135
+SCA Backend 25.4.0.0135
+SCA Frontend 25.4.0.0135
+SCA Platform 25.4.0.0135
+   logger:com.fortify.sca.Main marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=INFO_VERBOSE} NDC:[]
+[2026-05-15 19:05:40.932 INFO  ]
+Args:
+["-b", "tak_fortify", "-source", "1.8", "-Dcom.fortify.sca.ProjectRoot=/app/.fortify", "-logfile", "/app/build/fortify_analyze.log", "/app/plugin-src/**/*.java", "/app/plugin-src/**/*.kt"]
+   logger:com.fortify.sca.Main marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=LOG_STATUS} NDC:[]
+[2026-05-15 19:05:40.933 INFO  ]
+VM Args:
+"-XX:+UseParallelGC -XX:SoftRefLRUPolicyMSPerMB=3000 --add-exports=jdk.management/com.sun.management.internal=ALL-UNNAMED --add-exports=java.base/jdk.internal.misc=ALL-UNNAMED --add-opens=java.base/java.nio=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/sun.security.jca=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/sun.nio.ch=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.util.regex=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/javax.crypto=ALL-UNNAMED --add-opens=java.management/sun.management=ALL-UNNAMED -Xmx16g -Xss16M"
+   logger:com.fortify.sca.Main marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=LOG_STATUS} NDC:[]
+[2026-05-15 19:05:41.104 INFO  ]
+Front End started
+   logger:com.fortify.sca.frontend.FrontEndSession marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=LOG_STATUS, step=INIT} NDC:[timerAllFrontEnds]
+[2026-05-15 19:05:42.116 INFO  ]
+Initializing Java Type Table
+   logger:com.fortify.sca.frontend.javaJSP.JavaFrontEnd marker:DEV thread:sourceanalyzer-21
+   MDC:{frontend=JavaFrontEnd, msgId=-1, severity=LOG_STATUS, step=SRC_PARSE} NDC:[timerAllFrontEnds, timerJavaFrontEnd]
+[2026-05-15 19:05:43.305 INFO  ]
+Translating 7 java files
+   logger:com.fortify.sca.frontend.javaJSP.JavaFrontEnd marker:DEV thread:sourceanalyzer-21
+   MDC:{frontend=JavaFrontEnd, msgId=-1, severity=LOG_STATUS, step=SRC_PARSE} NDC:[timerAllFrontEnds, timerJavaFrontEnd]
+[2026-05-15 19:05:44.175 INFO  1450]
+Processing /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixCaptureActivity.java
+   logger:com.fortify.sca.frontend.javaJSP.JavaFrontEnd marker:USER thread:sourceanalyzer-21
+   MDC:{frontend=JavaFrontEnd, msgId=1450, pass=Processing, severity=INFO_VERBOSE, sourceInfo=MultiPixCaptureActivity.java, step=SRC_PARSE} NDC:[timerAllFrontEnds, timerJavaFrontEnd]
+[2026-05-15 19:05:44.777 INFO  1450]
+Processing /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixDropDownReceiver.java
+   logger:com.fortify.sca.frontend.javaJSP.JavaFrontEnd marker:USER thread:sourceanalyzer-21
+   MDC:{frontend=JavaFrontEnd, msgId=1450, pass=Processing, severity=INFO_VERBOSE, sourceInfo=MultiPixDropDownReceiver.java, step=SRC_PARSE} NDC:[timerAllFrontEnds, timerJavaFrontEnd]
+[2026-05-15 19:05:44.976 INFO  1450]
+Processing /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixMapComponent.java
+   logger:com.fortify.sca.frontend.javaJSP.JavaFrontEnd marker:USER thread:sourceanalyzer-21
+   MDC:{frontend=JavaFrontEnd, msgId=1450, pass=Processing, severity=INFO_VERBOSE, sourceInfo=MultiPixMapComponent.java, step=SRC_PARSE} NDC:[timerAllFrontEnds, timerJavaFrontEnd]
+[2026-05-15 19:05:44.988 INFO  1450]
+Processing /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/plugin/MultiPixLifecycle.java
+   logger:com.fortify.sca.frontend.javaJSP.JavaFrontEnd marker:USER thread:sourceanalyzer-21
+   MDC:{frontend=JavaFrontEnd, msgId=1450, pass=Processing, severity=INFO_VERBOSE, sourceInfo=MultiPixLifecycle.java, step=SRC_PARSE} NDC:[timerAllFrontEnds, timerJavaFrontEnd]
+[2026-05-15 19:05:44.996 INFO  1450]
+Processing /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/plugin/MultiPixTool.java
+   logger:com.fortify.sca.frontend.javaJSP.JavaFrontEnd marker:USER thread:sourceanalyzer-21
+   MDC:{frontend=JavaFrontEnd, msgId=1450, pass=Processing, severity=INFO_VERBOSE, sourceInfo=MultiPixTool.java, step=SRC_PARSE} NDC:[timerAllFrontEnds, timerJavaFrontEnd]
+[2026-05-15 19:05:45.018 INFO  1450]
+Processing /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/plugin/PluginNativeLoader.java
+   logger:com.fortify.sca.frontend.javaJSP.JavaFrontEnd marker:USER thread:sourceanalyzer-21
+   MDC:{frontend=JavaFrontEnd, msgId=1450, pass=Processing, severity=INFO_VERBOSE, sourceInfo=PluginNativeLoader.java, step=SRC_PARSE} NDC:[timerAllFrontEnds, timerJavaFrontEnd]
+[2026-05-15 19:05:45.026 INFO  1450]
+Processing /app/plugin-src/MultiPix/app/src/test/java/com/atakmap/android/test/ExampleTest.java
+   logger:com.fortify.sca.frontend.javaJSP.JavaFrontEnd marker:USER thread:sourceanalyzer-21
+   MDC:{frontend=JavaFrontEnd, msgId=1450, pass=Processing, severity=INFO_VERBOSE, sourceInfo=ExampleTest.java, step=SRC_PARSE} NDC:[timerAllFrontEnds, timerJavaFrontEnd]
+[2026-05-15 19:05:45.274 INFO  ]
+Front End complete
+   logger:com.fortify.sca.frontend.FrontEndSession marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=LOG_STATUS, step=SRC_PARSE} NDC:[timerAllFrontEnds]
+[2026-05-15 19:05:45.311 INFO  ]
+Timers: (elapsed 00:00)
+AllFrontEnds:                                00:01 [1142]        00:04 [4171]
+ApexFrontEnd:                                00:00 [5]           00:00 [5]
+DotnetFrontEnd:                              00:00 [4]           00:00 [4]
+JavaFrontEnd:                                00:02 [2993]        00:02 [2993]
+JavaScriptFrontEnd:                          00:00 [8]           00:00 [8]
+KotlinFrontEnd:                              00:00 [1]           00:00 [1]
+PHPFrontEnd:                                 00:00 [14]          00:00 [14]
+Python.App_Finder:                           00:00 [1]           00:00 [1]
+PythonFrontEnd:                              00:00 [1]           00:00 [2]
+VB6FrontEnd:                                 00:00 [1]           00:00 [1]
+VBScriptFrontEnd:                            00:00 [1]           00:00 [1]
+
+Counters:
+
+Heap: [free:] 304,464,336 [max:] 15,271,460,864 [total:] 477,626,368
+Live NST: [VarDecl:] 0 [FunDecl:] 0
+NST Serializer:  queued: 0  pinned: 0
+NCT Serializer:  queued: 0  pinned: 0
+Task information
+  Completed count:     0
+  Completed time (ms): 0
+Longest tasks (ms):
+
+MxInfo:
+ClassLoadingMXBean: 
+  LoadedClassCount: 9276
+  TotalLoadedClassCount: 9276
+  UnloadedClassCount: 0
+  Verbose: false
+CompilationMXBean: HotSpot 64-Bit Tiered Compilers
+  CompilationTimeMonitoringSupported: true
+  TotalCompilationTime: 7826
+[GarbageCollectorMXBeans]
+  GarbageCollectorMXBean: PS MarkSweep
+    CollectionCount: 2
+    CollectionTime: 75
+    LastGcInfo: GcThreadCount = 1 duration = 45 endTime = 3197 id = 2 startTime = 3152 
+    MemoryPoolNames: [PS Eden Space, PS Survivor Space, PS Old Gen]
+    Valid: true
+  GarbageCollectorMXBean: PS Scavenge
+    CollectionCount: 6
+    CollectionTime: 72
+    LastGcInfo: GcThreadCount = 1 duration = 16 endTime = 6029 id = 6 startTime = 6013 
+    MemoryPoolNames: [PS Eden Space, PS Survivor Space]
+    Valid: true
+MemoryMXBean: 
+  HeapMemoryUsage: init = 268435456(262144K) used = 173162032(169103K) committed = 477626368(466432K) max = 15271460864(14913536K)
+  NonHeapMemoryUsage: init = 7667712(7488K) used = 79867976(77996K) committed = 81920000(80000K) max = -1(-1K)
+  ObjectPendingFinalizationCount: 0
+  Verbose: false
+[MemoryPoolMXBeans]
+  MemoryPoolMXBean: CodeHeap 'non-nmethods'
+    MemoryManagerNames: [CodeCacheManager]
+    PeakUsage: init = 2555904(2496K) used = 1409536(1376K) committed = 2555904(2496K) max = 5828608(5692K)
+    Type: Non-heap memory
+    Usage: init = 2555904(2496K) used = 1380992(1348K) committed = 2555904(2496K) max = 5828608(5692K)
+    UsageThreshold: 0
+    UsageThresholdCount: 0
+    UsageThresholdExceeded: false
+  MemoryPoolMXBean: Metaspace
+    MemoryManagerNames: [Metaspace Manager]
+    PeakUsage: init = 0(0K) used = 60594920(59174K) committed = 61014016(59584K) max = -1(-1K)
+    Type: Non-heap memory
+    Usage: init = 0(0K) used = 60594920(59174K) committed = 61014016(59584K) max = -1(-1K)
+    UsageThreshold: 0
+    UsageThresholdCount: 0
+    UsageThresholdExceeded: false
+  MemoryPoolMXBean: CodeHeap 'profiled nmethods'
+    MemoryManagerNames: [CodeCacheManager]
+    PeakUsage: init = 2555904(2496K) used = 9416320(9195K) committed = 9437184(9216K) max = 122912768(120032K)
+    Type: Non-heap memory
+    Usage: init = 2555904(2496K) used = 9416320(9195K) committed = 9437184(9216K) max = 122912768(120032K)
+    UsageThreshold: 0
+    UsageThresholdCount: 0
+    UsageThresholdExceeded: false
+  MemoryPoolMXBean: PS Old Gen
+    CollectionUsage: init = 179306496(175104K) used = 33449312(32665K) committed = 179306496(175104K) max = 11453595648(11185152K)
+    CollectionUsageThreshold: 0
+    CollectionUsageThresholdCount: 0
+    CollectionUsageThresholdExceeded: false
+    MemoryManagerNames: [PS MarkSweep]
+    PeakUsage: init = 179306496(175104K) used = 44654160(43607K) committed = 179306496(175104K) max = 11453595648(11185152K)
+    Type: Heap memory
+    Usage: init = 179306496(175104K) used = 44654160(43607K) committed = 179306496(175104K) max = 11453595648(11185152K)
+    UsageThreshold: 0
+    UsageThresholdCount: 0
+    UsageThresholdExceeded: false
+  MemoryPoolMXBean: Compressed Class Space
+    MemoryManagerNames: [Metaspace Manager]
+    PeakUsage: init = 0(0K) used = 6155056(6010K) committed = 6356992(6208K) max = 1073741824(1048576K)
+    Type: Non-heap memory
+    Usage: init = 0(0K) used = 6155056(6010K) committed = 6356992(6208K) max = 1073741824(1048576K)
+    UsageThreshold: 0
+    UsageThresholdCount: 0
+    UsageThresholdExceeded: false
+  MemoryPoolMXBean: PS Survivor Space
+    CollectionUsage: init = 11010048(10752K) used = 19824984(19360K) committed = 29884416(29184K) max = 29884416(29184K)
+    CollectionUsageThreshold: 0
+    CollectionUsageThresholdCount: 0
+    CollectionUsageThresholdExceeded: false
+    MemoryManagerNames: [PS MarkSweep, PS Scavenge]
+    PeakUsage: init = 11010048(10752K) used = 19824984(19360K) committed = 29884416(29184K) max = 29884416(29184K)
+    Type: Heap memory
+    Usage: init = 11010048(10752K) used = 19824984(19360K) committed = 29884416(29184K) max = 29884416(29184K)
+  MemoryPoolMXBean: PS Eden Space
+    CollectionUsage: init = 67108864(65536K) used = 0(0K) committed = 268435456(262144K) max = 5666504704(5533696K)
+    CollectionUsageThreshold: 0
+    CollectionUsageThresholdCount: 0
+    CollectionUsageThresholdExceeded: false
+    MemoryManagerNames: [PS MarkSweep, PS Scavenge]
+    PeakUsage: init = 67108864(65536K) used = 134217728(131072K) committed = 268435456(262144K) max = 5704253440(5570560K)
+    Type: Heap memory
+    Usage: init = 67108864(65536K) used = 108682888(106135K) committed = 268435456(262144K) max = 5666504704(5533696K)
+  MemoryPoolMXBean: CodeHeap 'non-profiled nmethods'
+    MemoryManagerNames: [CodeCacheManager]
+    PeakUsage: init = 2555904(2496K) used = 2328832(2274K) committed = 2555904(2496K) max = 122916864(120036K)
+    Type: Non-heap memory
+    Usage: init = 2555904(2496K) used = 2328832(2274K) committed = 2555904(2496K) max = 122916864(120036K)
+    UsageThreshold: 0
+    UsageThresholdCount: 0
+    UsageThresholdExceeded: false
+OperatingSystemMXBean: Linux
+  Arch: amd64
+  AvailableProcessors: 3
+  CommittedVirtualMemorySize: 21126795264
+  CpuLoad: 0.5338245420406341
+  FreeMemorySize: 13155319808
+  FreePhysicalMemorySize: 13155319808
+  FreeSwapSpaceSize: 17179869184
+  MaxFileDescriptorCount: 1048576
+  OpenFileDescriptorCount: 201
+  ProcessCpuLoad: 0.03380218798839026
+  ProcessCpuTime: 15140000000
+  SystemCpuLoad: 0.0
+  SystemLoadAverage: 2.73
+  TotalMemorySize: 17179869184
+  TotalPhysicalMemorySize: 17179869184
+  TotalSwapSpaceSize: 17179869184
+  Version: 3.10.0-1160.88.1.el7.x86_64
+ThreadMXBean: 
+  CurrentThreadAllocatedBytes: 490928464
+  CurrentThreadCpuTime: 4810894883
+  CurrentThreadUserTime: 3800000000
+  DaemonThreadCount: 10
+  ObjectMonitorUsageSupported: true
+  PeakThreadCount: 12
+  SynchronizerUsageSupported: true
+  ThreadAllocatedMemoryEnabled: true
+  ThreadAllocatedMemorySupported: true
+  ThreadCount: 12
+  TotalStartedThreadCount: 12
+  TotalThreadAllocatedBytes: 603472288
+  Thread 1 [main]
+    ThreadCpuTime: 1714765298
+    ThreadUserTime: 1590000000
+  Thread 2 [Reference Handler]
+    ThreadCpuTime: 1738761
+    ThreadUserTime: 0
+  Thread 3 [Finalizer]
+    ThreadCpuTime: 791524
+    ThreadUserTime: 0
+  Thread 4 [Signal Dispatcher]
+    ThreadCpuTime: 131821
+    ThreadUserTime: 0
+  Thread 10 [Common-Cleaner]
+    ThreadCpuTime: 3972491
+    ThreadUserTime: 0
+  Thread 11 [Notification Thread]
+    ThreadCpuTime: 145421
+    ThreadUserTime: 0
+  Thread 15 [BC Disposal Daemon]
+    ThreadCpuTime: 2291694
+    ThreadUserTime: 0
+  Thread 17 [RMI TCP Accept-0]
+    ThreadCpuTime: 663483
+    ThreadUserTime: 0
+  Thread 21 [sourceanalyzer]
+    ThreadCpuTime: 4815279987
+    ThreadUserTime: 3810000000
+  Thread 22 [Stream Monitor [out] ]
+    ThreadCpuTime: 457092
+    ThreadUserTime: 0
+  Thread 23 [Stream Monitor [err] ]
+    ThreadCpuTime: 419125
+    ThreadUserTime: 0
+  Thread 24 [BC Cleanup Executor]
+    ThreadCpuTime: 608182
+    ThreadUserTime: 0
+
+   logger:com.fortify.sca.Main marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=SRC_PARSE} NDC:[]
+[2026-05-15 19:05:45.491 INFO  ]
+message id statistics:
+   id:        -1 total:      1272 totalSuppressedCount:         0 scope:[]
+   id:      1450 total:         7 totalSuppressedCount:         0 scope:[]
+
+   logger:com.fortify.messaging.MessageSuppressor marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=SRC_PARSE} NDC:[]
+[2026-05-15 19:05:45.491 INFO  ]
+logger:null  count:19
+   level:INFO count:19
+logger:com.fortify.messaging.MessageSuppressor  count:1
+   level:INFO count:1
+logger:com.fortify.sca.cmd.CommandLine  count:2
+   level:INFO count:2
+logger:com.fortify.logging.log4j2.LoggerFactory  count:1
+   level:INFO count:1
+logger:com.fortify.sca.Main  count:4
+   level:INFO count:4
+logger:com.fortify.sca.frontend.FrontEndSession  count:2
+   level:INFO count:2
+logger:com.fortify.sca.frontend.javaJSP.JavaFrontEnd  count:9
+   level:INFO count:9
+
+   logger:com.fortify.logging.LoggerStats marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=SRC_PARSE} NDC:[]

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.atakmap.android.plugintemplate.plugin"
+    android:versionCode="1777514980"
+    android:versionName="1.1 (d6e54ee9) - [5.0.0]" >
+
+    <uses-sdk android:minSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <application
+        android:allowBackup="false"
+        android:description="@string/app_desc"
+        android:extractNativeLibs="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="plugin-api"
+            android:value="com.atakmap.app@5.0.0.CIV" />
+        <meta-data
+            android:name="app_desc"
+            android:value="@string/app_desc" />
+
+        <!--
+            This fictitious activity entry allow for ATAK 4.6.0.2 and newer to perform 
+            plugin discovery  android devices.  If this is removed, the plugin will 
+            not be able to be discovered or loaded.
+        -->
+        <activity android:name="com.atakmap.app.component" >
+            <intent-filter android:label="@string/app_name" >
+                <action android:name="com.atakmap.app.component" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.atakmap.android.plugintemplate.MultiPixCaptureActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
+    </application>
+
+</manifest>

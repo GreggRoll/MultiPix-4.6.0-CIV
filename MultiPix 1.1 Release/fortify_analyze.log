@@ -1,0 +1,14 @@
+[2026-05-15 19:05:44.175 INFO  1450]
+Processing /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixCaptureActivity.java
+[2026-05-15 19:05:44.777 INFO  1450]
+Processing /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixDropDownReceiver.java
+[2026-05-15 19:05:44.976 INFO  1450]
+Processing /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixMapComponent.java
+[2026-05-15 19:05:44.988 INFO  1450]
+Processing /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/plugin/MultiPixLifecycle.java
+[2026-05-15 19:05:44.996 INFO  1450]
+Processing /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/plugin/MultiPixTool.java
+[2026-05-15 19:05:45.018 INFO  1450]
+Processing /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/plugin/PluginNativeLoader.java
+[2026-05-15 19:05:45.026 INFO  1450]
+Processing /app/plugin-src/MultiPix/app/src/test/java/com/atakmap/android/test/ExampleTest.java

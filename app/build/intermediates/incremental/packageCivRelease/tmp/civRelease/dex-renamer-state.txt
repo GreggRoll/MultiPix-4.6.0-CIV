@@ -1,0 +1,4 @@
+#Fri May 15 11:33:34 EDT 2026
+base.0=C\:\\Users\\adams\\Code\\ATAK\\ATAK-MIL-5.5.0.7-SDK\\plugins\\MultiPix-MIL\\app\\build\\intermediates\\dex\\civRelease\\minifyCivReleaseWithR8\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

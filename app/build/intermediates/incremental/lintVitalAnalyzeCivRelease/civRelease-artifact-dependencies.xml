@@ -1,0 +1,8 @@
+<dependencies>
+  <compile
+      roots="__local_aars__:C:\Users\adams\Code\ATAK\ATAK-MIL-5.5.0.7-SDK\main.jar:unspecified@jar">
+    <dependency
+        name="__local_aars__:C:\Users\adams\Code\ATAK\ATAK-MIL-5.5.0.7-SDK\main.jar:unspecified@jar"
+        simpleName="__local_aars__:C:\Users\adams\Code\ATAK\ATAK-MIL-5.5.0.7-SDK\main.jar"/>
+  </compile>
+</dependencies>

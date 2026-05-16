@@ -1,0 +1,1481 @@
+[2026-05-15 19:05:47.771 INFO  ]
+loggerConfig:
+   level:INFO
+   filename:/app/build/fortify_scan.txt
+   appendLogFile:true
+   installLoggingPrintStreams:true
+
+   logger:com.fortify.logging.log4j2.LoggerFactory marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE} NDC:[]
+[2026-05-15 19:05:47.918 INFO  ]
+0 suppressions loaded
+   logger:com.fortify.sca.cmd.CommandLine marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE} NDC:[]
+[2026-05-15 19:05:47.919 INFO  ]
+0 level adjustments loaded
+   logger:com.fortify.sca.cmd.CommandLine marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE} NDC:[]
+[2026-05-15 19:05:48.098 INFO  ]
+OpenText SAST (Fortify) 25.4.0.0135 (using JRE 17.0.11)
+Modules:
+.NET Frontend 25.4.0.0135
+.NET and ASP.NET Translators 25.4.0.0135
+AngularJS Translator Utils 25.4.0.0135
+Apex Translator 25.4.0.0135
+C/C++ Translator (CTran) 25.4.0.0022
+Flight main!12855_653c157b
+Kotlin Translator 25.4.0.0135
+Legacy Apex Translator 25.4.0.0135
+Legacy Translators 25.4.0.0135
+MSBuild Plugin 25.4.0.0135
+Modified Rhino 25.4.0.0135
+PHP Translator 25.4.0.0135
+Python Translator 25.4.0.0135
+SCA Backend 25.4.0.0135
+SCA Frontend 25.4.0.0135
+SCA Platform 25.4.0.0135
+   logger:com.fortify.sca.Main marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=INFO_VERBOSE} NDC:[]
+[2026-05-15 19:05:48.100 INFO  ]
+Args:
+["-b", "tak_fortify", "-scan", "-Dcom.fortify.sca.ProjectRoot=/app/.fortify", "-logfile", "/app/build/fortify_scan.txt", "-build-label", "", "-build-project", "", "-build-version", "", "-f", "/app/build/scan_results.fpr"]
+   logger:com.fortify.sca.Main marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=LOG_STATUS} NDC:[]
+[2026-05-15 19:05:48.101 INFO  ]
+VM Args:
+"-XX:+UseParallelGC -XX:SoftRefLRUPolicyMSPerMB=3000 --add-exports=jdk.management/com.sun.management.internal=ALL-UNNAMED --add-exports=java.base/jdk.internal.misc=ALL-UNNAMED --add-opens=java.base/java.nio=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/sun.security.jca=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/sun.nio.ch=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.util.regex=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/javax.crypto=ALL-UNNAMED --add-opens=java.management/sun.management=ALL-UNNAMED -Xmx16g -Xss16M"
+   logger:com.fortify.sca.Main marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=LOG_STATUS} NDC:[]
+[2026-05-15 19:05:48.527 INFO  ]
+No Flight-relevant source files found
+   logger:com.fortify.sca.flight.FlightProcess marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[]
+[2026-05-15 19:05:48.531 INFO  ]
+No Flight-relevant non-session source files found
+   logger:com.fortify.sca.flight.FlightProcess marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[]
+[2026-05-15 19:05:48.531 INFO  ]
+No Flight-relevant files found; skipping Flight
+   logger:com.fortify.sca.flight.FlightProcess marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[]
+[2026-05-15 19:05:48.568 INFO  ]
+Front End started
+   logger:com.fortify.sca.frontend.FrontEndSession marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=LOG_STATUS, step=FLIGHT} NDC:[timerAllFrontEnds]
+[2026-05-15 19:05:50.509 INFO  ]
+Front End complete
+   logger:com.fortify.sca.frontend.FrontEndSession marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=LOG_STATUS, step=FLIGHT} NDC:[timerAllFrontEnds]
+[2026-05-15 19:05:50.606 INFO  ]
+Timers: (elapsed 00:00)
+AllFrontEnds:                                00:01 [1871]        00:01 [1941]
+ApexFrontEnd:                                00:00 [6]           00:00 [6]
+DotnetFrontEnd:                              00:00 [4]           00:00 [4]
+JavaFrontEnd:                                00:00 [3]           00:00 [3]
+JavaScriptFrontEnd:                          00:00 [7]           00:00 [7]
+PHPFrontEnd:                                 00:00 [45]          00:00 [45]
+PythonFrontEnd:                              00:00 [3]           00:00 [3]
+VB6FrontEnd:                                 00:00 [1]           00:00 [1]
+VBScriptFrontEnd:                            00:00 [1]           00:00 [1]
+
+Counters:
+
+Heap: [free:] 295,404,840 [max:] 15,271,460,864 [total:] 490,733,568
+Live NST: [VarDecl:] 0 [FunDecl:] 0
+NST Serializer:  queued: 0  pinned: 0
+NCT Serializer:  queued: 0  pinned: 0
+Task information
+  Completed count:     0
+  Completed time (ms): 0
+Longest tasks (ms):
+
+MxInfo:
+ClassLoadingMXBean: 
+  LoadedClassCount: 9434
+  TotalLoadedClassCount: 9439
+  UnloadedClassCount: 5
+  Verbose: false
+CompilationMXBean: HotSpot 64-Bit Tiered Compilers
+  CompilationTimeMonitoringSupported: true
+  TotalCompilationTime: 6328
+[GarbageCollectorMXBeans]
+  GarbageCollectorMXBean: PS MarkSweep
+    CollectionCount: 2
+    CollectionTime: 124
+    LastGcInfo: GcThreadCount = 1 duration = 93 endTime = 3424 id = 2 startTime = 3331 
+    MemoryPoolNames: [PS Eden Space, PS Survivor Space, PS Old Gen]
+    Valid: true
+  GarbageCollectorMXBean: PS Scavenge
+    CollectionCount: 6
+    CollectionTime: 97
+    LastGcInfo: GcThreadCount = 1 duration = 21 endTime = 4448 id = 6 startTime = 4427 
+    MemoryPoolNames: [PS Eden Space, PS Survivor Space]
+    Valid: true
+MemoryMXBean: 
+  HeapMemoryUsage: init = 268435456(262144K) used = 199438176(194763K) committed = 490733568(479232K) max = 15271460864(14913536K)
+  NonHeapMemoryUsage: init = 7667712(7488K) used = 71044128(69379K) committed = 73793536(72064K) max = -1(-1K)
+  ObjectPendingFinalizationCount: 0
+  Verbose: false
+[MemoryPoolMXBeans]
+  MemoryPoolMXBean: CodeHeap 'non-nmethods'
+    MemoryManagerNames: [CodeCacheManager]
+    PeakUsage: init = 2555904(2496K) used = 1364480(1332K) committed = 2555904(2496K) max = 5828608(5692K)
+    Type: Non-heap memory
+    Usage: init = 2555904(2496K) used = 1351168(1319K) committed = 2555904(2496K) max = 5828608(5692K)
+    UsageThreshold: 0
+    UsageThresholdCount: 0
+    UsageThresholdExceeded: false
+  MemoryPoolMXBean: Metaspace
+    MemoryManagerNames: [Metaspace Manager]
+    PeakUsage: init = 0(0K) used = 53240600(51992K) committed = 53739520(52480K) max = -1(-1K)
+    Type: Non-heap memory
+    Usage: init = 0(0K) used = 53240600(51992K) committed = 53739520(52480K) max = -1(-1K)
+    UsageThreshold: 0
+    UsageThresholdCount: 0
+    UsageThresholdExceeded: false
+  MemoryPoolMXBean: CodeHeap 'profiled nmethods'
+    MemoryManagerNames: [CodeCacheManager]
+    PeakUsage: init = 2555904(2496K) used = 8599680(8398K) committed = 8650752(8448K) max = 122912768(120032K)
+    Type: Non-heap memory
+    Usage: init = 2555904(2496K) used = 8599680(8398K) committed = 8650752(8448K) max = 122912768(120032K)
+    UsageThreshold: 0
+    UsageThresholdCount: 0
+    UsageThresholdExceeded: false
+  MemoryPoolMXBean: PS Old Gen
+    CollectionUsage: init = 179306496(175104K) used = 79495840(77632K) committed = 179306496(175104K) max = 11453595648(11185152K)
+    CollectionUsageThreshold: 0
+    CollectionUsageThresholdCount: 0
+    CollectionUsageThresholdExceeded: false
+    MemoryManagerNames: [PS MarkSweep]
+    PeakUsage: init = 179306496(175104K) used = 79504032(77640K) committed = 179306496(175104K) max = 11453595648(11185152K)
+    Type: Heap memory
+    Usage: init = 179306496(175104K) used = 79504032(77640K) committed = 179306496(175104K) max = 11453595648(11185152K)
+    UsageThreshold: 0
+    UsageThresholdCount: 0
+    UsageThresholdExceeded: false
+  MemoryPoolMXBean: Compressed Class Space
+    MemoryManagerNames: [Metaspace Manager]
+    PeakUsage: init = 0(0K) used = 6063848(5921K) committed = 6291456(6144K) max = 1073741824(1048576K)
+    Type: Non-heap memory
+    Usage: init = 0(0K) used = 6063848(5921K) committed = 6291456(6144K) max = 1073741824(1048576K)
+    UsageThreshold: 0
+    UsageThresholdCount: 0
+    UsageThresholdExceeded: false
+  MemoryPoolMXBean: PS Survivor Space
+    CollectionUsage: init = 11010048(10752K) used = 30897576(30173K) committed = 43515904(42496K) max = 43515904(42496K)
+    CollectionUsageThreshold: 0
+    CollectionUsageThresholdCount: 0
+    CollectionUsageThresholdExceeded: false
+    MemoryManagerNames: [PS MarkSweep, PS Scavenge]
+    PeakUsage: init = 11010048(10752K) used = 30897576(30173K) committed = 43515904(42496K) max = 43515904(42496K)
+    Type: Heap memory
+    Usage: init = 11010048(10752K) used = 30897576(30173K) committed = 43515904(42496K) max = 43515904(42496K)
+  MemoryPoolMXBean: PS Eden Space
+    CollectionUsage: init = 67108864(65536K) used = 0(0K) committed = 267911168(261632K) max = 5638717440(5506560K)
+    CollectionUsageThreshold: 0
+    CollectionUsageThresholdCount: 0
+    CollectionUsageThresholdExceeded: false
+    MemoryManagerNames: [PS MarkSweep, PS Scavenge]
+    PeakUsage: init = 67108864(65536K) used = 134217728(131072K) committed = 267911168(261632K) max = 5704253440(5570560K)
+    Type: Heap memory
+    Usage: init = 67108864(65536K) used = 91953368(89798K) committed = 267911168(261632K) max = 5638717440(5506560K)
+  MemoryPoolMXBean: CodeHeap 'non-profiled nmethods'
+    MemoryManagerNames: [CodeCacheManager]
+    PeakUsage: init = 2555904(2496K) used = 1825152(1782K) committed = 2555904(2496K) max = 122916864(120036K)
+    Type: Non-heap memory
+    Usage: init = 2555904(2496K) used = 1825152(1782K) committed = 2555904(2496K) max = 122916864(120036K)
+    UsageThreshold: 0
+    UsageThresholdCount: 0
+    UsageThresholdExceeded: false
+OperatingSystemMXBean: Linux
+  Arch: amd64
+  AvailableProcessors: 3
+  CommittedVirtualMemorySize: 21438611456
+  CpuLoad: 0.5445202609471413
+  FreeMemorySize: 13131436032
+  FreePhysicalMemorySize: 13131436032
+  FreeSwapSpaceSize: 17179869184
+  MaxFileDescriptorCount: 1048576
+  OpenFileDescriptorCount: 179
+  ProcessCpuLoad: 0.027486515641855447
+  ProcessCpuTime: 12730000000
+  SystemCpuLoad: 0.0
+  SystemLoadAverage: 2.91
+  TotalMemorySize: 17179869184
+  TotalPhysicalMemorySize: 17179869184
+  TotalSwapSpaceSize: 17179869184
+  Version: 3.10.0-1160.88.1.el7.x86_64
+ThreadMXBean: 
+  CurrentThreadAllocatedBytes: 168625680
+  CurrentThreadCpuTime: 2056908617
+  CurrentThreadUserTime: 1920000000
+  DaemonThreadCount: 12
+  ObjectMonitorUsageSupported: true
+  PeakThreadCount: 14
+  SynchronizerUsageSupported: true
+  ThreadAllocatedMemoryEnabled: true
+  ThreadAllocatedMemorySupported: true
+  ThreadCount: 14
+  TotalStartedThreadCount: 14
+  TotalThreadAllocatedBytes: 542491072
+  Thread 1 [main]
+    ThreadCpuTime: 1728327560
+    ThreadUserTime: 1590000000
+  Thread 2 [Reference Handler]
+    ThreadCpuTime: 1558860
+    ThreadUserTime: 0
+  Thread 3 [Finalizer]
+    ThreadCpuTime: 845274
+    ThreadUserTime: 0
+  Thread 4 [Signal Dispatcher]
+    ThreadCpuTime: 129360
+    ThreadUserTime: 0
+  Thread 10 [Common-Cleaner]
+    ThreadCpuTime: 4974627
+    ThreadUserTime: 0
+  Thread 11 [Notification Thread]
+    ThreadCpuTime: 135751
+    ThreadUserTime: 0
+  Thread 15 [BC Disposal Daemon]
+    ThreadCpuTime: 2511276
+    ThreadUserTime: 0
+  Thread 17 [RMI TCP Accept-0]
+    ThreadCpuTime: 821785
+    ThreadUserTime: 0
+  Thread 21 [sourceanalyzer]
+    ThreadCpuTime: 2061682753
+    ThreadUserTime: 1930000000
+  Thread 22 [Stream Monitor [out] ]
+    ThreadCpuTime: 351601
+    ThreadUserTime: 0
+  Thread 23 [Stream Monitor [err] ]
+    ThreadCpuTime: 423022
+    ThreadUserTime: 0
+  Thread 24 [BC Cleanup Executor]
+    ThreadCpuTime: 668854
+    ThreadUserTime: 0
+  Thread 25 [ForkJoinPool-1-worker-1]
+    ThreadCpuTime: 1458774883
+    ThreadUserTime: 1370000000
+  Thread 26 [ForkJoinPool-1-worker-2]
+    ThreadCpuTime: 1503237775
+    ThreadUserTime: 1410000000
+
+   logger:com.fortify.sca.Main marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[]
+[2026-05-15 19:05:50.681 INFO  1451]
+Analyzing 7 source file(s)
+   logger:com.fortify.sca.Main marker:USER thread:sourceanalyzer-21
+   MDC:{msgId=1451, severity=INFO_VERBOSE, step=FLIGHT} NDC:[timerSourceanalyzer.Run]
+[2026-05-15 19:05:50.793 INFO  ]
+License Metadata:
+  Created On: 2021-08-16 18:25:10.0
+  License Description: 8 Scanning Users Order#: O-00086484, AC-0000145146
+  License ID: L506881a6-1654-4eaa-b896-633fe3517aac
+  Subscription ID: S6b0dd3d5-382c-4431-a940-323ea0e75fd9
+  owner: The Army United States Department Of
+   logger:com.fortify.sca.util.LicenseUtil marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=LOG_STATUS, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:50.879 INFO  ]
+Adding scan policy filters listed in file: /opt/fortify/Core/config/scales/scan-policy-security.txt
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:50.972 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter((ARGS||ENVIRONMENT||PROPERTY||REGISTRY))
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:50.979 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter(Probability<=2.0&&Impact<=4.0)
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:50.981 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter(DeadCode)
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:50.981 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter(DoubleFree)
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:50.982 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter(ExperimentalAPI)
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:50.983 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter(FormatString)
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:50.983 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter(Memoryleak)
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:50.984 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter(NullDereference)
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:50.984 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter(Obsolete)
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:50.985 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter(PoorStyle)
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:50.985 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter(PoorErrorHandling)
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:50.986 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter(PortabilityFlaw)
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:50.986 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter(RaceCondition)
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:50.987 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter(RedundantNullCheck)
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:50.988 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter(TypeMismatch)
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:50.989 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter(UndefinedBehavior)
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:50.989 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter(UninitializedVariable)
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:50.990 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter(UnreleasedResource)
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:50.990 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter(UseAfterFree)
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:50.991 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter(MissingCheckagainstNull)
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:50.991 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter(AndroidBadPractices:UseofInternalAPIs)
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:50.992 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter(AndroidBadPractices:UseofFileSchemeCookies)
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:50.993 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter(AndroidBadPractices:LeftoverDebugCode)
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:50.993 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter(ASP.NETBadPractices:UnminifiedCode)
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:50.994 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter(ASP.NETBadPractices:Non-SerializableObjectStoredinSession)
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:50.994 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter(CastorBadPractices:QueryModeNotRead-Only)
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:50.995 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter(CastorBadPractices:UnspecifiedQueryMode)
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:50.996 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter(EJBBadPractices:UseofAWT/Swing)
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:50.996 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter(EJBBadPractices:Useofjava.io)
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:50.997 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter(EJBBadPractices:UseofClassLoader)
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:50.997 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter(EJBBadPractices:UseofSockets)
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:50.998 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter(EJBBadPractices:UseofSynchronizationPrimitives)
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:50.999 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter(FlashBadPractices:StageSizeTooSmall)
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:50.999 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter(GoBadPractices:LeftoverDebugCode)
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:51.000 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter(J2EEBadPractices:Non-SerializableObjectStoredinSession)
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:51.000 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter(J2EEBadPractices:LeftoverDebugCode)
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:51.001 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter(KubernetesBadPractices:DefaultNamespace)
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:51.001 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter(PythonBadPractices:LeftoverDebugCode)
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:51.002 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter(SQLBadPractices:DirectUpdate)
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:51.002 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter(CodeCorrectness:ArithmeticOperationonBoolean)
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:51.003 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter(CodeCorrectness:ByteArraytoStringConversion)
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:51.003 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter(CodeCorrectness:CalltoGC.Collect())
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:51.004 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter(CodeCorrectness:Calltonotify())
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:51.004 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter(CodeCorrectness:Calltosleep()inLock)
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:51.005 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter(CodeCorrectness:CalltoSystem.gc())
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:51.005 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter(CodeCorrectness:CalltoThread.run())
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:51.005 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter(CodeCorrectness:CalltoThread.stop())
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:51.006 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter(CodeCorrectness:ClassDoesNotImplementCloneable)
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:51.006 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter(CodeCorrectness:ClassDoesNotImplementEquivalenceMethod)
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:51.007 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter(CodeCorrectness:ClassImplementsICloneable)
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:51.007 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter(CodeCorrectness:clone()InvokesOverridableFunction)
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:51.008 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter(CodeCorrectness:ComparisonofBoxedPrimitiveTypes)
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:51.008 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter(CodeCorrectness:ComparisonwithNaN)
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:51.009 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter(CodeCorrectness:ConstructorInvokesOverridableFunction)
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:51.009 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter(CodeCorrectness:Double-CheckedLocking)
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:51.010 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter(CodeCorrectness:ErroneousClassCompare)
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:51.010 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter(CodeCorrectness:Erroneousfinalize()Method)
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:51.010 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter(CodeCorrectness:ErroneousNegativeValue)
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:51.011 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter(CodeCorrectness:ErroneousNullComparison)
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:51.011 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter(CodeCorrectness:ErroneousStringCompare)
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:51.012 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter(CodeCorrectness:ErroneousSynchronization)
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:51.012 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter(CodeCorrectness:ErroneousZeroValue)
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:51.013 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter(CodeCorrectness:FunctionNotInvoked)
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:51.013 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter(CodeCorrectness:FunctionReturnsStackAddress)
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:51.013 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter(CodeCorrectness:HiddenMethod)
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:51.014 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter(CodeCorrectness:IncorrectSerializableMethodSignature)
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:51.014 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter(CodeCorrectness:IncorrectserialPersistentFieldsModifier)
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:51.015 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter(CodeCorrectness:InvalidCalltoObject.equals())
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:51.015 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter(CodeCorrectness:MacroMisuse)
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:51.015 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter(CodeCorrectness:MemoryFreeonStackVariable)
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:51.016 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter(CodeCorrectness:MisleadingMethodSignature)
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:51.016 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter(CodeCorrectness:Missing[Serializable]Attribute)
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:51.017 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter(CodeCorrectness:MultipleStreamCommits)
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:51.017 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter(CodeCorrectness:NegativeContent-Length)
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:51.017 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter(CodeCorrectness:Non-StaticInnerClassImplementsSerializable)
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:51.018 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter(CodeCorrectness:Non-SynchronizedMethodOverridesSynchronizedMethod)
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:51.018 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter(CodeCorrectness:nullArgumentToEquivalenceMethod)
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:51.019 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter(CodeCorrectness:PrematureThreadTermination)
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:51.019 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter(CodeCorrectness:readObject()InvokesOverridableFunction)
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:51.020 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter(CodeCorrectness:ReadonlyCollectionReference)
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:51.020 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter(CodeCorrectness:StackExhaustion)
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:51.020 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter(CodeCorrectness:StringComparisonofFloat)
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:51.021 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter(CodeCorrectness:ToStringonArray)
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:51.021 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter(CodeCorrectness:FailingAssertion)
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:51.021 INFO  ]
+Adding scan policy filter: CompositeExpressionFilter(CodeCorrectness:TypographicalError)
+   logger:com.fortify.sca.backend.FilterFileFilter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=FLIGHT} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:05:51.105 INFO  ]
+Loading nametable with 7 compilation units
+   logger:com.fortify.sca.backend.BackEnd marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=LOG_STATUS, step=NST_PARSE} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze, timerPHASE_ZERO]
+[2026-05-15 19:05:51.665 WARN  ]
+Recovered from NST parsing problems in /app/.fortify/sca25.4/build/tak_fortify/app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixCaptureActivity.java.nst at: 527:30
+   logger:com.fortify.sca.nst.reader.parser.NSTParser marker:DEV thread:NameTableLoad-thread-1-32
+   MDC:{msgId=-1, nstSourceInfo=MultiPixCaptureActivity.java.nst, severity=INTERNAL_WARNING, sourceInfo=MultiPixCaptureActivity.java, step=NST_PARSE} NDC:[timerNSTReader.parse]
+[2026-05-15 19:05:51.801 WARN  ]
+Unresolved variable: Toast @ MultiPixCaptureActivity.java:156
+   logger:com.fortify.sca.nst.util.Resolver marker:DEV thread:NameTableLoad-thread-1-32
+   MDC:{msgId=-1, nstFunction=com.atakmap.android.multipix.MultiPixCaptureActivity$4.onClick~com.atakmap.android.multipix.MultiPixCaptureActivity$4^com.atakmap.android.multipix.View^, nstSourceInfo=MultiPixCaptureActivity.java.nst:138:138:25, severity=INTERNAL_WARNING, sourceInfo=MultiPixCaptureActivity.java:154:162:1, step=NST_PARSE, visitor=com.fortify.sca.nst.util.Resolver} NDC:[]
+[2026-05-15 19:05:51.803 WARN  ]
+Unresolved variable: SENSOR_SERVICE @ MultiPixCaptureActivity.java:83
+   logger:com.fortify.sca.nst.util.Resolver marker:DEV thread:NameTableLoad-thread-1-32
+   MDC:{msgId=-1, nstFunction=com.atakmap.android.multipix.MultiPixCaptureActivity.onCreate~com.atakmap.android.multipix.MultiPixCaptureActivity^com.atakmap.android.multipix.Bundle^, nstSourceInfo=MultiPixCaptureActivity.java.nst:257:257:28, severity=INTERNAL_WARNING, sourceInfo=MultiPixCaptureActivity.java:79:101:1, step=NST_PARSE, visitor=com.fortify.sca.nst.util.Resolver} NDC:[]
+[2026-05-15 19:05:51.807 WARN  ]
+Unresolved variable: SensorManager @ MultiPixCaptureActivity.java:224
+   logger:com.fortify.sca.nst.util.Resolver marker:DEV thread:NameTableLoad-thread-1-32
+   MDC:{msgId=-1, nstFunction=com.atakmap.android.multipix.MultiPixCaptureActivity.onSensorChanged~com.atakmap.android.multipix.MultiPixCaptureActivity^com.atakmap.android.multipix.SensorEvent^, nstSourceInfo=MultiPixCaptureActivity.java.nst:671:671:25, severity=INTERNAL_WARNING, sourceInfo=MultiPixCaptureActivity.java:221:234:1, step=NST_PARSE, visitor=com.fortify.sca.nst.util.Resolver} NDC:[]
+[2026-05-15 19:05:51.808 WARN  ]
+Unresolved variable: Toast @ MultiPixCaptureActivity.java:249
+   logger:com.fortify.sca.nst.util.Resolver marker:DEV thread:NameTableLoad-thread-1-32
+   MDC:{msgId=-1, nstFunction=com.atakmap.android.multipix.MultiPixCaptureActivity.onRequestPermissionsResult~com.atakmap.android.multipix.MultiPixCaptureActivity^int^java.lang.String_A1^int_A1^, nstSourceInfo=MultiPixCaptureActivity.java.nst:746:746:25, severity=INTERNAL_WARNING, sourceInfo=MultiPixCaptureActivity.java:241:254:1, step=NST_PARSE, visitor=com.fortify.sca.nst.util.Resolver} NDC:[]
+[2026-05-15 19:05:51.808 WARN  ]
+Unresolved variable: Camera @ MultiPixCaptureActivity.java:262
+   logger:com.fortify.sca.nst.util.Resolver marker:DEV thread:NameTableLoad-thread-1-32
+   MDC:{msgId=-1, nstFunction=com.atakmap.android.multipix.MultiPixCaptureActivity.openCamera~com.atakmap.android.multipix.MultiPixCaptureActivity^, nstSourceInfo=MultiPixCaptureActivity.java.nst:816:816:26, severity=INTERNAL_WARNING, sourceInfo=MultiPixCaptureActivity.java:256:279:5, step=NST_PARSE, visitor=com.fortify.sca.nst.util.Resolver} NDC:[]
+[2026-05-15 19:05:51.809 WARN  ]
+Unresolved variable: Toast @ MultiPixCaptureActivity.java:275
+   logger:com.fortify.sca.nst.util.Resolver marker:DEV thread:NameTableLoad-thread-1-32
+   MDC:{msgId=-1, nstFunction=com.atakmap.android.multipix.MultiPixCaptureActivity.openCamera~com.atakmap.android.multipix.MultiPixCaptureActivity^, nstSourceInfo=MultiPixCaptureActivity.java.nst:816:816:26, severity=INTERNAL_WARNING, sourceInfo=MultiPixCaptureActivity.java:256:279:5, step=NST_PARSE, visitor=com.fortify.sca.nst.util.Resolver} NDC:[]
+[2026-05-15 19:05:51.810 WARN  ]
+Unresolved variable: Camera @ MultiPixCaptureActivity.java:282
+   logger:com.fortify.sca.nst.util.Resolver marker:DEV thread:NameTableLoad-thread-1-32
+   MDC:{msgId=-1, nstFunction=com.atakmap.android.multipix.MultiPixCaptureActivity.findBackCameraId~com.atakmap.android.multipix.MultiPixCaptureActivity^, nstSourceInfo=MultiPixCaptureActivity.java.nst:941:941:25, severity=INTERNAL_WARNING, sourceInfo=MultiPixCaptureActivity.java:281:291:5, step=NST_PARSE, visitor=com.fortify.sca.nst.util.Resolver} NDC:[]
+[2026-05-15 19:05:51.810 WARN  ]
+Unresolved variable: Camera @ MultiPixCaptureActivity.java:295
+   logger:com.fortify.sca.nst.util.Resolver marker:DEV thread:NameTableLoad-thread-1-32
+   MDC:{msgId=-1, nstFunction=com.atakmap.android.multipix.MultiPixCaptureActivity.applyLandscapeOrientation~com.atakmap.android.multipix.MultiPixCaptureActivity^Camera.Parameters^, nstSourceInfo=MultiPixCaptureActivity.java.nst:999:999:26, severity=INTERNAL_WARNING, sourceInfo=MultiPixCaptureActivity.java:293:308:5, step=NST_PARSE, visitor=com.fortify.sca.nst.util.Resolver} NDC:[]
+[2026-05-15 19:05:51.812 WARN  ]
+Unresolved variable: Toast @ MultiPixCaptureActivity.java:368
+   logger:com.fortify.sca.nst.util.Resolver marker:DEV thread:NameTableLoad-thread-1-32
+   MDC:{msgId=-1, nstFunction=com.atakmap.android.multipix.MultiPixCaptureActivity.capturePhoto~com.atakmap.android.multipix.MultiPixCaptureActivity^, nstSourceInfo=MultiPixCaptureActivity.java.nst:1256:1256:26, severity=INTERNAL_WARNING, sourceInfo=MultiPixCaptureActivity.java:340:371:5, step=NST_PARSE, visitor=com.fortify.sca.nst.util.Resolver} NDC:[]
+[2026-05-15 19:05:51.813 WARN  ]
+Unresolved variable: Toast @ MultiPixCaptureActivity.java:375
+   logger:com.fortify.sca.nst.util.Resolver marker:DEV thread:NameTableLoad-thread-1-32
+   MDC:{msgId=-1, nstFunction=com.atakmap.android.multipix.MultiPixCaptureActivity.savePhoto~com.atakmap.android.multipix.MultiPixCaptureActivity^byte_A1^java.lang.Float^, nstSourceInfo=MultiPixCaptureActivity.java.nst:1370:1370:26, severity=INTERNAL_WARNING, sourceInfo=MultiPixCaptureActivity.java:373:414:5, step=NST_PARSE, visitor=com.fortify.sca.nst.util.Resolver} NDC:[]
+[2026-05-15 19:05:51.814 WARN  ]
+Unresolved variable: Environment @ MultiPixCaptureActivity.java:422
+   logger:com.fortify.sca.nst.util.Resolver marker:DEV thread:NameTableLoad-thread-1-32
+   MDC:{msgId=-1, nstFunction=com.atakmap.android.multipix.MultiPixCaptureActivity.savePhotoToMediaStore~com.atakmap.android.multipix.MultiPixCaptureActivity^byte_A1^java.lang.Float^, nstSourceInfo=MultiPixCaptureActivity.java.nst:1623:1623:88, severity=INTERNAL_WARNING, sourceInfo=MultiPixCaptureActivity.java:416:473:5, step=NST_PARSE, visitor=com.fortify.sca.nst.util.Resolver} NDC:[]
+[2026-05-15 19:05:51.817 WARN  ]
+Unresolved variable: Environment @ MultiPixCaptureActivity.java:484
+   logger:com.fortify.sca.nst.util.Resolver marker:DEV thread:NameTableLoad-thread-1-32
+   MDC:{msgId=-1, nstFunction=com.atakmap.android.multipix.MultiPixCaptureActivity.getSharedPendingDirectory~com.atakmap.android.multipix.MultiPixCaptureActivity^, nstSourceInfo=MultiPixCaptureActivity.java.nst:1998:1998:36, severity=INTERNAL_WARNING, sourceInfo=MultiPixCaptureActivity.java:475:497:5, step=NST_PARSE, visitor=com.fortify.sca.nst.util.Resolver} NDC:[]
+[2026-05-15 19:05:51.819 WARN  ]
+Unresolved variable: MODE_PRIVATE @ MultiPixCaptureActivity.java:523
+   logger:com.fortify.sca.nst.util.Resolver marker:DEV thread:NameTableLoad-thread-1-32
+   MDC:{msgId=-1, nstFunction=com.atakmap.android.multipix.MultiPixCaptureActivity.storeSession~com.atakmap.android.multipix.MultiPixCaptureActivity^, nstSourceInfo=MultiPixCaptureActivity.java.nst:2313:2313:26, severity=INTERNAL_WARNING, sourceInfo=MultiPixCaptureActivity.java:522:527:5, step=NST_PARSE, visitor=com.fortify.sca.nst.util.Resolver} NDC:[]
+[2026-05-15 19:05:51.820 WARN  ]
+Unresolved variable: Uri @ MultiPixCaptureActivity.java:578
+   logger:com.fortify.sca.nst.util.Resolver marker:DEV thread:NameTableLoad-thread-1-32
+   MDC:{msgId=-1, nstFunction=com.atakmap.android.multipix.MultiPixCaptureActivity.getPhotoUriClipData~com.atakmap.android.multipix.MultiPixCaptureActivity^, nstSourceInfo=MultiPixCaptureActivity.java.nst:2535:2535:61, severity=INTERNAL_WARNING, sourceInfo=MultiPixCaptureActivity.java:571:587:5, step=NST_PARSE, visitor=com.fortify.sca.nst.util.Resolver} NDC:[]
+[2026-05-15 19:05:51.820 WARN  ]
+Unresolved variable: ClipData @ MultiPixCaptureActivity.java:580
+   logger:com.fortify.sca.nst.util.Resolver marker:DEV thread:NameTableLoad-thread-1-32
+   MDC:{msgId=-1, nstFunction=com.atakmap.android.multipix.MultiPixCaptureActivity.getPhotoUriClipData~com.atakmap.android.multipix.MultiPixCaptureActivity^, nstSourceInfo=MultiPixCaptureActivity.java.nst:2535:2535:61, severity=INTERNAL_WARNING, sourceInfo=MultiPixCaptureActivity.java:571:587:5, step=NST_PARSE, visitor=com.fortify.sca.nst.util.Resolver} NDC:[]
+[2026-05-15 19:05:51.821 WARN  ]
+Unresolved variable: MODE_PRIVATE @ MultiPixCaptureActivity.java:590
+   logger:com.fortify.sca.nst.util.Resolver marker:DEV thread:NameTableLoad-thread-1-32
+   MDC:{msgId=-1, nstFunction=com.atakmap.android.multipix.MultiPixCaptureActivity.clearStoredSession~com.atakmap.android.multipix.MultiPixCaptureActivity^, nstSourceInfo=MultiPixCaptureActivity.java.nst:2605:2605:26, severity=INTERNAL_WARNING, sourceInfo=MultiPixCaptureActivity.java:589:594:5, step=NST_PARSE, visitor=com.fortify.sca.nst.util.Resolver} NDC:[]
+[2026-05-15 19:05:51.863 WARN  ]
+Unresolved variable: SensorManager @ MultiPixCaptureActivity.java:628
+   logger:com.fortify.sca.nst.util.Resolver marker:DEV thread:NameTableLoad-thread-1-32
+   MDC:{msgId=-1, nstFunction=com.atakmap.android.multipix.MultiPixCaptureActivity.updateHeadingFromFallbackSensors~com.atakmap.android.multipix.MultiPixCaptureActivity^, nstSourceInfo=MultiPixCaptureActivity.java.nst:2696:2696:26, severity=INTERNAL_WARNING, sourceInfo=MultiPixCaptureActivity.java:621:632:5, step=NST_PARSE, visitor=com.fortify.sca.nst.util.Resolver} NDC:[]
+[2026-05-15 19:05:51.991 WARN  ]
+Recovered from NST parsing problems in /app/.fortify/sca25.4/build/tak_fortify/app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixDropDownReceiver.java.nst at: 1915:30, 1976:30
+   logger:com.fortify.sca.nst.reader.parser.NSTParser marker:DEV thread:NameTableLoad-thread-1-32
+   MDC:{msgId=-1, nstSourceInfo=MultiPixDropDownReceiver.java.nst, severity=INTERNAL_WARNING, sourceInfo=MultiPixDropDownReceiver.java, step=NST_PARSE} NDC:[timerNSTReader.parse]
+[2026-05-15 19:05:52.075 WARN  ]
+Unresolved variable: PluginLayoutInflater @ MultiPixDropDownReceiver.java:89
+   logger:com.fortify.sca.nst.util.Resolver marker:DEV thread:NameTableLoad-thread-1-32
+   MDC:{msgId=-1, nstFunction=com.atakmap.android.multipix.MultiPixDropDownReceiver.init^~com.atakmap.android.multipix.MultiPixDropDownReceiver^com.atakmap.android.multipix.MapView^com.atakmap.android.multipix.Context^, nstSourceInfo=MultiPixDropDownReceiver.java.nst:163:163:25, severity=INTERNAL_WARNING, sourceInfo=MultiPixDropDownReceiver.java:83:105:5, step=NST_PARSE, visitor=com.fortify.sca.nst.util.Resolver} NDC:[]
+[2026-05-15 19:05:52.076 WARN  ]
+Unresolved variable: Log @ MultiPixDropDownReceiver.java:144
+   logger:com.fortify.sca.nst.util.Resolver marker:DEV thread:NameTableLoad-thread-1-32
+   MDC:{msgId=-1, nstFunction=com.atakmap.android.multipix.MultiPixDropDownReceiver.launchCaptureActivity~com.atakmap.android.multipix.MultiPixDropDownReceiver^, nstSourceInfo=MultiPixDropDownReceiver.java.nst:353:353:26, severity=INTERNAL_WARNING, sourceInfo=MultiPixDropDownReceiver.java:143:152:5, step=NST_PARSE, visitor=com.fortify.sca.nst.util.Resolver} NDC:[]
+[2026-05-15 19:05:52.077 WARN  ]
+Unresolved variable: Log @ MultiPixDropDownReceiver.java:176
+   logger:com.fortify.sca.nst.util.Resolver marker:DEV thread:NameTableLoad-thread-1-32
+   MDC:{msgId=-1, nstFunction=com.atakmap.android.multipix.MultiPixDropDownReceiver.receiveCaptureSession~com.atakmap.android.multipix.MultiPixDropDownReceiver^java.lang.String^java.util.List^, nstSourceInfo=MultiPixDropDownReceiver.java.nst:383:383:26, severity=INTERNAL_WARNING, sourceInfo=MultiPixDropDownReceiver.java:154:195:5, step=NST_PARSE, visitor=com.fortify.sca.nst.util.Resolver} NDC:[]
+[2026-05-15 19:05:52.077 WARN  ]
+Unresolved variable: THREE_EIGHTHS_WIDTH @ MultiPixDropDownReceiver.java:193
+   logger:com.fortify.sca.nst.util.Resolver marker:DEV thread:NameTableLoad-thread-1-32
+   MDC:{msgId=-1, nstFunction=com.atakmap.android.multipix.MultiPixDropDownReceiver.receiveCaptureSession~com.atakmap.android.multipix.MultiPixDropDownReceiver^java.lang.String^java.util.List^, nstSourceInfo=MultiPixDropDownReceiver.java.nst:383:383:26, severity=INTERNAL_WARNING, sourceInfo=MultiPixDropDownReceiver.java:154:195:5, step=NST_PARSE, visitor=com.fortify.sca.nst.util.Resolver} NDC:[]
+[2026-05-15 19:05:52.077 WARN  ]
+Unresolved variable: FULL_HEIGHT @ MultiPixDropDownReceiver.java:193
+   logger:com.fortify.sca.nst.util.Resolver marker:DEV thread:NameTableLoad-thread-1-32
+   MDC:{msgId=-1, nstFunction=com.atakmap.android.multipix.MultiPixDropDownReceiver.receiveCaptureSession~com.atakmap.android.multipix.MultiPixDropDownReceiver^java.lang.String^java.util.List^, nstSourceInfo=MultiPixDropDownReceiver.java.nst:383:383:26, severity=INTERNAL_WARNING, sourceInfo=MultiPixDropDownReceiver.java:154:195:5, step=NST_PARSE, visitor=com.fortify.sca.nst.util.Resolver} NDC:[]
+[2026-05-15 19:05:52.078 WARN  ]
+Unresolved variable: FULL_WIDTH @ MultiPixDropDownReceiver.java:193
+   logger:com.fortify.sca.nst.util.Resolver marker:DEV thread:NameTableLoad-thread-1-32
+   MDC:{msgId=-1, nstFunction=com.atakmap.android.multipix.MultiPixDropDownReceiver.receiveCaptureSession~com.atakmap.android.multipix.MultiPixDropDownReceiver^java.lang.String^java.util.List^, nstSourceInfo=MultiPixDropDownReceiver.java.nst:383:383:26, severity=INTERNAL_WARNING, sourceInfo=MultiPixDropDownReceiver.java:154:195:5, step=NST_PARSE, visitor=com.fortify.sca.nst.util.Resolver} NDC:[]
+[2026-05-15 19:05:52.078 WARN  ]
+Unresolved variable: HALF_HEIGHT @ MultiPixDropDownReceiver.java:194
+   logger:com.fortify.sca.nst.util.Resolver marker:DEV thread:NameTableLoad-thread-1-32
+   MDC:{msgId=-1, nstFunction=com.atakmap.android.multipix.MultiPixDropDownReceiver.receiveCaptureSession~com.atakmap.android.multipix.MultiPixDropDownReceiver^java.lang.String^java.util.List^, nstSourceInfo=MultiPixDropDownReceiver.java.nst:383:383:26, severity=INTERNAL_WARNING, sourceInfo=MultiPixDropDownReceiver.java:154:195:5, step=NST_PARSE, visitor=com.fortify.sca.nst.util.Resolver} NDC:[]
+[2026-05-15 19:05:52.080 WARN  ]
+Unresolved variable: Log @ MultiPixDropDownReceiver.java:252
+   logger:com.fortify.sca.nst.util.Resolver marker:DEV thread:NameTableLoad-thread-1-32
+   MDC:{msgId=-1, nstFunction=com.atakmap.android.multipix.MultiPixDropDownReceiver.readPhotoRecords~com.atakmap.android.multipix.MultiPixDropDownReceiver^java.lang.String^, nstSourceInfo=MultiPixDropDownReceiver.java.nst:766:766:113, severity=INTERNAL_WARNING, sourceInfo=MultiPixDropDownReceiver.java:222:255:5, step=NST_PARSE, visitor=com.fortify.sca.nst.util.Resolver} NDC:[]
+[2026-05-15 19:05:52.082 WARN  ]
+Unresolved variable: Uri @ MultiPixDropDownReceiver.java:273
+   logger:com.fortify.sca.nst.util.Resolver marker:DEV thread:NameTableLoad-thread-1-32
+   MDC:{msgId=-1, nstFunction=com.atakmap.android.multipix.MultiPixDropDownReceiver.copyPhotoUriToPendingFile~com.atakmap.android.multipix.MultiPixDropDownReceiver^java.lang.String^int^, nstSourceInfo=MultiPixDropDownReceiver.java.nst:1022:1022:36, severity=INTERNAL_WARNING, sourceInfo=MultiPixDropDownReceiver.java:269:311:5, step=NST_PARSE, visitor=com.fortify.sca.nst.util.Resolver} NDC:[]
+[2026-05-15 19:05:52.082 WARN  ]
+Unresolved variable: Log @ MultiPixDropDownReceiver.java:295
+   logger:com.fortify.sca.nst.util.Resolver marker:DEV thread:NameTableLoad-thread-1-32
+   MDC:{msgId=-1, nstFunction=com.atakmap.android.multipix.MultiPixDropDownReceiver.copyPhotoUriToPendingFile~com.atakmap.android.multipix.MultiPixDropDownReceiver^java.lang.String^int^, nstSourceInfo=MultiPixDropDownReceiver.java.nst:1022:1022:36, severity=INTERNAL_WARNING, sourceInfo=MultiPixDropDownReceiver.java:269:311:5, step=NST_PARSE, visitor=com.fortify.sca.nst.util.Resolver} NDC:[]
+[2026-05-15 19:05:52.085 WARN  ]
+Unresolved variable: BitmapFactory @ MultiPixDropDownReceiver.java:382
+   logger:com.fortify.sca.nst.util.Resolver marker:DEV thread:NameTableLoad-thread-1-32
+   MDC:{msgId=-1, nstFunction=com.atakmap.android.multipix.MultiPixDropDownReceiver.decodeThumbnail~com.atakmap.android.multipix.MultiPixDropDownReceiver^java.io.File^, nstSourceInfo=MultiPixDropDownReceiver.java.nst:1905:1905:59, severity=INTERNAL_WARNING, sourceInfo=MultiPixDropDownReceiver.java:379:393:5, step=NST_PARSE, visitor=com.fortify.sca.nst.util.Resolver} NDC:[]
+[2026-05-15 19:05:52.086 WARN  ]
+Unresolved variable: Toast @ MultiPixDropDownReceiver.java:399
+   logger:com.fortify.sca.nst.util.Resolver marker:DEV thread:NameTableLoad-thread-1-32
+   MDC:{msgId=-1, nstFunction=com.atakmap.android.multipix.MultiPixDropDownReceiver.saveSession~com.atakmap.android.multipix.MultiPixDropDownReceiver^, nstSourceInfo=MultiPixDropDownReceiver.java.nst:1988:1988:26, severity=INTERNAL_WARNING, sourceInfo=MultiPixDropDownReceiver.java:395:440:5, step=NST_PARSE, visitor=com.fortify.sca.nst.util.Resolver} NDC:[]
+[2026-05-15 19:05:52.086 WARN  ]
+Unresolved variable: AttachmentManager @ MultiPixDropDownReceiver.java:415
+   logger:com.fortify.sca.nst.util.Resolver marker:DEV thread:NameTableLoad-thread-1-32
+   MDC:{msgId=-1, nstFunction=com.atakmap.android.multipix.MultiPixDropDownReceiver.saveSession~com.atakmap.android.multipix.MultiPixDropDownReceiver^, nstSourceInfo=MultiPixDropDownReceiver.java.nst:1988:1988:26, severity=INTERNAL_WARNING, sourceInfo=MultiPixDropDownReceiver.java:395:440:5, step=NST_PARSE, visitor=com.fortify.sca.nst.util.Resolver} NDC:[]
+[2026-05-15 19:05:52.086 WARN  ]
+Unresolved variable: Log @ MultiPixDropDownReceiver.java:424
+   logger:com.fortify.sca.nst.util.Resolver marker:DEV thread:NameTableLoad-thread-1-32
+   MDC:{msgId=-1, nstFunction=com.atakmap.android.multipix.MultiPixDropDownReceiver.saveSession~com.atakmap.android.multipix.MultiPixDropDownReceiver^, nstSourceInfo=MultiPixDropDownReceiver.java.nst:1988:1988:26, severity=INTERNAL_WARNING, sourceInfo=MultiPixDropDownReceiver.java:395:440:5, step=NST_PARSE, visitor=com.fortify.sca.nst.util.Resolver} NDC:[]
+[2026-05-15 19:05:52.098 INFO  ]
+Loaded nametable with 2 compilation units
+   logger:com.fortify.sca.util.Parallelizer marker:DEV thread:NameTableLoad-thread-1-32
+   MDC:{msgId=-1, severity=LOG_STATUS, step=NST_PARSE} NDC:[]
+[2026-05-15 19:05:52.107 WARN  ]
+Unresolved variable: Log @ MultiPixMapComponent.java:32
+   logger:com.fortify.sca.nst.util.Resolver marker:DEV thread:NameTableLoad-thread-1-32
+   MDC:{msgId=-1, nstFunction=com.atakmap.android.multipix.MultiPixMapComponent.onCreate~com.atakmap.android.multipix.MultiPixMapComponent^com.atakmap.android.multipix.Context^com.atakmap.android.multipix.Intent^com.atakmap.android.multipix.MapView^, nstSourceInfo=MultiPixMapComponent.java.nst:9:9:25, severity=INTERNAL_WARNING, sourceInfo=MultiPixMapComponent.java:22:36:5, step=NST_PARSE, visitor=com.fortify.sca.nst.util.Resolver} NDC:[]
+[2026-05-15 19:05:52.311 INFO  ]
+Loaded nametable with 3 compilation units
+   logger:com.fortify.sca.util.Parallelizer marker:DEV thread:NameTableLoad-thread-1-32
+   MDC:{msgId=-1, severity=LOG_STATUS, step=NST_PARSE} NDC:[]
+[2026-05-15 19:05:52.318 INFO  ]
+Loaded nametable with 4 compilation units
+   logger:com.fortify.sca.util.Parallelizer marker:DEV thread:NameTableLoad-thread-1-32
+   MDC:{msgId=-1, severity=LOG_STATUS, step=NST_PARSE} NDC:[]
+[2026-05-15 19:05:52.368 INFO  ]
+Loaded nametable with 5 compilation units
+   logger:com.fortify.sca.util.Parallelizer marker:DEV thread:NameTableLoad-thread-1-32
+   MDC:{msgId=-1, severity=LOG_STATUS, step=NST_PARSE} NDC:[]
+[2026-05-15 19:05:52.377 INFO  ]
+Loaded nametable with 6 compilation units
+   logger:com.fortify.sca.util.Parallelizer marker:DEV thread:NameTableLoad-thread-1-32
+   MDC:{msgId=-1, severity=LOG_STATUS, step=NST_PARSE} NDC:[]
+[2026-05-15 19:05:52.380 INFO  ]
+Loaded nametable with 7 compilation units
+   logger:com.fortify.sca.util.Parallelizer marker:DEV thread:NameTableLoad-thread-1-32
+   MDC:{msgId=-1, severity=LOG_STATUS, step=NST_PARSE} NDC:[]
+[2026-05-15 19:06:13.482 WARN  20511]
+Unable to locate metadata for function getAction at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixDropDownReceiver.java:72:44
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:ReachingTypes-thread-2-43
+   MDC:{msgId=20511, nstFunction=com.atakmap.android.multipix.MultiPixDropDownReceiver$1.onReceive~com.atakmap.android.multipix.MultiPixDropDownReceiver$1^com.atakmap.android.multipix.Context^com.atakmap.android.multipix.Intent^, nstSourceInfo=MultiPixDropDownReceiver.java.nst:9:9:25, severity=NONE, sourceInfo=MultiPixDropDownReceiver.java:70:80:1, step=BUILD_CALLGRAPH, visitor=com.fortify.sca.analyzer.callgraph.CallGraphBuilder$ReachingTypeVisitor} NDC:[timerCallGraphBuilder.ReachingTypes]
+[2026-05-15 19:06:13.484 WARN  20511]
+Unable to locate metadata for function getStringExtra at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixDropDownReceiver.java:75:45
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:ReachingTypes-thread-2-43
+   MDC:{msgId=20511, nstFunction=com.atakmap.android.multipix.MultiPixDropDownReceiver$1.onReceive~com.atakmap.android.multipix.MultiPixDropDownReceiver$1^com.atakmap.android.multipix.Context^com.atakmap.android.multipix.Intent^, nstSourceInfo=MultiPixDropDownReceiver.java.nst:9:9:25, severity=NONE, sourceInfo=MultiPixDropDownReceiver.java:70:80:1, step=BUILD_CALLGRAPH, visitor=com.fortify.sca.analyzer.callgraph.CallGraphBuilder$ReachingTypeVisitor} NDC:[timerCallGraphBuilder.ReachingTypes]
+[2026-05-15 19:06:13.484 WARN  20511]
+Unable to locate metadata for function getStringArrayListExtra at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixDropDownReceiver.java:77:54
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:ReachingTypes-thread-2-43
+   MDC:{msgId=20511, nstFunction=com.atakmap.android.multipix.MultiPixDropDownReceiver$1.onReceive~com.atakmap.android.multipix.MultiPixDropDownReceiver$1^com.atakmap.android.multipix.Context^com.atakmap.android.multipix.Intent^, nstSourceInfo=MultiPixDropDownReceiver.java.nst:9:9:25, severity=NONE, sourceInfo=MultiPixDropDownReceiver.java:70:80:1, step=BUILD_CALLGRAPH, visitor=com.fortify.sca.analyzer.callgraph.CallGraphBuilder$ReachingTypeVisitor} NDC:[timerCallGraphBuilder.ReachingTypes]
+[2026-05-15 19:06:13.517 WARN  20511]
+Unable to locate metadata for function makeText at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixCaptureActivity.java:156:27
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:ReachingTypes-thread-1-42
+   MDC:{msgId=20511, nstFunction=com.atakmap.android.multipix.MultiPixCaptureActivity$4.onClick~com.atakmap.android.multipix.MultiPixCaptureActivity$4^com.atakmap.android.multipix.View^, nstSourceInfo=MultiPixCaptureActivity.java.nst:138:138:25, severity=NONE, sourceInfo=MultiPixCaptureActivity.java:154:162:1, step=BUILD_CALLGRAPH, visitor=com.fortify.sca.analyzer.callgraph.CallGraphBuilder$ReachingTypeVisitor} NDC:[timerCallGraphBuilder.ReachingTypes]
+[2026-05-15 19:06:13.521 WARN  20511]
+Unable to locate metadata for function getService at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/plugin/MultiPixLifecycle.java:14:26
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:ReachingTypes-thread-3-44
+   MDC:{msgId=20511, nstFunction=com.atakmap.android.multipix.plugin.MultiPixLifecycle.init^~com.atakmap.android.multipix.plugin.MultiPixLifecycle^com.atakmap.android.multipix.plugin.IServiceController^, nstSourceInfo=MultiPixLifecycle.java.nst:9:9:25, severity=NONE, sourceInfo=MultiPixLifecycle.java:11:20:5, step=BUILD_CALLGRAPH, visitor=com.fortify.sca.analyzer.callgraph.CallGraphBuilder$ReachingTypeVisitor} NDC:[timerCallGraphBuilder.ReachingTypes]
+[2026-05-15 19:06:13.522 WARN  20511]
+Unable to locate metadata for function getPluginContext at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/plugin/MultiPixLifecycle.java:15:26
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:ReachingTypes-thread-3-44
+   MDC:{msgId=20511, nstFunction=com.atakmap.android.multipix.plugin.MultiPixLifecycle.init^~com.atakmap.android.multipix.plugin.MultiPixLifecycle^com.atakmap.android.multipix.plugin.IServiceController^, nstSourceInfo=MultiPixLifecycle.java.nst:9:9:25, severity=NONE, sourceInfo=MultiPixLifecycle.java:11:20:5, step=BUILD_CALLGRAPH, visitor=com.fortify.sca.analyzer.callgraph.CallGraphBuilder$ReachingTypeVisitor} NDC:[timerCallGraphBuilder.ReachingTypes]
+[2026-05-15 19:06:13.527 WARN  20511]
+Unable to locate metadata for function getString at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/plugin/MultiPixTool.java:14:25
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:ReachingTypes-thread-3-44
+   MDC:{msgId=20511, nstFunction=com.atakmap.android.multipix.plugin.MultiPixTool.init^~com.atakmap.android.multipix.plugin.MultiPixTool^com.atakmap.android.multipix.plugin.Context^, nstSourceInfo=MultiPixTool.java.nst:9:9:25, severity=NONE, sourceInfo=MultiPixTool.java:12:18:5, step=BUILD_CALLGRAPH, visitor=com.fortify.sca.analyzer.callgraph.CallGraphBuilder$ReachingTypeVisitor} NDC:[timerCallGraphBuilder.ReachingTypes]
+[2026-05-15 19:06:13.527 WARN  20511]
+Unable to locate metadata for function getResources at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/plugin/MultiPixTool.java:16:25
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:ReachingTypes-thread-3-44
+   MDC:{msgId=20511, nstFunction=com.atakmap.android.multipix.plugin.MultiPixTool.init^~com.atakmap.android.multipix.plugin.MultiPixTool^com.atakmap.android.multipix.plugin.Context^, nstSourceInfo=MultiPixTool.java.nst:9:9:25, severity=NONE, sourceInfo=MultiPixTool.java:12:18:5, step=BUILD_CALLGRAPH, visitor=com.fortify.sca.analyzer.callgraph.CallGraphBuilder$ReachingTypeVisitor} NDC:[timerCallGraphBuilder.ReachingTypes]
+[2026-05-15 19:06:13.528 WARN  20511]
+Unable to locate metadata for function getDrawable at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/plugin/MultiPixTool.java:16:40
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:ReachingTypes-thread-3-44
+   MDC:{msgId=20511, nstFunction=com.atakmap.android.multipix.plugin.MultiPixTool.init^~com.atakmap.android.multipix.plugin.MultiPixTool^com.atakmap.android.multipix.plugin.Context^, nstSourceInfo=MultiPixTool.java.nst:9:9:25, severity=NONE, sourceInfo=MultiPixTool.java:12:18:5, step=BUILD_CALLGRAPH, visitor=com.fortify.sca.analyzer.callgraph.CallGraphBuilder$ReachingTypeVisitor} NDC:[timerCallGraphBuilder.ReachingTypes]
+[2026-05-15 19:06:13.581 WARN  20511]
+Unable to locate metadata for function getContext at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixDropDownReceiver.java:87:36
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:ReachingTypes-thread-2-43
+   MDC:{msgId=20511, nstFunction=com.atakmap.android.multipix.MultiPixDropDownReceiver.init^~com.atakmap.android.multipix.MultiPixDropDownReceiver^com.atakmap.android.multipix.MapView^com.atakmap.android.multipix.Context^, nstSourceInfo=MultiPixDropDownReceiver.java.nst:163:163:25, severity=NONE, sourceInfo=MultiPixDropDownReceiver.java:83:105:5, step=BUILD_CALLGRAPH, visitor=com.fortify.sca.analyzer.callgraph.CallGraphBuilder$ReachingTypeVisitor} NDC:[timerCallGraphBuilder.ReachingTypes]
+[2026-05-15 19:06:13.581 WARN  20511]
+Unable to locate metadata for function inflate at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixDropDownReceiver.java:89:43
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:ReachingTypes-thread-2-43
+   MDC:{msgId=20511, nstFunction=com.atakmap.android.multipix.MultiPixDropDownReceiver.init^~com.atakmap.android.multipix.MultiPixDropDownReceiver^com.atakmap.android.multipix.MapView^com.atakmap.android.multipix.Context^, nstSourceInfo=MultiPixDropDownReceiver.java.nst:163:163:25, severity=NONE, sourceInfo=MultiPixDropDownReceiver.java:83:105:5, step=BUILD_CALLGRAPH, visitor=com.fortify.sca.analyzer.callgraph.CallGraphBuilder$ReachingTypeVisitor} NDC:[timerCallGraphBuilder.ReachingTypes]
+[2026-05-15 19:06:13.582 WARN  20511]
+Unable to locate metadata for function findViewById at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixDropDownReceiver.java:91:34
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:ReachingTypes-thread-2-43
+   MDC:{msgId=20511, nstFunction=com.atakmap.android.multipix.MultiPixDropDownReceiver.init^~com.atakmap.android.multipix.MultiPixDropDownReceiver^com.atakmap.android.multipix.MapView^com.atakmap.android.multipix.Context^, nstSourceInfo=MultiPixDropDownReceiver.java.nst:163:163:25, severity=NONE, sourceInfo=MultiPixDropDownReceiver.java:83:105:5, step=BUILD_CALLGRAPH, visitor=com.fortify.sca.analyzer.callgraph.CallGraphBuilder$ReachingTypeVisitor} NDC:[timerCallGraphBuilder.ReachingTypes]
+[2026-05-15 19:06:13.604 WARN  20511]
+Unable to locate metadata for function getWindow at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixCaptureActivity.java:82:9
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:ReachingTypes-thread-1-42
+   MDC:{msgId=20511, nstFunction=com.atakmap.android.multipix.MultiPixCaptureActivity.onCreate~com.atakmap.android.multipix.MultiPixCaptureActivity^com.atakmap.android.multipix.Bundle^, nstSourceInfo=MultiPixCaptureActivity.java.nst:257:257:28, severity=NONE, sourceInfo=MultiPixCaptureActivity.java:79:101:1, step=BUILD_CALLGRAPH, visitor=com.fortify.sca.analyzer.callgraph.CallGraphBuilder$ReachingTypeVisitor} NDC:[timerCallGraphBuilder.ReachingTypes]
+[2026-05-15 19:06:13.604 WARN  20511]
+Unable to locate metadata for function getSystemService at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixCaptureActivity.java:83:41
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:ReachingTypes-thread-1-42
+   MDC:{msgId=20511, nstFunction=com.atakmap.android.multipix.MultiPixCaptureActivity.onCreate~com.atakmap.android.multipix.MultiPixCaptureActivity^com.atakmap.android.multipix.Bundle^, nstSourceInfo=MultiPixCaptureActivity.java.nst:257:257:28, severity=NONE, sourceInfo=MultiPixCaptureActivity.java:79:101:1, step=BUILD_CALLGRAPH, visitor=com.fortify.sca.analyzer.callgraph.CallGraphBuilder$ReachingTypeVisitor} NDC:[timerCallGraphBuilder.ReachingTypes]
+[2026-05-15 19:06:13.605 WARN  20511]
+Unable to locate metadata for function getDefaultSensor at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixCaptureActivity.java:85:50
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:ReachingTypes-thread-1-42
+   MDC:{msgId=20511, nstFunction=com.atakmap.android.multipix.MultiPixCaptureActivity.onCreate~com.atakmap.android.multipix.MultiPixCaptureActivity^com.atakmap.android.multipix.Bundle^, nstSourceInfo=MultiPixCaptureActivity.java.nst:257:257:28, severity=NONE, sourceInfo=MultiPixCaptureActivity.java:79:101:1, step=BUILD_CALLGRAPH, visitor=com.fortify.sca.analyzer.callgraph.CallGraphBuilder$ReachingTypeVisitor} NDC:[timerCallGraphBuilder.ReachingTypes]
+[2026-05-15 19:06:13.606 WARN  20511]
+Unable to locate metadata for function checkSelfPermission at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixCaptureActivity.java:96:20
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:ReachingTypes-thread-1-42
+   MDC:{msgId=20511, nstFunction=com.atakmap.android.multipix.MultiPixCaptureActivity.onCreate~com.atakmap.android.multipix.MultiPixCaptureActivity^com.atakmap.android.multipix.Bundle^, nstSourceInfo=MultiPixCaptureActivity.java.nst:257:257:28, severity=NONE, sourceInfo=MultiPixCaptureActivity.java:79:101:1, step=BUILD_CALLGRAPH, visitor=com.fortify.sca.analyzer.callgraph.CallGraphBuilder$ReachingTypeVisitor} NDC:[timerCallGraphBuilder.ReachingTypes]
+[2026-05-15 19:06:13.611 WARN  20511]
+Unable to locate metadata for function getPackageName at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixDropDownReceiver.java:146:43
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:ReachingTypes-thread-2-43
+   MDC:{msgId=20511, nstFunction=com.atakmap.android.multipix.MultiPixDropDownReceiver.launchCaptureActivity~com.atakmap.android.multipix.MultiPixDropDownReceiver^, nstSourceInfo=MultiPixDropDownReceiver.java.nst:353:353:26, severity=NONE, sourceInfo=MultiPixDropDownReceiver.java:143:152:5, step=BUILD_CALLGRAPH, visitor=com.fortify.sca.analyzer.callgraph.CallGraphBuilder$ReachingTypeVisitor} NDC:[timerCallGraphBuilder.ReachingTypes]
+[2026-05-15 19:06:13.620 WARN  20511]
+Unable to locate metadata for function getHolder at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixCaptureActivity.java:107:26
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:ReachingTypes-thread-1-42
+   MDC:{msgId=20511, nstFunction=com.atakmap.android.multipix.MultiPixCaptureActivity.buildUi~com.atakmap.android.multipix.MultiPixCaptureActivity^, nstSourceInfo=MultiPixCaptureActivity.java.nst:350:350:26, severity=NONE, sourceInfo=MultiPixCaptureActivity.java:103:182:5, step=BUILD_CALLGRAPH, visitor=com.fortify.sca.analyzer.callgraph.CallGraphBuilder$ReachingTypeVisitor} NDC:[timerCallGraphBuilder.ReachingTypes]
+[2026-05-15 19:06:13.719 WARN  20511]
+Unable to locate metadata for function getType at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixCaptureActivity.java:222:26
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:ReachingTypes-thread-1-42
+   MDC:{msgId=20511, nstFunction=com.atakmap.android.multipix.MultiPixCaptureActivity.onSensorChanged~com.atakmap.android.multipix.MultiPixCaptureActivity^com.atakmap.android.multipix.SensorEvent^, nstSourceInfo=MultiPixCaptureActivity.java.nst:671:671:25, severity=NONE, sourceInfo=MultiPixCaptureActivity.java:221:234:1, step=BUILD_CALLGRAPH, visitor=com.fortify.sca.analyzer.callgraph.CallGraphBuilder$ReachingTypeVisitor} NDC:[timerCallGraphBuilder.ReachingTypes]
+[2026-05-15 19:06:13.719 WARN  20511]
+Unable to locate metadata for function clone at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixCaptureActivity.java:228:48
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:ReachingTypes-thread-1-42
+   MDC:{msgId=20511, nstFunction=com.atakmap.android.multipix.MultiPixCaptureActivity.onSensorChanged~com.atakmap.android.multipix.MultiPixCaptureActivity^com.atakmap.android.multipix.SensorEvent^, nstSourceInfo=MultiPixCaptureActivity.java.nst:671:671:25, severity=NONE, sourceInfo=MultiPixCaptureActivity.java:221:234:1, step=BUILD_CALLGRAPH, visitor=com.fortify.sca.analyzer.callgraph.CallGraphBuilder$ReachingTypeVisitor} NDC:[timerCallGraphBuilder.ReachingTypes]
+[2026-05-15 19:06:13.737 WARN  20511]
+Unable to locate metadata for function getMapView at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixDropDownReceiver.java:191:23
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:ReachingTypes-thread-2-43
+   MDC:{msgId=20511, nstFunction=com.atakmap.android.multipix.MultiPixDropDownReceiver.receiveCaptureSession~com.atakmap.android.multipix.MultiPixDropDownReceiver^java.lang.String^java.util.List^, nstSourceInfo=MultiPixDropDownReceiver.java.nst:383:383:26, severity=NONE, sourceInfo=MultiPixDropDownReceiver.java:154:195:5, step=BUILD_CALLGRAPH, visitor=com.fortify.sca.analyzer.callgraph.CallGraphBuilder$ReachingTypeVisitor} NDC:[timerCallGraphBuilder.ReachingTypes]
+[2026-05-15 19:06:13.738 WARN  20511]
+Unable to locate metadata for function getPointWithElevation at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixDropDownReceiver.java:191:36
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:ReachingTypes-thread-2-43
+   MDC:{msgId=20511, nstFunction=com.atakmap.android.multipix.MultiPixDropDownReceiver.receiveCaptureSession~com.atakmap.android.multipix.MultiPixDropDownReceiver^java.lang.String^java.util.List^, nstSourceInfo=MultiPixDropDownReceiver.java.nst:383:383:26, severity=NONE, sourceInfo=MultiPixDropDownReceiver.java:154:195:5, step=BUILD_CALLGRAPH, visitor=com.fortify.sca.analyzer.callgraph.CallGraphBuilder$ReachingTypeVisitor} NDC:[timerCallGraphBuilder.ReachingTypes]
+[2026-05-15 19:06:13.738 WARN  20511]
+Unable to locate metadata for function open at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixCaptureActivity.java:262:29
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:ReachingTypes-thread-1-42
+   MDC:{msgId=20511, nstFunction=com.atakmap.android.multipix.MultiPixCaptureActivity.openCamera~com.atakmap.android.multipix.MultiPixCaptureActivity^, nstSourceInfo=MultiPixCaptureActivity.java.nst:816:816:26, severity=NONE, sourceInfo=MultiPixCaptureActivity.java:256:279:5, step=BUILD_CALLGRAPH, visitor=com.fortify.sca.analyzer.callgraph.CallGraphBuilder$ReachingTypeVisitor} NDC:[timerCallGraphBuilder.ReachingTypes]
+[2026-05-15 19:06:13.739 WARN  20511]
+Unable to locate metadata for function getParameters at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixCaptureActivity.java:264:51
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:ReachingTypes-thread-1-42
+   MDC:{msgId=20511, nstFunction=com.atakmap.android.multipix.MultiPixCaptureActivity.openCamera~com.atakmap.android.multipix.MultiPixCaptureActivity^, nstSourceInfo=MultiPixCaptureActivity.java.nst:816:816:26, severity=NONE, sourceInfo=MultiPixCaptureActivity.java:256:279:5, step=BUILD_CALLGRAPH, visitor=com.fortify.sca.analyzer.callgraph.CallGraphBuilder$ReachingTypeVisitor} NDC:[timerCallGraphBuilder.ReachingTypes]
+[2026-05-15 19:06:13.739 WARN  20511]
+Unable to locate metadata for function getSupportedFocusModes at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixCaptureActivity.java:265:50
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:ReachingTypes-thread-1-42
+   MDC:{msgId=20511, nstFunction=com.atakmap.android.multipix.MultiPixCaptureActivity.openCamera~com.atakmap.android.multipix.MultiPixCaptureActivity^, nstSourceInfo=MultiPixCaptureActivity.java.nst:816:816:26, severity=NONE, sourceInfo=MultiPixCaptureActivity.java:256:279:5, step=BUILD_CALLGRAPH, visitor=com.fortify.sca.analyzer.callgraph.CallGraphBuilder$ReachingTypeVisitor} NDC:[timerCallGraphBuilder.ReachingTypes]
+[2026-05-15 19:06:13.742 WARN  20511]
+Unable to locate metadata for function getNumberOfCameras at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixCaptureActivity.java:282:34
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:ReachingTypes-thread-1-42
+   MDC:{msgId=20511, nstFunction=com.atakmap.android.multipix.MultiPixCaptureActivity.findBackCameraId~com.atakmap.android.multipix.MultiPixCaptureActivity^, nstSourceInfo=MultiPixCaptureActivity.java.nst:941:941:25, severity=NONE, sourceInfo=MultiPixCaptureActivity.java:281:291:5, step=BUILD_CALLGRAPH, visitor=com.fortify.sca.analyzer.callgraph.CallGraphBuilder$ReachingTypeVisitor} NDC:[timerCallGraphBuilder.ReachingTypes]
+[2026-05-15 19:06:13.774 WARN  20511]
+Unable to locate metadata for function getWindowManager at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixCaptureActivity.java:311:24
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:ReachingTypes-thread-1-42
+   MDC:{msgId=20511, nstFunction=com.atakmap.android.multipix.MultiPixCaptureActivity.getDisplayRotationDegrees~com.atakmap.android.multipix.MultiPixCaptureActivity^, nstSourceInfo=MultiPixCaptureActivity.java.nst:1048:1048:25, severity=NONE, sourceInfo=MultiPixCaptureActivity.java:310:323:5, step=BUILD_CALLGRAPH, visitor=com.fortify.sca.analyzer.callgraph.CallGraphBuilder$ReachingTypeVisitor} NDC:[timerCallGraphBuilder.ReachingTypes]
+[2026-05-15 19:06:13.775 WARN  20511]
+Unable to locate metadata for function getDefaultDisplay at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixCaptureActivity.java:311:43
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:ReachingTypes-thread-1-42
+   MDC:{msgId=20511, nstFunction=com.atakmap.android.multipix.MultiPixCaptureActivity.getDisplayRotationDegrees~com.atakmap.android.multipix.MultiPixCaptureActivity^, nstSourceInfo=MultiPixCaptureActivity.java.nst:1048:1048:25, severity=NONE, sourceInfo=MultiPixCaptureActivity.java:310:323:5, step=BUILD_CALLGRAPH, visitor=com.fortify.sca.analyzer.callgraph.CallGraphBuilder$ReachingTypeVisitor} NDC:[timerCallGraphBuilder.ReachingTypes]
+[2026-05-15 19:06:13.775 WARN  20511]
+Unable to locate metadata for function getRotation at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixCaptureActivity.java:311:63
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:ReachingTypes-thread-1-42
+   MDC:{msgId=20511, nstFunction=com.atakmap.android.multipix.MultiPixCaptureActivity.getDisplayRotationDegrees~com.atakmap.android.multipix.MultiPixCaptureActivity^, nstSourceInfo=MultiPixCaptureActivity.java.nst:1048:1048:25, severity=NONE, sourceInfo=MultiPixCaptureActivity.java:310:323:5, step=BUILD_CALLGRAPH, visitor=com.fortify.sca.analyzer.callgraph.CallGraphBuilder$ReachingTypeVisitor} NDC:[timerCallGraphBuilder.ReachingTypes]
+[2026-05-15 19:06:13.776 WARN  20511]
+Unable to locate metadata for function getSharedPreferences at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixDropDownReceiver.java:198:55
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:ReachingTypes-thread-2-43
+   MDC:{msgId=20511, nstFunction=com.atakmap.android.multipix.MultiPixDropDownReceiver.readStoredSessionPaths~com.atakmap.android.multipix.MultiPixDropDownReceiver^, nstSourceInfo=MultiPixDropDownReceiver.java.nst:641:641:63, severity=NONE, sourceInfo=MultiPixDropDownReceiver.java:197:213:5, step=BUILD_CALLGRAPH, visitor=com.fortify.sca.analyzer.callgraph.CallGraphBuilder$ReachingTypeVisitor} NDC:[timerCallGraphBuilder.ReachingTypes]
+[2026-05-15 19:06:13.790 WARN  20511]
+Unable to locate metadata for function length at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixDropDownReceiver.java:230:39
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:ReachingTypes-thread-2-43
+   MDC:{msgId=20511, nstFunction=com.atakmap.android.multipix.MultiPixDropDownReceiver.readPhotoRecords~com.atakmap.android.multipix.MultiPixDropDownReceiver^java.lang.String^, nstSourceInfo=MultiPixDropDownReceiver.java.nst:766:766:113, severity=NONE, sourceInfo=MultiPixDropDownReceiver.java:222:255:5, step=BUILD_CALLGRAPH, visitor=com.fortify.sca.analyzer.callgraph.CallGraphBuilder$ReachingTypeVisitor} NDC:[timerCallGraphBuilder.ReachingTypes]
+[2026-05-15 19:06:13.790 WARN  20511]
+Unable to locate metadata for function optJSONObject at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixDropDownReceiver.java:231:43
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:ReachingTypes-thread-2-43
+   MDC:{msgId=20511, nstFunction=com.atakmap.android.multipix.MultiPixDropDownReceiver.readPhotoRecords~com.atakmap.android.multipix.MultiPixDropDownReceiver^java.lang.String^, nstSourceInfo=MultiPixDropDownReceiver.java.nst:766:766:113, severity=NONE, sourceInfo=MultiPixDropDownReceiver.java:222:255:5, step=BUILD_CALLGRAPH, visitor=com.fortify.sca.analyzer.callgraph.CallGraphBuilder$ReachingTypeVisitor} NDC:[timerCallGraphBuilder.ReachingTypes]
+[2026-05-15 19:06:13.790 WARN  20511]
+Unable to locate metadata for function optString at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixDropDownReceiver.java:236:38
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:ReachingTypes-thread-2-43
+   MDC:{msgId=20511, nstFunction=com.atakmap.android.multipix.MultiPixDropDownReceiver.readPhotoRecords~com.atakmap.android.multipix.MultiPixDropDownReceiver^java.lang.String^, nstSourceInfo=MultiPixDropDownReceiver.java.nst:766:766:113, severity=NONE, sourceInfo=MultiPixDropDownReceiver.java:222:255:5, step=BUILD_CALLGRAPH, visitor=com.fortify.sca.analyzer.callgraph.CallGraphBuilder$ReachingTypeVisitor} NDC:[timerCallGraphBuilder.ReachingTypes]
+[2026-05-15 19:06:13.791 WARN  20511]
+Unable to locate metadata for function has at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixDropDownReceiver.java:244:28
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:ReachingTypes-thread-2-43
+   MDC:{msgId=20511, nstFunction=com.atakmap.android.multipix.MultiPixDropDownReceiver.readPhotoRecords~com.atakmap.android.multipix.MultiPixDropDownReceiver^java.lang.String^, nstSourceInfo=MultiPixDropDownReceiver.java.nst:766:766:113, severity=NONE, sourceInfo=MultiPixDropDownReceiver.java:222:255:5, step=BUILD_CALLGRAPH, visitor=com.fortify.sca.analyzer.callgraph.CallGraphBuilder$ReachingTypeVisitor} NDC:[timerCallGraphBuilder.ReachingTypes]
+[2026-05-15 19:06:13.791 WARN  20511]
+Unable to locate metadata for function optDouble at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixDropDownReceiver.java:245:46
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:ReachingTypes-thread-2-43
+   MDC:{msgId=20511, nstFunction=com.atakmap.android.multipix.MultiPixDropDownReceiver.readPhotoRecords~com.atakmap.android.multipix.MultiPixDropDownReceiver^java.lang.String^, nstSourceInfo=MultiPixDropDownReceiver.java.nst:766:766:113, severity=NONE, sourceInfo=MultiPixDropDownReceiver.java:222:255:5, step=BUILD_CALLGRAPH, visitor=com.fortify.sca.analyzer.callgraph.CallGraphBuilder$ReachingTypeVisitor} NDC:[timerCallGraphBuilder.ReachingTypes]
+[2026-05-15 19:06:13.868 WARN  20511]
+Unable to locate metadata for function parse at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixDropDownReceiver.java:273:27
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:ReachingTypes-thread-2-43
+   MDC:{msgId=20511, nstFunction=com.atakmap.android.multipix.MultiPixDropDownReceiver.copyPhotoUriToPendingFile~com.atakmap.android.multipix.MultiPixDropDownReceiver^java.lang.String^int^, nstSourceInfo=MultiPixDropDownReceiver.java.nst:1022:1022:36, severity=NONE, sourceInfo=MultiPixDropDownReceiver.java:269:311:5, step=BUILD_CALLGRAPH, visitor=com.fortify.sca.analyzer.callgraph.CallGraphBuilder$ReachingTypeVisitor} NDC:[timerCallGraphBuilder.ReachingTypes]
+[2026-05-15 19:06:13.868 WARN  20511]
+Unable to locate metadata for function getContentResolver at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixDropDownReceiver.java:274:39
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:ReachingTypes-thread-2-43
+   MDC:{msgId=20511, nstFunction=com.atakmap.android.multipix.MultiPixDropDownReceiver.copyPhotoUriToPendingFile~com.atakmap.android.multipix.MultiPixDropDownReceiver^java.lang.String^int^, nstSourceInfo=MultiPixDropDownReceiver.java.nst:1022:1022:36, severity=NONE, sourceInfo=MultiPixDropDownReceiver.java:269:311:5, step=BUILD_CALLGRAPH, visitor=com.fortify.sca.analyzer.callgraph.CallGraphBuilder$ReachingTypeVisitor} NDC:[timerCallGraphBuilder.ReachingTypes]
+[2026-05-15 19:06:13.869 WARN  20511]
+Unable to locate metadata for function openInputStream at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixDropDownReceiver.java:274:60
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:ReachingTypes-thread-2-43
+   MDC:{msgId=20511, nstFunction=com.atakmap.android.multipix.MultiPixDropDownReceiver.copyPhotoUriToPendingFile~com.atakmap.android.multipix.MultiPixDropDownReceiver^java.lang.String^int^, nstSourceInfo=MultiPixDropDownReceiver.java.nst:1022:1022:36, severity=NONE, sourceInfo=MultiPixDropDownReceiver.java:269:311:5, step=BUILD_CALLGRAPH, visitor=com.fortify.sca.analyzer.callgraph.CallGraphBuilder$ReachingTypeVisitor} NDC:[timerCallGraphBuilder.ReachingTypes]
+[2026-05-15 19:06:13.874 WARN  20511]
+Unable to locate metadata for function getExternalFilesDir at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixDropDownReceiver.java:314:32
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:ReachingTypes-thread-2-43
+   MDC:{msgId=20511, nstFunction=com.atakmap.android.multipix.MultiPixDropDownReceiver.getAtakPendingDirectory~com.atakmap.android.multipix.MultiPixDropDownReceiver^, nstSourceInfo=MultiPixDropDownReceiver.java.nst:1679:1679:36, severity=NONE, sourceInfo=MultiPixDropDownReceiver.java:313:320:5, step=BUILD_CALLGRAPH, visitor=com.fortify.sca.analyzer.callgraph.CallGraphBuilder$ReachingTypeVisitor} NDC:[timerCallGraphBuilder.ReachingTypes]
+[2026-05-15 19:06:13.875 WARN  20511]
+Unable to locate metadata for function getCacheDir at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixDropDownReceiver.java:317:31
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:ReachingTypes-thread-2-43
+   MDC:{msgId=20511, nstFunction=com.atakmap.android.multipix.MultiPixDropDownReceiver.getAtakPendingDirectory~com.atakmap.android.multipix.MultiPixDropDownReceiver^, nstSourceInfo=MultiPixDropDownReceiver.java.nst:1679:1679:36, severity=NONE, sourceInfo=MultiPixDropDownReceiver.java:313:320:5, step=BUILD_CALLGRAPH, visitor=com.fortify.sca.analyzer.callgraph.CallGraphBuilder$ReachingTypeVisitor} NDC:[timerCallGraphBuilder.ReachingTypes]
+[2026-05-15 19:06:13.905 WARN  20511]
+Unable to locate metadata for function get at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixDropDownReceiver.java:328:67
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:ReachingTypes-thread-2-43
+   MDC:{msgId=20511, nstFunction=com.atakmap.android.multipix.MultiPixDropDownReceiver.renderSession~com.atakmap.android.multipix.MultiPixDropDownReceiver^, nstSourceInfo=MultiPixDropDownReceiver.java.nst:1707:1707:26, severity=NONE, sourceInfo=MultiPixDropDownReceiver.java:322:340:5, step=BUILD_CALLGRAPH, visitor=com.fortify.sca.analyzer.callgraph.CallGraphBuilder$ReachingTypeVisitor} NDC:[timerCallGraphBuilder.ReachingTypes]
+[2026-05-15 19:06:13.906 WARN  20511]
+Unable to locate metadata for function getLatitude at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixDropDownReceiver.java:333:36
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:ReachingTypes-thread-2-43
+   MDC:{msgId=20511, nstFunction=com.atakmap.android.multipix.MultiPixDropDownReceiver.renderSession~com.atakmap.android.multipix.MultiPixDropDownReceiver^, nstSourceInfo=MultiPixDropDownReceiver.java.nst:1707:1707:26, severity=NONE, sourceInfo=MultiPixDropDownReceiver.java:322:340:5, step=BUILD_CALLGRAPH, visitor=com.fortify.sca.analyzer.callgraph.CallGraphBuilder$ReachingTypeVisitor} NDC:[timerCallGraphBuilder.ReachingTypes]
+[2026-05-15 19:06:13.906 WARN  20511]
+Unable to locate metadata for function getLongitude at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixDropDownReceiver.java:334:36
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:ReachingTypes-thread-2-43
+   MDC:{msgId=20511, nstFunction=com.atakmap.android.multipix.MultiPixDropDownReceiver.renderSession~com.atakmap.android.multipix.MultiPixDropDownReceiver^, nstSourceInfo=MultiPixDropDownReceiver.java.nst:1707:1707:26, severity=NONE, sourceInfo=MultiPixDropDownReceiver.java:322:340:5, step=BUILD_CALLGRAPH, visitor=com.fortify.sca.analyzer.callgraph.CallGraphBuilder$ReachingTypeVisitor} NDC:[timerCallGraphBuilder.ReachingTypes]
+[2026-05-15 19:06:13.907 WARN  20511]
+Unable to locate metadata for function getExternalStoragePublicDirectory at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixCaptureActivity.java:422:45
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:ReachingTypes-thread-1-42
+   MDC:{msgId=20511, nstFunction=com.atakmap.android.multipix.MultiPixCaptureActivity.savePhotoToMediaStore~com.atakmap.android.multipix.MultiPixCaptureActivity^byte_A1^java.lang.Float^, nstSourceInfo=MultiPixCaptureActivity.java.nst:1623:1623:88, severity=NONE, sourceInfo=MultiPixCaptureActivity.java:416:473:5, step=BUILD_CALLGRAPH, visitor=com.fortify.sca.analyzer.callgraph.CallGraphBuilder$ReachingTypeVisitor} NDC:[timerCallGraphBuilder.ReachingTypes]
+[2026-05-15 19:06:13.908 WARN  20511]
+Unable to locate metadata for function insert at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixCaptureActivity.java:444:40
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:ReachingTypes-thread-1-42
+   MDC:{msgId=20511, nstFunction=com.atakmap.android.multipix.MultiPixCaptureActivity.savePhotoToMediaStore~com.atakmap.android.multipix.MultiPixCaptureActivity^byte_A1^java.lang.Float^, nstSourceInfo=MultiPixCaptureActivity.java.nst:1623:1623:88, severity=NONE, sourceInfo=MultiPixCaptureActivity.java:416:473:5, step=BUILD_CALLGRAPH, visitor=com.fortify.sca.analyzer.callgraph.CallGraphBuilder$ReachingTypeVisitor} NDC:[timerCallGraphBuilder.ReachingTypes]
+[2026-05-15 19:06:13.909 WARN  20511]
+Unable to locate metadata for function openOutputStream at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixCaptureActivity.java:453:22
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:ReachingTypes-thread-1-42
+   MDC:{msgId=20511, nstFunction=com.atakmap.android.multipix.MultiPixCaptureActivity.savePhotoToMediaStore~com.atakmap.android.multipix.MultiPixCaptureActivity^byte_A1^java.lang.Float^, nstSourceInfo=MultiPixCaptureActivity.java.nst:1623:1623:88, severity=NONE, sourceInfo=MultiPixCaptureActivity.java:416:473:5, step=BUILD_CALLGRAPH, visitor=com.fortify.sca.analyzer.callgraph.CallGraphBuilder$ReachingTypeVisitor} NDC:[timerCallGraphBuilder.ReachingTypes]
+[2026-05-15 19:06:13.910 WARN  20511]
+Unable to locate metadata for function toString at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixCaptureActivity.java:467:46
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:ReachingTypes-thread-1-42
+   MDC:{msgId=20511, nstFunction=com.atakmap.android.multipix.MultiPixCaptureActivity.savePhotoToMediaStore~com.atakmap.android.multipix.MultiPixCaptureActivity^byte_A1^java.lang.Float^, nstSourceInfo=MultiPixCaptureActivity.java.nst:1623:1623:88, severity=NONE, sourceInfo=MultiPixCaptureActivity.java:416:473:5, step=BUILD_CALLGRAPH, visitor=com.fortify.sca.analyzer.callgraph.CallGraphBuilder$ReachingTypeVisitor} NDC:[timerCallGraphBuilder.ReachingTypes]
+[2026-05-15 19:06:13.934 WARN  20511]
+Unable to locate metadata for function getExternalStorageDirectory at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixCaptureActivity.java:484:47
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:ReachingTypes-thread-1-42
+   MDC:{msgId=20511, nstFunction=com.atakmap.android.multipix.MultiPixCaptureActivity.getSharedPendingDirectory~com.atakmap.android.multipix.MultiPixCaptureActivity^, nstSourceInfo=MultiPixCaptureActivity.java.nst:1998:1998:36, severity=NONE, sourceInfo=MultiPixCaptureActivity.java:475:497:5, step=BUILD_CALLGRAPH, visitor=com.fortify.sca.analyzer.callgraph.CallGraphBuilder$ReachingTypeVisitor} NDC:[timerCallGraphBuilder.ReachingTypes]
+[2026-05-15 19:06:13.935 WARN  20511]
+Unable to locate metadata for function decodeFile at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixDropDownReceiver.java:392:30
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:ReachingTypes-thread-2-43
+   MDC:{msgId=20511, nstFunction=com.atakmap.android.multipix.MultiPixDropDownReceiver.decodeThumbnail~com.atakmap.android.multipix.MultiPixDropDownReceiver^java.io.File^, nstSourceInfo=MultiPixDropDownReceiver.java.nst:1905:1905:59, severity=NONE, sourceInfo=MultiPixDropDownReceiver.java:379:393:5, step=BUILD_CALLGRAPH, visitor=com.fortify.sca.analyzer.callgraph.CallGraphBuilder$ReachingTypeVisitor} NDC:[timerCallGraphBuilder.ReachingTypes]
+[2026-05-15 19:06:13.984 WARN  20511]
+Unable to locate metadata for function getIntent at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixCaptureActivity.java:515:32
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:ReachingTypes-thread-1-42
+   MDC:{msgId=20511, nstFunction=com.atakmap.android.multipix.MultiPixCaptureActivity.sendSession~com.atakmap.android.multipix.MultiPixCaptureActivity^, nstSourceInfo=MultiPixCaptureActivity.java.nst:2245:2245:26, severity=NONE, sourceInfo=MultiPixCaptureActivity.java:505:520:5, step=BUILD_CALLGRAPH, visitor=com.fortify.sca.analyzer.callgraph.CallGraphBuilder$ReachingTypeVisitor} NDC:[timerCallGraphBuilder.ReachingTypes]
+[2026-05-15 19:06:13.993 WARN  20511]
+Unable to locate metadata for function edit at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixCaptureActivity.java:523:56
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:ReachingTypes-thread-1-42
+   MDC:{msgId=20511, nstFunction=com.atakmap.android.multipix.MultiPixCaptureActivity.storeSession~com.atakmap.android.multipix.MultiPixCaptureActivity^, nstSourceInfo=MultiPixCaptureActivity.java.nst:2313:2313:26, severity=NONE, sourceInfo=MultiPixCaptureActivity.java:522:527:5, step=BUILD_CALLGRAPH, visitor=com.fortify.sca.analyzer.callgraph.CallGraphBuilder$ReachingTypeVisitor} NDC:[timerCallGraphBuilder.ReachingTypes]
+[2026-05-15 19:06:13.994 WARN  20511]
+Unable to locate metadata for function putString at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixCaptureActivity.java:524:18
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:ReachingTypes-thread-1-42
+   MDC:{msgId=20511, nstFunction=com.atakmap.android.multipix.MultiPixCaptureActivity.storeSession~com.atakmap.android.multipix.MultiPixCaptureActivity^, nstSourceInfo=MultiPixCaptureActivity.java.nst:2313:2313:26, severity=NONE, sourceInfo=MultiPixCaptureActivity.java:522:527:5, step=BUILD_CALLGRAPH, visitor=com.fortify.sca.analyzer.callgraph.CallGraphBuilder$ReachingTypeVisitor} NDC:[timerCallGraphBuilder.ReachingTypes]
+[2026-05-15 19:06:13.995 WARN  20511]
+Unable to locate metadata for function getText at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixDropDownReceiver.java:396:47
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:ReachingTypes-thread-2-43
+   MDC:{msgId=20511, nstFunction=com.atakmap.android.multipix.MultiPixDropDownReceiver.saveSession~com.atakmap.android.multipix.MultiPixDropDownReceiver^, nstSourceInfo=MultiPixDropDownReceiver.java.nst:1988:1988:26, severity=NONE, sourceInfo=MultiPixDropDownReceiver.java:395:440:5, step=BUILD_CALLGRAPH, visitor=com.fortify.sca.analyzer.callgraph.CallGraphBuilder$ReachingTypeVisitor} NDC:[timerCallGraphBuilder.ReachingTypes]
+[2026-05-15 19:06:13.996 WARN  20511]
+Unable to locate metadata for function addAttachment at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixDropDownReceiver.java:415:55
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:ReachingTypes-thread-2-43
+   MDC:{msgId=20511, nstFunction=com.atakmap.android.multipix.MultiPixDropDownReceiver.saveSession~com.atakmap.android.multipix.MultiPixDropDownReceiver^, nstSourceInfo=MultiPixDropDownReceiver.java.nst:1988:1988:26, severity=NONE, sourceInfo=MultiPixDropDownReceiver.java:395:440:5, step=BUILD_CALLGRAPH, visitor=com.fortify.sca.analyzer.callgraph.CallGraphBuilder$ReachingTypeVisitor} NDC:[timerCallGraphBuilder.ReachingTypes]
+[2026-05-15 19:06:13.997 WARN  20511]
+Unable to locate metadata for function getMapEventDispatcher at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixDropDownReceiver.java:432:37
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:ReachingTypes-thread-2-43
+   MDC:{msgId=20511, nstFunction=com.atakmap.android.multipix.MultiPixDropDownReceiver.saveSession~com.atakmap.android.multipix.MultiPixDropDownReceiver^, nstSourceInfo=MultiPixDropDownReceiver.java.nst:1988:1988:26, severity=NONE, sourceInfo=MultiPixDropDownReceiver.java:395:440:5, step=BUILD_CALLGRAPH, visitor=com.fortify.sca.analyzer.callgraph.CallGraphBuilder$ReachingTypeVisitor} NDC:[timerCallGraphBuilder.ReachingTypes]
+[2026-05-15 19:06:13.998 WARN  20511]
+Unable to locate metadata for function getTitle at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixDropDownReceiver.java:438:42
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:ReachingTypes-thread-2-43
+   MDC:{msgId=20511, nstFunction=com.atakmap.android.multipix.MultiPixDropDownReceiver.saveSession~com.atakmap.android.multipix.MultiPixDropDownReceiver^, nstSourceInfo=MultiPixDropDownReceiver.java.nst:1988:1988:26, severity=NONE, sourceInfo=MultiPixDropDownReceiver.java:395:440:5, step=BUILD_CALLGRAPH, visitor=com.fortify.sca.analyzer.callgraph.CallGraphBuilder$ReachingTypeVisitor} NDC:[timerCallGraphBuilder.ReachingTypes]
+[2026-05-15 19:06:14.021 WARN  20511]
+Unable to locate metadata for function placePoint at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixDropDownReceiver.java:459:39
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:ReachingTypes-thread-2-43
+   MDC:{msgId=20511, nstFunction=com.atakmap.android.multipix.MultiPixDropDownReceiver.createSessionMarker~com.atakmap.android.multipix.MultiPixDropDownReceiver^com.atakmap.android.multipix.GeoPointMetaData^, nstSourceInfo=MultiPixDropDownReceiver.java.nst:2244:2244:59, severity=NONE, sourceInfo=MultiPixDropDownReceiver.java:448:467:5, step=BUILD_CALLGRAPH, visitor=com.fortify.sca.analyzer.callgraph.CallGraphBuilder$ReachingTypeVisitor} NDC:[timerCallGraphBuilder.ReachingTypes]
+[2026-05-15 19:06:14.030 WARN  20511]
+Unable to locate metadata for function newUri at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixCaptureActivity.java:580:37
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:ReachingTypes-thread-1-42
+   MDC:{msgId=20511, nstFunction=com.atakmap.android.multipix.MultiPixCaptureActivity.getPhotoUriClipData~com.atakmap.android.multipix.MultiPixCaptureActivity^, nstSourceInfo=MultiPixCaptureActivity.java.nst:2535:2535:61, severity=NONE, sourceInfo=MultiPixCaptureActivity.java:571:587:5, step=BUILD_CALLGRAPH, visitor=com.fortify.sca.analyzer.callgraph.CallGraphBuilder$ReachingTypeVisitor} NDC:[timerCallGraphBuilder.ReachingTypes]
+[2026-05-15 19:06:14.032 WARN  20511]
+Unable to locate metadata for function remove at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixCaptureActivity.java:591:18
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:ReachingTypes-thread-1-42
+   MDC:{msgId=20511, nstFunction=com.atakmap.android.multipix.MultiPixCaptureActivity.clearStoredSession~com.atakmap.android.multipix.MultiPixCaptureActivity^, nstSourceInfo=MultiPixCaptureActivity.java.nst:2605:2605:26, severity=NONE, sourceInfo=MultiPixCaptureActivity.java:589:594:5, step=BUILD_CALLGRAPH, visitor=com.fortify.sca.analyzer.callgraph.CallGraphBuilder$ReachingTypeVisitor} NDC:[timerCallGraphBuilder.ReachingTypes]
+[2026-05-15 19:06:14.038 WARN  20511]
+Unable to locate metadata for function getRotationMatrix at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixCaptureActivity.java:628:27
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:ReachingTypes-thread-1-42
+   MDC:{msgId=20511, nstFunction=com.atakmap.android.multipix.MultiPixCaptureActivity.updateHeadingFromFallbackSensors~com.atakmap.android.multipix.MultiPixCaptureActivity^, nstSourceInfo=MultiPixCaptureActivity.java.nst:2696:2696:26, severity=NONE, sourceInfo=MultiPixCaptureActivity.java:621:632:5, step=BUILD_CALLGRAPH, visitor=com.fortify.sca.analyzer.callgraph.CallGraphBuilder$ReachingTypeVisitor} NDC:[timerCallGraphBuilder.ReachingTypes]
+[2026-05-15 19:06:14.164 WARN  20511]
+Unable to locate metadata for function finish at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixCaptureActivity.java:124:17
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:CallGraphBuilder-thread-1-48
+   MDC:{msgId=20511, nstFunction=com.atakmap.android.multipix.MultiPixCaptureActivity$1.onClick~com.atakmap.android.multipix.MultiPixCaptureActivity$1^com.atakmap.android.multipix.View^, nstSourceInfo=MultiPixCaptureActivity.java.nst:9:9:25, severity=NONE, sourceInfo=MultiPixCaptureActivity.java:123:125:1, step=BUILD_CALLGRAPH, visitor=com.fortify.sca.analyzer.callgraph.CallGraphBuilder$1} NDC:[timerCallGraphBuilder]
+[2026-05-15 19:06:14.166 WARN  20511]
+Unable to locate metadata for function setTheme at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixMapComponent.java:25:17
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:CallGraphBuilder-thread-3-50
+   MDC:{msgId=20511, severity=NONE, step=BUILD_CALLGRAPH} NDC:[timerCallGraphBuilder]
+[2026-05-15 19:06:14.167 WARN  20511]
+Unable to locate metadata for function onCreate at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixMapComponent.java:26:9
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:CallGraphBuilder-thread-3-50
+   MDC:{msgId=20511, severity=NONE, step=BUILD_CALLGRAPH} NDC:[timerCallGraphBuilder]
+[2026-05-15 19:06:14.167 WARN  20511]
+Unable to locate metadata for function d at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixMapComponent.java:32:13
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:CallGraphBuilder-thread-3-50
+   MDC:{msgId=20511, severity=NONE, step=BUILD_CALLGRAPH} NDC:[timerCallGraphBuilder]
+[2026-05-15 19:06:14.168 WARN  20511]
+Unable to locate metadata for function addAction at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixMapComponent.java:34:18
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:CallGraphBuilder-thread-3-50
+   MDC:{msgId=20511, severity=NONE, step=BUILD_CALLGRAPH} NDC:[timerCallGraphBuilder]
+[2026-05-15 19:06:14.168 WARN  20511]
+Unable to locate metadata for function registerDropDownReceiver at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixMapComponent.java:35:9
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:CallGraphBuilder-thread-3-50
+   MDC:{msgId=20511, severity=NONE, step=BUILD_CALLGRAPH} NDC:[timerCallGraphBuilder]
+[2026-05-15 19:06:14.285 WARN  20511]
+Unable to locate metadata for function onDestroyImpl at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixMapComponent.java:40:9
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:CallGraphBuilder-thread-3-50
+   MDC:{msgId=20511, nstFunction=com.atakmap.android.multipix.MultiPixMapComponent.onDestroyImpl~com.atakmap.android.multipix.MultiPixMapComponent^com.atakmap.android.multipix.Context^com.atakmap.android.multipix.MapView^, nstSourceInfo=MultiPixMapComponent.java.nst:52:52:28, severity=NONE, sourceInfo=MultiPixMapComponent.java:39:41:1, step=BUILD_CALLGRAPH, visitor=com.fortify.sca.analyzer.callgraph.CallGraphBuilder$1} NDC:[timerCallGraphBuilder]
+[2026-05-15 19:06:14.387 WARN  20511]
+Unable to locate metadata for function show at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixCaptureActivity.java:157:70
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:CallGraphBuilder-thread-1-48
+   MDC:{msgId=20511, severity=NONE, step=BUILD_CALLGRAPH} NDC:[timerCallGraphBuilder]
+[2026-05-15 19:06:14.420 WARN  20511]
+Unable to locate metadata for function setOnClickListener at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixDropDownReceiver.java:96:21
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:CallGraphBuilder-thread-2-49
+   MDC:{msgId=20511, severity=NONE, step=BUILD_CALLGRAPH} NDC:[timerCallGraphBuilder]
+[2026-05-15 19:06:14.471 WARN  20511]
+Unable to locate metadata for function setEnabled at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixCaptureActivity.java:357:35
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:CallGraphBuilder-thread-1-48
+   MDC:{msgId=20511, severity=NONE, step=BUILD_CALLGRAPH} NDC:[timerCallGraphBuilder]
+[2026-05-15 19:06:14.518 WARN  20511]
+Unable to locate metadata for function setRequestedOrientation at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixCaptureActivity.java:81:9
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:CallGraphBuilder-thread-1-48
+   MDC:{msgId=20511, severity=NONE, step=BUILD_CALLGRAPH} NDC:[timerCallGraphBuilder]
+[2026-05-15 19:06:14.519 WARN  20511]
+Unable to locate metadata for function addFlags at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixCaptureActivity.java:82:21
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:CallGraphBuilder-thread-1-48
+   MDC:{msgId=20511, severity=NONE, step=BUILD_CALLGRAPH} NDC:[timerCallGraphBuilder]
+[2026-05-15 19:06:14.520 WARN  20511]
+Unable to locate metadata for function requestPermissions at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixCaptureActivity.java:98:13
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:CallGraphBuilder-thread-1-48
+   MDC:{msgId=20511, severity=NONE, step=BUILD_CALLGRAPH} NDC:[timerCallGraphBuilder]
+[2026-05-15 19:06:14.583 WARN  20511]
+Unable to locate metadata for function unregisterReceiver at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixDropDownReceiver.java:110:29
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:CallGraphBuilder-thread-2-49
+   MDC:{msgId=20511, nstFunction=com.atakmap.android.multipix.MultiPixDropDownReceiver.disposeImpl~com.atakmap.android.multipix.MultiPixDropDownReceiver^, nstSourceInfo=MultiPixDropDownReceiver.java.nst:229:229:25, severity=NONE, sourceInfo=MultiPixDropDownReceiver.java:107:115:5, step=BUILD_CALLGRAPH, visitor=com.fortify.sca.analyzer.callgraph.CallGraphBuilder$1} NDC:[timerCallGraphBuilder]
+[2026-05-15 19:06:14.598 WARN  20511]
+Unable to locate metadata for function assertEquals at /app/plugin-src/MultiPix/app/src/test/java/com/atakmap/android/test/ExampleTest.java:11:9
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:CallGraphBuilder-thread-3-50
+   MDC:{msgId=20511, nstFunction=com.atakmap.android.test.ExampleTest.basicArithmetic~com.atakmap.android.test.ExampleTest^, nstSourceInfo=ExampleTest.java.nst:9:9:25, severity=NONE, sourceInfo=ExampleTest.java:10:12:1, step=BUILD_CALLGRAPH, visitor=com.fortify.sca.analyzer.callgraph.CallGraphBuilder$1} NDC:[timerCallGraphBuilder]
+[2026-05-15 19:06:14.626 WARN  20511]
+Unable to locate metadata for function registerReceiver at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixDropDownReceiver.java:134:29
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:CallGraphBuilder-thread-2-49
+   MDC:{msgId=20511, severity=NONE, step=BUILD_CALLGRAPH} NDC:[timerCallGraphBuilder]
+[2026-05-15 19:06:14.668 WARN  20511]
+Unable to locate metadata for function addCallback at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixCaptureActivity.java:108:16
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:CallGraphBuilder-thread-1-48
+   MDC:{msgId=20511, severity=NONE, step=BUILD_CALLGRAPH} NDC:[timerCallGraphBuilder]
+[2026-05-15 19:06:14.668 WARN  20511]
+Unable to locate metadata for function addView at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixCaptureActivity.java:109:14
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:CallGraphBuilder-thread-1-48
+   MDC:{msgId=20511, severity=NONE, step=BUILD_CALLGRAPH} NDC:[timerCallGraphBuilder]
+[2026-05-15 19:06:14.669 WARN  20511]
+Unable to locate metadata for function setGravity at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixCaptureActivity.java:114:18
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:CallGraphBuilder-thread-1-48
+   MDC:{msgId=20511, severity=NONE, step=BUILD_CALLGRAPH} NDC:[timerCallGraphBuilder]
+[2026-05-15 19:06:14.669 WARN  20511]
+Unable to locate metadata for function setPadding at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixCaptureActivity.java:115:18
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:CallGraphBuilder-thread-1-48
+   MDC:{msgId=20511, severity=NONE, step=BUILD_CALLGRAPH} NDC:[timerCallGraphBuilder]
+[2026-05-15 19:06:14.669 WARN  20511]
+Unable to locate metadata for function setBackgroundColor at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixCaptureActivity.java:116:18
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:CallGraphBuilder-thread-1-48
+   MDC:{msgId=20511, severity=NONE, step=BUILD_CALLGRAPH} NDC:[timerCallGraphBuilder]
+[2026-05-15 19:06:14.670 WARN  20511]
+Unable to locate metadata for function setOrientation at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixCaptureActivity.java:117:18
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:CallGraphBuilder-thread-1-48
+   MDC:{msgId=20511, severity=NONE, step=BUILD_CALLGRAPH} NDC:[timerCallGraphBuilder]
+[2026-05-15 19:06:14.670 WARN  20511]
+Unable to locate metadata for function setText at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixCaptureActivity.java:120:22
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:CallGraphBuilder-thread-1-48
+   MDC:{msgId=20511, severity=NONE, step=BUILD_CALLGRAPH} NDC:[timerCallGraphBuilder]
+[2026-05-15 19:06:14.670 WARN  20511]
+Unable to locate metadata for function setOnTouchListener at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixCaptureActivity.java:132:23
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:CallGraphBuilder-thread-1-48
+   MDC:{msgId=20511, severity=NONE, step=BUILD_CALLGRAPH} NDC:[timerCallGraphBuilder]
+[2026-05-15 19:06:14.671 WARN  20511]
+Unable to locate metadata for function setTextColor at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixCaptureActivity.java:168:19
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:CallGraphBuilder-thread-1-48
+   MDC:{msgId=20511, severity=NONE, step=BUILD_CALLGRAPH} NDC:[timerCallGraphBuilder]
+[2026-05-15 19:06:14.671 WARN  20511]
+Unable to locate metadata for function setTextSize at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixCaptureActivity.java:170:19
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:CallGraphBuilder-thread-1-48
+   MDC:{msgId=20511, severity=NONE, step=BUILD_CALLGRAPH} NDC:[timerCallGraphBuilder]
+[2026-05-15 19:06:14.672 WARN  20511]
+Unable to locate metadata for function setContentView at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixCaptureActivity.java:181:9
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:CallGraphBuilder-thread-1-48
+   MDC:{msgId=20511, severity=NONE, step=BUILD_CALLGRAPH} NDC:[timerCallGraphBuilder]
+[2026-05-15 19:06:14.677 WARN  20511]
+Unable to locate metadata for function setClassName at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixDropDownReceiver.java:146:16
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:CallGraphBuilder-thread-2-49
+   MDC:{msgId=20511, severity=NONE, step=BUILD_CALLGRAPH} NDC:[timerCallGraphBuilder]
+[2026-05-15 19:06:14.677 WARN  20511]
+Unable to locate metadata for function putExtra at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixDropDownReceiver.java:148:16
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:CallGraphBuilder-thread-2-49
+   MDC:{msgId=20511, severity=NONE, step=BUILD_CALLGRAPH} NDC:[timerCallGraphBuilder]
+[2026-05-15 19:06:14.678 WARN  20511]
+Unable to locate metadata for function startActivity at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixDropDownReceiver.java:151:21
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:CallGraphBuilder-thread-2-49
+   MDC:{msgId=20511, severity=NONE, step=BUILD_CALLGRAPH} NDC:[timerCallGraphBuilder]
+[2026-05-15 19:06:14.770 WARN  20511]
+Unable to locate metadata for function w at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixDropDownReceiver.java:176:25
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:CallGraphBuilder-thread-2-49
+   MDC:{msgId=20511, severity=NONE, step=BUILD_CALLGRAPH} NDC:[timerCallGraphBuilder]
+[2026-05-15 19:06:14.770 WARN  20511]
+Unable to locate metadata for function showDropDown at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixDropDownReceiver.java:193:9
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:CallGraphBuilder-thread-2-49
+   MDC:{msgId=20511, severity=NONE, step=BUILD_CALLGRAPH} NDC:[timerCallGraphBuilder]
+[2026-05-15 19:06:14.845 WARN  20511]
+Unable to locate metadata for function onResume at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixCaptureActivity.java:206:9
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:CallGraphBuilder-thread-1-48
+   MDC:{msgId=20511, severity=NONE, step=BUILD_CALLGRAPH} NDC:[timerCallGraphBuilder]
+[2026-05-15 19:06:14.866 WARN  20511]
+Unable to locate metadata for function onPause at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixCaptureActivity.java:217:9
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:CallGraphBuilder-thread-1-48
+   MDC:{msgId=20511, severity=NONE, step=BUILD_CALLGRAPH} NDC:[timerCallGraphBuilder]
+[2026-05-15 19:06:14.878 WARN  20511]
+Unable to locate metadata for function getRotationMatrixFromVector at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixCaptureActivity.java:224:27
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:CallGraphBuilder-thread-1-48
+   MDC:{msgId=20511, severity=NONE, step=BUILD_CALLGRAPH} NDC:[timerCallGraphBuilder]
+[2026-05-15 19:06:14.920 WARN  20511]
+Unable to locate metadata for function onRequestPermissionsResult at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixCaptureActivity.java:243:9
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:CallGraphBuilder-thread-1-48
+   MDC:{msgId=20511, severity=NONE, step=BUILD_CALLGRAPH} NDC:[timerCallGraphBuilder]
+[2026-05-15 19:06:14.972 WARN  20511]
+Unable to locate metadata for function setPreviewDisplay at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixCaptureActivity.java:263:20
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:CallGraphBuilder-thread-1-48
+   MDC:{msgId=20511, severity=NONE, step=BUILD_CALLGRAPH} NDC:[timerCallGraphBuilder]
+[2026-05-15 19:06:14.972 WARN  20511]
+Unable to locate metadata for function setFocusMode at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixCaptureActivity.java:268:28
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:CallGraphBuilder-thread-1-48
+   MDC:{msgId=20511, severity=NONE, step=BUILD_CALLGRAPH} NDC:[timerCallGraphBuilder]
+[2026-05-15 19:06:14.973 WARN  20511]
+Unable to locate metadata for function setParameters at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixCaptureActivity.java:272:20
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:CallGraphBuilder-thread-1-48
+   MDC:{msgId=20511, severity=NONE, step=BUILD_CALLGRAPH} NDC:[timerCallGraphBuilder]
+[2026-05-15 19:06:14.973 WARN  20511]
+Unable to locate metadata for function startPreview at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixCaptureActivity.java:273:20
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:CallGraphBuilder-thread-1-48
+   MDC:{msgId=20511, severity=NONE, step=BUILD_CALLGRAPH} NDC:[timerCallGraphBuilder]
+[2026-05-15 19:06:15.001 WARN  20511]
+Unable to locate metadata for function getCameraInfo at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixCaptureActivity.java:285:20
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:CallGraphBuilder-thread-1-48
+   MDC:{msgId=20511, severity=NONE, step=BUILD_CALLGRAPH} NDC:[timerCallGraphBuilder]
+[2026-05-15 19:06:15.017 WARN  20511]
+Unable to locate metadata for function setDisplayOrientation at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixCaptureActivity.java:306:16
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:CallGraphBuilder-thread-1-48
+   MDC:{msgId=20511, severity=NONE, step=BUILD_CALLGRAPH} NDC:[timerCallGraphBuilder]
+[2026-05-15 19:06:15.017 WARN  20511]
+Unable to locate metadata for function setRotation at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixCaptureActivity.java:307:20
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:CallGraphBuilder-thread-1-48
+   MDC:{msgId=20511, severity=NONE, step=BUILD_CALLGRAPH} NDC:[timerCallGraphBuilder]
+[2026-05-15 19:06:15.076 WARN  20511]
+Unable to locate metadata for function stopPreview at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixCaptureActivity.java:327:20
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:CallGraphBuilder-thread-1-48
+   MDC:{msgId=20511, severity=NONE, step=BUILD_CALLGRAPH} NDC:[timerCallGraphBuilder]
+[2026-05-15 19:06:15.077 WARN  20511]
+Unable to locate metadata for function removeAllViews at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixDropDownReceiver.java:323:21
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:CallGraphBuilder-thread-2-49
+   MDC:{msgId=20511, severity=NONE, step=BUILD_CALLGRAPH} NDC:[timerCallGraphBuilder]
+[2026-05-15 19:06:15.078 WARN  20511]
+Unable to locate metadata for function setVisibility at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixDropDownReceiver.java:324:20
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:CallGraphBuilder-thread-2-49
+   MDC:{msgId=20511, severity=NONE, step=BUILD_CALLGRAPH} NDC:[timerCallGraphBuilder]
+[2026-05-15 19:06:15.090 WARN  20511]
+Unable to locate metadata for function takePicture at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixCaptureActivity.java:352:20
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:CallGraphBuilder-thread-1-48
+   MDC:{msgId=20511, severity=NONE, step=BUILD_CALLGRAPH} NDC:[timerCallGraphBuilder]
+[2026-05-15 19:06:15.112 WARN  20511]
+Unable to locate metadata for function setScaleType at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixDropDownReceiver.java:348:19
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:CallGraphBuilder-thread-2-49
+   MDC:{msgId=20511, severity=NONE, step=BUILD_CALLGRAPH} NDC:[timerCallGraphBuilder]
+[2026-05-15 19:06:15.113 WARN  20511]
+Unable to locate metadata for function setAdjustViewBounds at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixDropDownReceiver.java:349:19
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:CallGraphBuilder-thread-2-49
+   MDC:{msgId=20511, severity=NONE, step=BUILD_CALLGRAPH} NDC:[timerCallGraphBuilder]
+[2026-05-15 19:06:15.113 WARN  20511]
+Unable to locate metadata for function setImageBitmap at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixDropDownReceiver.java:350:19
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:CallGraphBuilder-thread-2-49
+   MDC:{msgId=20511, severity=NONE, step=BUILD_CALLGRAPH} NDC:[timerCallGraphBuilder]
+[2026-05-15 19:06:15.324 WARN  20511]
+Unable to locate metadata for function put at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixCaptureActivity.java:438:16
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:CallGraphBuilder-thread-1-48
+   MDC:{msgId=20511, severity=NONE, step=BUILD_CALLGRAPH} NDC:[timerCallGraphBuilder]
+[2026-05-15 19:06:15.325 WARN  20511]
+Unable to locate metadata for function update at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixCaptureActivity.java:465:34
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:CallGraphBuilder-thread-1-48
+   MDC:{msgId=20511, severity=NONE, step=BUILD_CALLGRAPH} NDC:[timerCallGraphBuilder]
+[2026-05-15 19:06:15.325 WARN  20511]
+Unable to locate metadata for function delete at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixCaptureActivity.java:470:38
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:CallGraphBuilder-thread-1-48
+   MDC:{msgId=20511, severity=NONE, step=BUILD_CALLGRAPH} NDC:[timerCallGraphBuilder]
+[2026-05-15 19:06:15.364 WARN  20511]
+Unable to locate metadata for function e at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixDropDownReceiver.java:424:21
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:CallGraphBuilder-thread-2-49
+   MDC:{msgId=20511, severity=NONE, step=BUILD_CALLGRAPH} NDC:[timerCallGraphBuilder]
+[2026-05-15 19:06:15.364 WARN  20511]
+Unable to locate metadata for function setMetaStringArrayList at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixDropDownReceiver.java:428:16
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:CallGraphBuilder-thread-2-49
+   MDC:{msgId=20511, severity=NONE, step=BUILD_CALLGRAPH} NDC:[timerCallGraphBuilder]
+[2026-05-15 19:06:15.364 WARN  20511]
+Unable to locate metadata for function setMetaString at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixDropDownReceiver.java:430:16
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:CallGraphBuilder-thread-2-49
+   MDC:{msgId=20511, severity=NONE, step=BUILD_CALLGRAPH} NDC:[timerCallGraphBuilder]
+[2026-05-15 19:06:15.364 WARN  20511]
+Unable to locate metadata for function setMetaInteger at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixDropDownReceiver.java:431:16
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:CallGraphBuilder-thread-2-49
+   MDC:{msgId=20511, severity=NONE, step=BUILD_CALLGRAPH} NDC:[timerCallGraphBuilder]
+[2026-05-15 19:06:15.365 WARN  20511]
+Unable to locate metadata for function persist at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixDropDownReceiver.java:432:16
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:CallGraphBuilder-thread-2-49
+   MDC:{msgId=20511, severity=NONE, step=BUILD_CALLGRAPH} NDC:[timerCallGraphBuilder]
+[2026-05-15 19:06:15.365 WARN  20511]
+Unable to locate metadata for function refresh at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixDropDownReceiver.java:434:16
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:CallGraphBuilder-thread-2-49
+   MDC:{msgId=20511, severity=NONE, step=BUILD_CALLGRAPH} NDC:[timerCallGraphBuilder]
+[2026-05-15 19:06:15.365 WARN  20511]
+Unable to locate metadata for function closeDropDown at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixDropDownReceiver.java:439:9
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:CallGraphBuilder-thread-2-49
+   MDC:{msgId=20511, severity=NONE, step=BUILD_CALLGRAPH} NDC:[timerCallGraphBuilder]
+[2026-05-15 19:06:15.442 WARN  20511]
+Unable to locate metadata for function setUid at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixDropDownReceiver.java:453:23
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:CallGraphBuilder-thread-2-49
+   MDC:{msgId=20511, severity=NONE, step=BUILD_CALLGRAPH} NDC:[timerCallGraphBuilder]
+[2026-05-15 19:06:15.443 WARN  20511]
+Unable to locate metadata for function setCallsign at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixDropDownReceiver.java:454:23
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:CallGraphBuilder-thread-2-49
+   MDC:{msgId=20511, severity=NONE, step=BUILD_CALLGRAPH} NDC:[timerCallGraphBuilder]
+[2026-05-15 19:06:15.443 WARN  20511]
+Unable to locate metadata for function setType at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixDropDownReceiver.java:455:23
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:CallGraphBuilder-thread-2-49
+   MDC:{msgId=20511, severity=NONE, step=BUILD_CALLGRAPH} NDC:[timerCallGraphBuilder]
+[2026-05-15 19:06:15.443 WARN  20511]
+Unable to locate metadata for function setArchive at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixDropDownReceiver.java:456:23
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:CallGraphBuilder-thread-2-49
+   MDC:{msgId=20511, severity=NONE, step=BUILD_CALLGRAPH} NDC:[timerCallGraphBuilder]
+[2026-05-15 19:06:15.443 WARN  20511]
+Unable to locate metadata for function setNeverPersist at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixDropDownReceiver.java:457:23
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:CallGraphBuilder-thread-2-49
+   MDC:{msgId=20511, severity=NONE, step=BUILD_CALLGRAPH} NDC:[timerCallGraphBuilder]
+[2026-05-15 19:06:15.444 WARN  20511]
+Unable to locate metadata for function showCotDetails at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixDropDownReceiver.java:458:23
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:CallGraphBuilder-thread-2-49
+   MDC:{msgId=20511, severity=NONE, step=BUILD_CALLGRAPH} NDC:[timerCallGraphBuilder]
+[2026-05-15 19:06:15.444 WARN  20511]
+Unable to locate metadata for function setTitle at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixDropDownReceiver.java:460:16
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:CallGraphBuilder-thread-2-49
+   MDC:{msgId=20511, severity=NONE, step=BUILD_CALLGRAPH} NDC:[timerCallGraphBuilder]
+[2026-05-15 19:06:15.444 WARN  20511]
+Unable to locate metadata for function setMetaBoolean at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixDropDownReceiver.java:462:16
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:CallGraphBuilder-thread-2-49
+   MDC:{msgId=20511, severity=NONE, step=BUILD_CALLGRAPH} NDC:[timerCallGraphBuilder]
+[2026-05-15 19:06:15.481 WARN  20511]
+Unable to locate metadata for function putStringArrayListExtra at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixCaptureActivity.java:508:16
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:CallGraphBuilder-thread-1-48
+   MDC:{msgId=20511, severity=NONE, step=BUILD_CALLGRAPH} NDC:[timerCallGraphBuilder]
+[2026-05-15 19:06:15.481 WARN  20511]
+Unable to locate metadata for function setClipData at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixCaptureActivity.java:512:20
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:CallGraphBuilder-thread-1-48
+   MDC:{msgId=20511, severity=NONE, step=BUILD_CALLGRAPH} NDC:[timerCallGraphBuilder]
+[2026-05-15 19:06:15.482 WARN  20511]
+Unable to locate metadata for function setPackage at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixCaptureActivity.java:517:20
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:CallGraphBuilder-thread-1-48
+   MDC:{msgId=20511, severity=NONE, step=BUILD_CALLGRAPH} NDC:[timerCallGraphBuilder]
+[2026-05-15 19:06:15.482 WARN  20511]
+Unable to locate metadata for function sendBroadcast at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixCaptureActivity.java:519:9
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:CallGraphBuilder-thread-1-48
+   MDC:{msgId=20511, severity=NONE, step=BUILD_CALLGRAPH} NDC:[timerCallGraphBuilder]
+[2026-05-15 19:06:15.488 WARN  20511]
+Unable to locate metadata for function setAttribute at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixDropDownReceiver.java:471:14
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:CallGraphBuilder-thread-2-49
+   MDC:{msgId=20511, severity=NONE, step=BUILD_CALLGRAPH} NDC:[timerCallGraphBuilder]
+[2026-05-15 19:06:15.488 WARN  20511]
+Unable to locate metadata for function saveAttributes at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixDropDownReceiver.java:488:14
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:CallGraphBuilder-thread-2-49
+   MDC:{msgId=20511, severity=NONE, step=BUILD_CALLGRAPH} NDC:[timerCallGraphBuilder]
+[2026-05-15 19:06:15.505 WARN  20511]
+Unable to locate metadata for function commit at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixCaptureActivity.java:526:18
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:CallGraphBuilder-thread-1-48
+   MDC:{msgId=20511, severity=NONE, step=BUILD_CALLGRAPH} NDC:[timerCallGraphBuilder]
+[2026-05-15 19:06:15.582 WARN  20511]
+Unable to locate metadata for function addItem at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixCaptureActivity.java:583:26
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:CallGraphBuilder-thread-1-48
+   MDC:{msgId=20511, severity=NONE, step=BUILD_CALLGRAPH} NDC:[timerCallGraphBuilder]
+[2026-05-15 19:06:15.597 WARN  20511]
+Unable to locate metadata for function apply at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixCaptureActivity.java:593:18
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:CallGraphBuilder-thread-1-48
+   MDC:{msgId=20511, nstFunction=com.atakmap.android.multipix.MultiPixCaptureActivity.clearStoredSession~com.atakmap.android.multipix.MultiPixCaptureActivity^, nstSourceInfo=MultiPixCaptureActivity.java.nst:2605:2605:26, severity=NONE, sourceInfo=MultiPixCaptureActivity.java:589:594:5, step=BUILD_CALLGRAPH, visitor=com.fortify.sca.analyzer.callgraph.CallGraphBuilder$1} NDC:[timerCallGraphBuilder]
+[2026-05-15 19:06:15.616 WARN  20511]
+Unable to locate metadata for function registerListener at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixCaptureActivity.java:601:27
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:CallGraphBuilder-thread-1-48
+   MDC:{msgId=20511, severity=NONE, step=BUILD_CALLGRAPH} NDC:[timerCallGraphBuilder]
+[2026-05-15 19:06:15.628 WARN  20511]
+Unable to locate metadata for function unregisterListener at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixCaptureActivity.java:617:27
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:CallGraphBuilder-thread-1-48
+   MDC:{msgId=20511, nstFunction=com.atakmap.android.multipix.MultiPixCaptureActivity.unregisterHeadingSensors~com.atakmap.android.multipix.MultiPixCaptureActivity^, nstSourceInfo=MultiPixCaptureActivity.java.nst:2680:2680:26, severity=NONE, sourceInfo=MultiPixCaptureActivity.java:615:619:5, step=BUILD_CALLGRAPH, visitor=com.fortify.sca.analyzer.callgraph.CallGraphBuilder$1} NDC:[timerCallGraphBuilder]
+[2026-05-15 19:06:15.671 WARN  20511]
+Unable to locate metadata for function release at /app/plugin-src/MultiPix/app/src/main/java/com/atakmap/android/multipix/MultiPixCaptureActivity.java:668:20
+   logger:com.fortify.sca.nst.nodes.NSTFunCall marker:DEV thread:CallGraphBuilder-thread-1-48
+   MDC:{msgId=20511, nstFunction=com.atakmap.android.multipix.MultiPixCaptureActivity.releaseCamera~com.atakmap.android.multipix.MultiPixCaptureActivity^, nstSourceInfo=MultiPixCaptureActivity.java.nst:2836:2836:26, severity=NONE, sourceInfo=MultiPixCaptureActivity.java:662:671:5, step=BUILD_CALLGRAPH, visitor=com.fortify.sca.analyzer.callgraph.CallGraphBuilder$1} NDC:[timerCallGraphBuilder]
+[2026-05-15 19:06:15.707 INFO  ]
+Completing call graph
+   logger:com.fortify.sca.analyzer.callgraph.CallGraphBuilder marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=LOG_STATUS, step=COMPLETE_CALLGRAPH} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:06:16.188 INFO  20717]
+InferredConstants: Found 12 resolved runtime-constant fields
+   logger:com.fortify.sca.analyzer.callgraph.CallGraphBuilder marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=20717, severity=NONE, step=COMPLETE_CALLGRAPH} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze, timerInferredConstantResolution]
+[2026-05-15 19:06:16.206 INFO  20714]
+InferredConstants: Sorting 63 potential constant fields by dependency
+   logger:com.fortify.sca.analyzer.callgraph.CallGraphBuilder$StorageSorter marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=20714, severity=NONE, step=COMPLETE_CALLGRAPH} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze, timerInferredConstantResolution]
+[2026-05-15 19:06:18.124 INFO  ]
+Call target caching completed. Cached a total of 2 virtual targets from reaching types, 13 virtual targets from super types, 415 virtual targets from direct calls
+   logger:com.fortify.sca.analyzer.callgraph.VirtualCGBuilder marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=LOG_STATUS, step=COMPLETE_CALLGRAPH} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:06:18.176 INFO  ]
+Constant Propagation: initial constants for 111 functions
+   logger:com.fortify.sca.analyzer.constants.ConstantPropagator marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=LOG_STATUS, step=CONSTANT_PROP} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze, timerConstantPropagator]
+[2026-05-15 19:06:18.212 INFO  ]
+Constant Propagation: propagating constant parameters for 111 functions
+   logger:com.fortify.sca.analyzer.constants.ConstantPropagator marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=LOG_STATUS, step=CONSTANT_PROP} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze, timerConstantPropagator]
+[2026-05-15 19:06:18.215 INFO  ]
+Constant propagator queue initialized with 40 elements for propagation pass
+   logger:com.fortify.sca.analyzer.constants.ConstantPropagator marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=LOG_STATUS, step=CONSTANT_PROP} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze, timerConstantPropagator]
+[2026-05-15 19:06:18.230 INFO  ]
+Constant Propagation: possible types for synthetic functions
+   logger:com.fortify.sca.analyzer.constants.ConstantPropagator marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=LOG_STATUS, step=CONSTANT_PROP} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze, timerConstantPropagator]
+[2026-05-15 19:06:18.231 INFO  ]
+Constant propagator queue initialized with 9 elements for synthetic pass
+   logger:com.fortify.sca.analyzer.constants.ConstantPropagator marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=LOG_STATUS, step=CONSTANT_PROP} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze, timerConstantPropagator]
+[2026-05-15 19:06:18.231 INFO  ]
+Constant propagator queue initialized with 9 elements for synthetic pass
+   logger:com.fortify.sca.analyzer.constants.ConstantPropagator marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=LOG_STATUS, step=CONSTANT_PROP} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze, timerConstantPropagator]
+[2026-05-15 19:06:18.264 INFO  ]
+Constant Propagation: propagate non initialized possible type
+   logger:com.fortify.sca.analyzer.constants.ConstantPropagator marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=LOG_STATUS, step=CONSTANT_PROP} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze, timerConstantPropagator]
+[2026-05-15 19:06:18.264 INFO  ]
+Constant propagator queue initialized with 53 elements for final pass
+   logger:com.fortify.sca.analyzer.constants.ConstantPropagator marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=LOG_STATUS, step=CONSTANT_PROP} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze, timerConstantPropagator]
+[2026-05-15 19:06:18.265 INFO  ]
+Constant propagator queue initialized with 53 elements for final pass
+   logger:com.fortify.sca.analyzer.constants.ConstantPropagator marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=LOG_STATUS, step=CONSTANT_PROP} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze, timerConstantPropagator]
+[2026-05-15 19:06:18.280 INFO  ]
+Constant Propagation: completed
+   logger:com.fortify.sca.analyzer.constants.ConstantPropagator marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=LOG_STATUS, step=CONSTANT_PROP} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze, timerConstantPropagator]
+[2026-05-15 19:06:18.404 INFO  ]
+Call target caching completed. Cached a total of 7 virtual targets from reaching types, 8 virtual targets from super types, 410 virtual targets from direct calls
+   logger:com.fortify.sca.analyzer.callgraph.VirtualCGBuilder marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=LOG_STATUS, step=CONSTANT_PROP} NDC:[timerSourceanalyzer.Run, timerBackEnd.Analyze]
+[2026-05-15 19:06:18.419 INFO  1455]
+Configuration analysis complete
+   logger:com.fortify.sca.backend.BackEnd marker:USER thread:sourceanalyzer-21
+   MDC:{msgId=1455, severity=INFO_VERBOSE, step=CONSTANT_PROP} NDC:[timerSourceanalyzer.Run, timerPHASE_ONE_TWO]
+[2026-05-15 19:06:22.763 INFO  ]
+legacy nullpointer analyzer WILL be run
+   logger:com.fortify.sca.analyzer.stateful.nullptr.NullPtrAnalyzer marker:DEV thread:sourceanalyzer-21
+   MDC:{analyzer=NullPointerAnalyzer, msgId=-1, severity=NONE, step=NULLPTR} NDC:[timerSourceanalyzer.Run, timerPHASE_ONE_TWO, timerNullPointerAnalyzer]
+[2026-05-15 19:06:30.654 INFO  1458]
+Rendering 0 results
+   logger:com.fortify.sca.renderer.AbstractRenderer marker:USER thread:sourceanalyzer-21
+   MDC:{msgId=1458, severity=INFO_VERBOSE, step=RENDER_RESULTS} NDC:[timerRender.Run]
+[2026-05-15 19:06:32.127 INFO  1459]
+Analysis completed in 00:40
+   logger:com.fortify.sca.Main marker:USER thread:sourceanalyzer-21
+   MDC:{msgId=1459, severity=INFO_VERBOSE, step=RENDER_RESULTS} NDC:[]
+[2026-05-15 19:06:32.130 INFO  ]
+message id statistics:
+   id:        -1 total:      2391 totalSuppressedCount:         0 scope:[]
+   id:      1458 total:         1 totalSuppressedCount:         0 scope:[]
+   id:      1459 total:         1 totalSuppressedCount:         0 scope:[]
+   id:     20709 total:         7 totalSuppressedCount:         0 scope:[]
+   id:     20714 total:         1 totalSuppressedCount:         0 scope:[]
+   id:      1451 total:         1 totalSuppressedCount:         0 scope:[]
+   id:     20717 total:         1 totalSuppressedCount:         0 scope:[]
+   id:     20511 total:       140 totalSuppressedCount:         0 scope:[]
+   id:      1455 total:         1 totalSuppressedCount:         0 scope:[]
+
+   logger:com.fortify.messaging.MessageSuppressor marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=RENDER_RESULTS} NDC:[]
+[2026-05-15 19:06:32.130 INFO  ]
+logger:null  count:301
+   level:INFO count:127
+   level:WARN count:174
+logger:com.fortify.sca.backend.BackEnd  count:2
+   level:INFO count:2
+logger:com.fortify.messaging.MessageSuppressor  count:1
+   level:INFO count:1
+logger:com.fortify.sca.analyzer.stateful.nullptr.NullPtrAnalyzer  count:1
+   level:INFO count:1
+logger:com.fortify.sca.analyzer.constants.ConstantPropagator  count:10
+   level:INFO count:10
+logger:com.fortify.sca.analyzer.callgraph.CallGraphBuilder  count:2
+   level:INFO count:2
+logger:com.fortify.sca.cmd.CommandLine  count:2
+   level:INFO count:2
+logger:com.fortify.logging.log4j2.LoggerFactory  count:1
+   level:INFO count:1
+logger:com.fortify.sca.util.Parallelizer  count:6
+   level:INFO count:6
+logger:com.fortify.sca.analyzer.callgraph.CallGraphBuilder$StorageSorter  count:1
+   level:INFO count:1
+logger:com.fortify.sca.frontend.FrontEndSession  count:2
+   level:INFO count:2
+logger:com.fortify.sca.nst.util.Resolver  count:32
+   level:WARN count:32
+logger:com.fortify.sca.renderer.AbstractRenderer  count:1
+   level:INFO count:1
+logger:com.fortify.sca.flight.FlightProcess  count:3
+   level:INFO count:3
+logger:com.fortify.sca.nst.nodes.NSTFunCall  count:140
+   level:WARN count:140
+logger:com.fortify.sca.analyzer.callgraph.VirtualCGBuilder  count:2
+   level:INFO count:2
+logger:com.fortify.sca.nst.reader.parser.NSTParser  count:2
+   level:WARN count:2
+logger:com.fortify.sca.backend.FilterFileFilter  count:86
+   level:INFO count:86
+logger:com.fortify.sca.Main  count:6
+   level:INFO count:6
+logger:com.fortify.sca.util.LicenseUtil  count:1
+   level:INFO count:1
+
+   logger:com.fortify.logging.LoggerStats marker:DEV thread:sourceanalyzer-21
+   MDC:{msgId=-1, severity=NONE, step=RENDER_RESULTS} NDC:[]
